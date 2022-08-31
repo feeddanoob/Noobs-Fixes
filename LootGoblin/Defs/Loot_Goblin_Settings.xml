@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- Begin Subgroups -->
+	
+	<!-- What the Hack?! subgroup -->
+	<LootGoblin.LootTypeDef>
+		<defName>LG_Type_WTHModules</defName>
+		<label>What the Hack - Modules</label>
+		<parent>LG_Type_Manufactured</parent>
+	</LootGoblin.LootTypeDef>
+	<!-- Dubs Rimatomics subgroup -->
+	<LootGoblin.LootTypeDef>
+		<defName>LG_Type_DubsRimatomics</defName>
+		<label>Rimatomics Products</label>
+		<parent>LG_Type_Manufactured</parent>
+	</LootGoblin.LootTypeDef>
+	
+	<!-- Begin Item/Category -->
+		<LootGoblin.LootRulesDef>
+		<defName>LG_Rule_feeddanoobEdit</defName>
+		<rules>
+			<!-- What the hack?! - A little expansion -->
+			<li>
+				<match>
+					<category>^WTH_.*Modules$</category>
+				</match>
+				<lootType>LG_Type_WTHModules</lootType>
+			</li>
+			<li>
+				<match>
+					<name>^WTH_.*Module$</name>
+				</match>
+				<lootType>LG_Type_WTHModules</lootType>
+			</li>
+			<!-- Dubs Rimatomics -->
+			<li>
+				<match>
+					<category>NuclearFuel</category>
+				</match>
+				<lootType>LG_Type_DubsRimatomics</lootType>
+			</li>
+			<li>
+				<match>
+					<category>RimatomicsProduct</category>
+				</match>
+				<lootType>LG_Type_DubsRimatomics</lootType>
+			</li>
+			<!-- Project Rimfactory Revived -->
+			<li>
+				<match>
+					<name>PRF_DataDisk</name>
+				</match>
+				<lootType>LG_Type_Ignore</lootType>
+			</li>
+			<!-- Giddy-Up! Mechanoids -->
+			<li>
+				<match>
+					<name>GU_Mech_GiddyUpModule</name>
+				</match>
+				<lootType>LG_Type_WTHModules</lootType>
+			</li>
+			<!-- Ideology (for relics) -->
+			<li>
+				<match>
+					<category>InertRelics</category>
+				</match>
+				<lootType>LG_Type_Ignore</lootType>
+			</li>
+			<!-- Save Our Ship 2 -->
+			<li>
+				<match>
+					<name>SoSEntanglementManifold</name>
+				</match>
+				<lootType>LG_Type_Ignore</lootType>
+			</li>
+			<li>
+				<match>
+					<name>ArchotechMechaniteCore</name>
+				</match>
+				<lootType>LG_Type_Ignore</lootType>
+			</li>
+			<li>
+				<match>
+					<name>ArchotechPsychicCore</name>
+				</match>
+				<lootType>LG_Type_Ignore</lootType>
+			</li>
+			<!-- Core -->
+			<li>
+				<match>
+					<name>AIPersonaCore</name>
+				</match>
+				<lootType>LG_Type_Ignore</lootType>
+			</li>
+			<li>
+				<match>
+					<name>TechprofSubpersonaCore</name>
+				</match>
+				<lootType>LG_Type_Ignore</lootType>
+			</li>
+			<!-- Royalty -->
+			<li>
+				<match>
+					<name>BroadshieldCore</name>
+				</match>
+				<lootType>LG_Type_Ignore</lootType>
+			</li>
+			<!-- Vanilla Factions Expanded - Ancients -->
+			<li>
+				<match>
+					<name>VFEA_SuperNanites</name>
+				</match>
+				<lootType>LG_Type_Ignore</lootType>
+			</li>
+		</rules>
+	</LootGoblin.LootRulesDef>
+</Defs>
