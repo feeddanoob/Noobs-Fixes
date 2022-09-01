@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>LWM's Deep Storage</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<!-- Removing mass limits of deep storage structures - from Madman's patches -->
+				<li Class="PatchOperationConditional">
+					<xpath>
+						Defs/ThingDef/comps/li[@Class="LWM.DeepStorage.Properties"]/maxTotalMass | 
+						Defs/ThingDef/comps/li[@Class="LWM.DeepStorage.Properties"]/maxMassOfStoredItem | 
+						Defs/ThingDef/comps/li[@Class="LWM.DeepStorage.Properties"]/minNumberStacks
+					</xpath>
+					<match Class="PatchOperationRemove">
+						<xpath>
+							Defs/ThingDef/comps/li[@Class="LWM.DeepStorage.Properties"]/maxTotalMass | 
+							Defs/ThingDef/comps/li[@Class="LWM.DeepStorage.Properties"]/maxMassOfStoredItem | 
+							Defs/ThingDef/comps/li[@Class="LWM.DeepStorage.Properties"]/minNumberStacks
+						</xpath>
+					</match>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>
