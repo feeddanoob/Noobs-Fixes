@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Insectoids</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName = "VFEI_InsectMilk"]/thingCategories</xpath>
+					<value>
+						<thingCategories>
+							<li>Milk_Type</li>
+						</thingCategories>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName = "AA_GowMilk"]/thingCategories</xpath>
+					<value>
+						<thingCategories>
+							<li>Milk_Type</li>
+						</thingCategories>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

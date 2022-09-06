@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>VGP Garden Gourmet</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RecipeDef[defName="MakeIcecream"]/ingredients/li/filter/thingDefs/li[text()='Milk']/..</xpath>
+					<value>
+						<categories>
+							<li>Milk_Type</li>
+						</categories>
+					</value>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/RecipeDef[defName="MakeIcecream"]/fixedIngredientFilter/thingDefs/li[text()='Milk']</xpath>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RecipeDef[defName="MakeIcecream"]/fixedIngredientFilter</xpath>
+					<value>
+						<categories>
+							<li>Milk_Type</li>
+						</categories>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RecipeDef[defName="MakeYogurt"]/ingredients/li/filter/thingDefs/li[text()='Milk']/..</xpath>
+					<value>
+						<categories>
+							<li>Milk_Type</li>
+						</categories>
+					</value>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/RecipeDef[defName="MakeYogurt"]/fixedIngredientFilter/thingDefs</xpath>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RecipeDef[defName="MakeYogurt"]/fixedIngredientFilter/categories</xpath>
+					<value>
+						<li>Milk_Type</li>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RecipeDef[defName="MakeSmoothie"]/ingredients/li/filter/thingDefs/li[text()='Milk']/..</xpath>
+					<value>
+						<categories>
+							<li>Milk_Type</li>
+						</categories>
+					</value>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/RecipeDef[defName="MakeSmoothie"]/fixedIngredientFilter/thingDefs</xpath>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RecipeDef[defName="MakeSmoothie"]/fixedIngredientFilter/categories</xpath>
+					<value>
+						<li>Milk_Type</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Alpha Animals</li>
+		</mods>
+		<!-- Changing AA milk categories to own -->
+		<match Class="PatchOperationSequence">
+			<operations>
+				<!-- Milk from frostbound behemoth -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName = "AA_BlueMilk"]/thingCategories</xpath>
+					<value>
+						<thingCategories>
+							<li>Milk_Type</li>
+						</thingCategories>
+					</value>
+				</li>
+				<!-- Milk from gow -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName = "AA_GowMilk"]/thingCategories</xpath>
+					<value>
+						<thingCategories>
+							<li>Milk_Type</li>
+						</thingCategories>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

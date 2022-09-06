@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingCategoryDef>
+		<defName>Milk_Type</defName>
+		<label>milk</label>
+		<parent>AnimalProductRaw</parent>
+		<iconPath>Empty</iconPath>
+	</ThingCategoryDef>
+</Defs>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>VGP Garden Gourmet</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RecipeDef[defName="Makesoycheese"]/ingredients/li/filter/thingDefs</xpath>
+					<value>
+						<categories>
+							<li>Milk_Type</li>
+						</categories>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RecipeDef[defName="Makesoycheese"]/fixedIngredientFilter/thingDefs</xpath>
+					<value>
+						<categories>
+							<li>Milk_Type</li>
+						</categories>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RecipeDef[defName="MakeBulksoycheese"]/ingredients/li/filter/thingDefs</xpath>
+					<value>
+						<categories>
+							<li>Milk_Type</li>
+						</categories>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RecipeDef[defName="MakeBulksoycheese"]/fixedIngredientFilter/thingDefs</xpath>
+					<value>
+						<categories>
+							<li>Milk_Type</li>
+						</categories>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

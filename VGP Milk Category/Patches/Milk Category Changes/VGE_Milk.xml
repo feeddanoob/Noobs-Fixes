@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Genetics Expanded</li>
+		</mods>
+		<!-- Changing VGE milk categories to own -->
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName = "GR_ChickenffaloMilk"]/thingCategories</xpath>
+					<value>
+						<thingCategories>
+							<li>Milk_Type</li>
+						</thingCategories>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName = "GR_WeirdMilk"]/thingCategories</xpath>
+					<value>
+						<thingCategories>
+							<li>Milk_Type</li>
+						</thingCategories>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName = "GR_BearffaloMilk"]/thingCategories</xpath>
+					<value>
+						<thingCategories>
+							<li>Milk_Type</li>
+						</thingCategories>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName = "GR_ThrumffaloMilk"]/thingCategories</xpath>
+					<value>
+						<thingCategories>
+							<li>Milk_Type</li>
+						</thingCategories>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName = "GR_MuffalochickenMilk"]/thingCategories</xpath>
+					<value>
+						<thingCategories>
+							<li>Milk_Type</li>
+						</thingCategories>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName = "GR_MuffalobearMilk"]/thingCategories</xpath>
+					<value>
+						<thingCategories>
+							<li>Milk_Type</li>
+						</thingCategories>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>
