@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Brewing Expanded</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[defName="VBE_SodaFountain"]/thingClass</xpath>
+				</li>
+				<!-- Soda -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+						<ProcessorFramework.ProcessDef>
+							<defName>VBE_SyrupToSoda</defName>
+							<thingDef>VBE_Soda</thingDef>
+							<ingredientFilter>
+								<thingDefs>
+									<li>VBE_SodaSyrup</li>
+								</thingDefs>
+							</ingredientFilter>
+							<processDays>2</processDays>
+						</ProcessorFramework.ProcessDef>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="VBE_SodaFountain"]/comps/li[@Class="ItemProcessor.CompProperties_ItemProcessor"]</xpath>
+					<value>
+						<li Class="ProcessorFramework.CompProperties_Processor">
+							<capacity>20</capacity>
+							<dropIngredients>true</dropIngredients>
+							<showProductIcon>true</showProductIcon>
+							<processes>
+								<li>VBE_SyrupToSoda</li>
+							</processes>
+						</li>
+					</value>
+				</li>
+				<!-- Ambrandy - Do not patch very bad-->
+				<!-- <li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+						<ProcessorFramework.ProcessDef>
+							<defName>VBE_AmbrandyMustToAmbrandy</defName>
+							<thingDef>VBE_Soda</thingDef>
+							<ingredientFilter>
+								<thingDefs>
+									<li>VBE_AmbrandyMust</li>
+								</thingDefs>
+							</ingredientFilter>
+							<processDays>2</processDays>
+						</ProcessorFramework.ProcessDef>
+					</value>
+				</li> -->
+			</operations>
+		</match>
+	<Operation>
+</Patch>

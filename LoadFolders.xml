@@ -4,5 +4,6 @@
 		<li>1.3</li>
 		<li IfModActive="usagirei.lootgoblin">LootGoblin</li>
 		<li IfModActive="dismarzero.VGP.VGPVegetableGarden">VGP Milk Category</li>
+		<li IfModActive="syrchalis.processor.framework">Processor Framework</li>
 	</v1.3>
 </loadFolders>
