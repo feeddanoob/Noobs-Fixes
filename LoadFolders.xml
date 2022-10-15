@@ -6,5 +6,6 @@
 		<li IfModActive="dismarzero.VGP.VGPVegetableGarden">VGP Milk Category</li>
 		<li IfModActive="syrchalis.processor.framework">Processor Framework</li>
 		<li IfModActive="syrchalis.traitvalue">SYR Trait</li>
+		<li IfModActive="owlchemist.seedspleaselite">Seeds Please Lite</li>
 	</v1.3>
 </loadFolders>
