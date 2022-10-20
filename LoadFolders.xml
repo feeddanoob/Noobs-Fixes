@@ -7,5 +7,8 @@
 		<li IfModActive="syrchalis.processor.framework">Processor Framework</li>
 		<li IfModActive="syrchalis.traitvalue">SYR Trait</li>
 		<li IfModActive="owlchemist.seedspleaselite">Seeds Please Lite</li>
+		<li IfModActive="freemapa.freewill">Free Will</li>
+		<li IfModActive="jamaicancastle.rf.fertilefields">Fertile Fields</li>
+		<li IfModActive="ogliss.thewhitecrayon.quarry">Quarry</li>
 	</v1.3>
 </loadFolders>
