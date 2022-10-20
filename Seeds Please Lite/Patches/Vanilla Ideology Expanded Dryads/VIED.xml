@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Ideology Expanded - Dryads</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+						<ThingDef ParentName="SeedBase">
+							<defName>Seed_VDE_AmbrosiaPalm</defName>
+							<label>vde_ambrosiapalm seeds</label>
+							<descriptionHyperlinks>
+								<ThingDef>VDE_AmbrosiaPalm</ThingDef>
+							</descriptionHyperlinks>
+							<modExtensions>
+								<li Class="SeedsPleaseLite.Seed">
+									<sources>
+										<li>VDE_AmbrosiaPalm</li>
+									</sources>
+									<extractable>False</extractable>
+								</li>
+							</modExtensions>
+							<graphicData>
+								<texPath>Seeds/Ambrosia</texPath>
+							</graphicData>
+						</ThingDef>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>
