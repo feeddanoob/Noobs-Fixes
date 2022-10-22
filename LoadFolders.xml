@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <loadFolders>
 	<v1.3>
+		<li>Common</li>
 		<li>1.3</li>
 		<li IfModActive="usagirei.lootgoblin">LootGoblin</li>
 		<li IfModActive="dismarzero.VGP.VGPVegetableGarden">VGP Milk Category</li>
@@ -10,5 +11,19 @@
 		<li IfModActive="freemapa.freewill">Free Will</li>
 		<li IfModActive="jamaicancastle.rf.fertilefields">Fertile Fields</li>
 		<li IfModActive="ogliss.thewhitecrayon.quarry">Quarry</li>
+		<li IfModActive="sarg.alphaanimals">Alpha Animals</li>
 	</v1.3>
+	<v1.4>
+		<li>Common</li>
+		<li>1.4</li>
+		<li IfModActive="usagirei.lootgoblin">LootGoblin</li>
+		<li IfModActive="dismarzero.VGP.VGPVegetableGarden">VGP Milk Category</li>
+		<li IfModActive="syrchalis.processor.framework">Processor Framework</li>
+		<li IfModActive="syrchalis.traitvalue">SYR Trait</li>
+		<li IfModActive="owlchemist.seedspleaselite">Seeds Please Lite</li>
+		<li IfModActive="freemapa.freewill">Free Will</li>
+		<li IfModActive="jamaicancastle.rf.fertilefields">Fertile Fields</li>
+		<li IfModActive="ogliss.thewhitecrayon.quarry">Quarry</li>
+		<li IfModActive="sarg.alphaanimals">Alpha Animals</li>
+	</v1.4>
 </loadFolders>
