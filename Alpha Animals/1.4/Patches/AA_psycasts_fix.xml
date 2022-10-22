@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Psycasts Expanded</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<!-- Removing mass limits of deep storage structures - from Madman's patches -->
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/MentalStateDef[defName="AAVPE_Manhunter"]/unspawnedCanDo</xpath>
+					<match Class="PatchOperationRemove">
+						<xpath>Defs/MentalStateDef[defName="AAVPE_Manhunter"]/unspawnedCanDo</xpath>
+					</match>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>
