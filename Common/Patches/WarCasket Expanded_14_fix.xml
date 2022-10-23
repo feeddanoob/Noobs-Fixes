@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>WarCasket Expanded</li>
+		</mods>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/ThingDef[defName="WC_Bullet_SmokeLauncher"]/projectile[postExplosionSpawnThingDef="Gas_Smoke"]</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="WC_Bullet_SmokeLauncher"]/projectile/postExplosionSpawnThingDef</xpath>
+				<value>
+					<postExplosionSpawnThingDef>BlindSmoke</postExplosionSpawnThingDef>
+				</value>
+			</match>
+		</match>
+	</Operation>
+</Patch>
