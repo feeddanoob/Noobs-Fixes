@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Micro Designations</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>MendAndRecycle</li>
+					</mods>
+					<nomatch Class="PatchOperationSequence">
+						<operations>
+							<li Class="PatchOperationConditional">
+								<xpath>Defs/MicroDesignations.RecipeJobDef[workClass="MendAndRecycle.RecipeWorkerWithJob_Mend"]</xpath>
+								<match Class="PatchOperationRemove">
+									<xpath>Defs/MicroDesignations.RecipeJobDef[workerClass="MendAndRecycle.RecipeWorkerWithJob_Mend"]</xpath>
+								</match>
+							</li>
+							<li Class="PatchOperationConditional">
+								<xpath>Defs/MicroDesignations.RecipeJobDef[workClass="MendAndRecycle.RecipeWorkerWithJob_Recycle"]</xpath>
+								<match Class="PatchOperationRemove">
+									<xpath>Defs/MicroDesignations.RecipeJobDef[workerClass="MendAndRecycle.RecipeWorkerWithJob_Recycle"]</xpath>
+								</match>
+							</li>
+						</operations>
+					</nomatch>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>
