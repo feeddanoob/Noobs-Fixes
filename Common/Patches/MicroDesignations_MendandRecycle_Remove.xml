@@ -13,13 +13,13 @@
 					<nomatch Class="PatchOperationSequence">
 						<operations>
 							<li Class="PatchOperationConditional">
-								<xpath>Defs/MicroDesignations.RecipeJobDef[workClass="MendAndRecycle.RecipeWorkerWithJob_Mend"]</xpath>
+								<xpath>Defs/RecipeDef[defName = "MendSimpleApparel"]</xpath>
 								<match Class="PatchOperationRemove">
 									<xpath>Defs/MicroDesignations.RecipeJobDef[workerClass="MendAndRecycle.RecipeWorkerWithJob_Mend"]</xpath>
 								</match>
 							</li>
 							<li Class="PatchOperationConditional">
-								<xpath>Defs/MicroDesignations.RecipeJobDef[workClass="MendAndRecycle.RecipeWorkerWithJob_Recycle"]</xpath>
+								<xpath>Defs/RecipeDef[defName = "RecycleApparel"]</xpath>
 								<match Class="PatchOperationRemove">
 									<xpath>Defs/MicroDesignations.RecipeJobDef[workerClass="MendAndRecycle.RecipeWorkerWithJob_Recycle"]</xpath>
 								</match>
