@@ -9,7 +9,7 @@
 			<match Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="WC_Bullet_SmokeLauncher"]/projectile/postExplosionSpawnThingDef</xpath>
 				<value>
-					<postExplosionSpawnThingDef>BlindSmoke</postExplosionSpawnThingDef>
+					<postExplosionGasType>BlindSmoke</postExplosionGasType>
 				</value>
 			</match>
 		</match>
