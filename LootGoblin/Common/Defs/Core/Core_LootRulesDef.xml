@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- Begin Item/Category -->
+	<LootGoblin.LootRulesDef>
+		<defName>Core_feeddanoob</defName>
+		<rules>
+			<!-- Core -->
+			<li>
+				<match>
+					<name>AIPersonaCore</name>
+				</match>
+				<lootType>LG_Type_PreventStacking</lootType>
+			</li>
+			<li>
+				<match>
+					<name>TechprofSubpersonaCore</name>
+				</match>
+				<lootType>LG_Type_PreventStacking</lootType>
+			</li>
+		</rules>
+	</LootGoblin.LootRulesDef>
+</Defs>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- Begin Item/Category -->
+	<LootGoblin.LootRulesDef MayRequire="vanillaexpanded.vbookse">
+		<defName>VBE_feeddanoob</defName>
+		<rules>
+			<!-- Vanilla Books Expanded -->
+			<li>
+				<match>
+					<name>VBE_Blueprint</name>
+				</match>
+				<lootType>LG_Type_PreventStacking</lootType>
+			</li>
+			<li>
+				<match>
+					<name>VBE_Map</name>
+				</match>
+				<lootType>LG_Type_PreventStacking</lootType>
+			</li>
+			<li>
+				<match>
+					<name>VBE_Newspaper</name>
+				</match>
+				<lootType>LG_Type_PreventStacking</lootType>
+			</li>
+		</rules>
+	</LootGoblin.LootRulesDef>
+</Defs>

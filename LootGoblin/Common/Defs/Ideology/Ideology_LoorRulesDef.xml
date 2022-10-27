@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- Begin Item/Category -->
+	<LootGoblin.LootRulesDef MayRequire="ludeon.rimworld.ideology">
+		<defName>Ideology_feeddanoob</defName>
+		<rules>
+			<!-- Ideology (for relics) -->
+			<li>
+				<match>
+					<category>InertRelics</category>
+				</match>
+				<lootType>LG_Type_PreventStacking</lootType>
+			</li>
+		</rules>
+	</LootGoblin.LootRulesDef>
+</Defs>

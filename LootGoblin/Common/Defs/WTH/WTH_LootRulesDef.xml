@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- Begin Item/Category -->
+	<LootGoblin.LootRulesDef MayRequire="mrkociak.morewthmechimplants">
+		<defName>WTH_feeddanoob</defName>
+		<rules>
+			<!-- What the hack?! - A little expansion -->
+			<li>
+				<match>
+					<category>^WTH_.*Modules$</category>
+				</match>
+				<lootType>LG_Type_WTHModules</lootType>
+			</li>
+			<li>
+				<match>
+					<name>^WTH_.*Module$</name>
+				</match>
+				<lootType>LG_Type_WTHModules</lootType>
+			</li>
+		</rules>
+	</LootGoblin.LootRulesDef>
+</Defs>

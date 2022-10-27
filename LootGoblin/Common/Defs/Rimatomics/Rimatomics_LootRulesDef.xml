@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- Begin Item/Category -->
+	<LootGoblin.LootRulesDef MayRequire="dubwise.rimatomics">
+		<defName>Rimatomics_feeddanoob</defName>
+		<rules>
+			<!-- Dubs Rimatomics -->
+			<li>
+				<match>
+					<name>FuelRods</name>
+				</match>
+				<lootType>LG_Type_PreventStacking</lootType>
+			</li>
+			<li>
+				<match>
+					<name>FuelRodsMOX</name>
+				</match>
+				<lootType>LG_Type_PreventStacking</lootType>
+			</li>
+			<li>
+				<match>
+					<name>ChunkRadioactiveSlag</name>
+				</match>
+				<lootType>LG_Type_PreventStacking</lootType>
+			</li>
+			<li>
+				<match>
+					<name>RocketEngine</name>
+				</match>
+				<lootType>LG_Type_PreventStacking</lootType>
+			</li>
+			<li>
+				<match>
+					<name>MissileFuselage</name>
+				</match>
+				<lootType>LG_Type_PreventStacking</lootType>
+			</li>
+			<li>
+				<match>
+					<name>FissionWarhead</name>
+				</match>
+				<lootType>LG_Type_PreventStacking</lootType>
+			</li>
+		</rules>
+	</LootGoblin.LootRulesDef>
+</Defs>

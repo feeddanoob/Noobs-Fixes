@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- Begin Subgroups -->
+	<LootGoblin.LootTypeDef MayRequire="roolo.whatthehack">
+		<defName>LG_Type_WTHModules</defName>
+		<label>What the Hack - Modules</label>
+		<parent>LG_Type_Manufactured</parent>
+	</LootGoblin.LootTypeDef>
+</Defs>

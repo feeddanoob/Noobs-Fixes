@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- Begin Item/Category -->
+	<LootGoblin.LootRulesDef MayRequire="dubwise.dubsbadhygiene">
+		<defName>BadHygiene_feeddanoob</defName>
+		<rules>
+			<!-- Dubs Bad Hygiene -->
+			<li>
+				<match>
+					<name>BedPan</name>
+				</match>
+				<lootType>LG_Type_PreventStacking</lootType>
+			</li>
+		</rules>
+	</LootGoblin.LootRulesDef>
+</Defs>

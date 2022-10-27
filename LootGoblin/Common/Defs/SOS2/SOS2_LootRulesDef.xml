@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- Begin Item/Category -->
+	<LootGoblin.LootRulesDef MayRequire="kentington.saveourship2">
+		<defName>SOS2_feeddanoob</defName>
+		<rules>
+			<!-- Save Our Ship 2 -->
+			<li>
+				<match>
+					<name>SoSEntanglementManifold</name>
+				</match>
+				<lootType>LG_Type_PreventStacking</lootType>
+			</li>
+			<li>
+				<match>
+					<name>ArchotechMechaniteCore</name>
+				</match>
+				<lootType>LG_Type_PreventStacking</lootType>
+			</li>
+			<li>
+				<match>
+					<name>ArchotechPsychicCore</name>
+				</match>
+				<lootType>LG_Type_PreventStacking</lootType>
+			</li>
+		</rules>
+	</LootGoblin.LootRulesDef>
+</Defs>
