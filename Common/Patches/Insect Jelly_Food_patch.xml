@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Insectoids</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>*/RecipeDef[@Name="CookMealBase"]/defaultIngredientFilter/disallowedThingDefs</xpath>
+			<value>
+				<li>VFEI_RoyalInsectJelly</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Alpha Animals</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>*/RecipeDef[@Name="CookMealBase"]/defaultIngredientFilter/disallowedThingDefs</xpath>
+			<value>
+				<li>AA_BlackInsectJelly</li>
+			</value>
+		</match>
+	</Operation>
+</Patch>
