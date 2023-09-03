@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Medieval Overhaul</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+						<ThingDef ParentName="SeedBase">
+							<defName>Seed_DankPyon__Flax</defName>
+							<label>flax seeds</label>
+							<descriptionHyperlinks>
+								<ThingDef>DankPyon_Plant_Flax</ThingDef>
+							</descriptionHyperlinks>
+							<modExtensions>
+								<li Class="SeedsPleaseLite.Seed">
+									<sources>
+										<li>DankPyon_Plant_Flax</li>
+									</sources>
+								</li>
+							</modExtensions>
+						</ThingDef>
+						<ThingDef ParentName="SeedBase">
+							<defName>Seed_DankPyon__Mulberry</defName>
+							<label>mulberry seeds</label>
+							<descriptionHyperlinks>
+								<ThingDef>DankPyon_Tree_Mulberry</ThingDef>
+							</descriptionHyperlinks>
+							<modExtensions>
+								<li Class="SeedsPleaseLite.Seed">
+									<sources>
+										<li>DankPyon_Tree_Mulberry</li>
+									</sources>
+								</li>
+							</modExtensions>
+						</ThingDef>
+						<ThingDef ParentName="SeedBase">
+							<defName>Seed_DankPyon_Macci</defName>
+							<label>macci seeds</label>
+							<descriptionHyperlinks>
+								<ThingDef>DankPyon_MacciPlant</ThingDef>
+							</descriptionHyperlinks>
+							<modExtensions>
+								<li Class="SeedsPleaseLite.Seed">
+									<sources>
+										<li>DankPyon_MacciPlant</li>
+									</sources>
+								</li>
+							</modExtensions>
+						</ThingDef>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

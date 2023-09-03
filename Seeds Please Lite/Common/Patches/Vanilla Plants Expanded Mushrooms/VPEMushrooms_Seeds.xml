@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Plants Expanded - Mushrooms</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+						<ThingDef ParentName="SeedBase">
+							<defName>Seed_VPE__Timbercap</defName>
+							<label>timbercap seeds</label>
+							<descriptionHyperlinks>
+								<ThingDef>VPE_Plant_Timbercap</ThingDef>
+							</descriptionHyperlinks>
+							<modExtensions>
+								<li Class="SeedsPleaseLite.Seed">
+									<sources>
+										<li>VPE_Plant_Timbercap</li>
+									</sources>
+								</li>
+							</modExtensions>
+						</ThingDef>
+						<ThingDef ParentName="SeedBase">
+							<defName>Seed_VPE__Healtruffle</defName>
+							<label>healtruffle seeds</label>
+							<descriptionHyperlinks>
+								<ThingDef>VPE_Plant_Healtruffle</ThingDef>
+							</descriptionHyperlinks>
+							<modExtensions>
+								<li Class="SeedsPleaseLite.Seed">
+									<sources>
+										<li>VPE_Plant_Healtruffle</li>
+									</sources>
+								</li>
+							</modExtensions>
+						</ThingDef>
+						<ThingDef ParentName="SeedBase">
+							<defName>Seed_VPE__Stinker</defName>
+							<label>stinker seeds</label>
+							<descriptionHyperlinks>
+								<ThingDef>VPE_Plant_Stinker</ThingDef>
+							</descriptionHyperlinks>
+							<modExtensions>
+								<li Class="SeedsPleaseLite.Seed">
+									<sources>
+										<li>VPE_Plant_Stinker</li>
+									</sources>
+								</li>
+							</modExtensions>
+						</ThingDef>
+						<ThingDef ParentName="SeedBase">
+							<defName>Seed_VPE__Blisscap</defName>
+							<label>blisscap seeds</label>
+							<descriptionHyperlinks>
+								<ThingDef>VPE_Plant_Blisscap</ThingDef>
+							</descriptionHyperlinks>
+							<modExtensions>
+								<li Class="SeedsPleaseLite.Seed">
+									<sources>
+										<li>VPE_Plant_Blisscap</li>
+									</sources>
+								</li>
+							</modExtensions>
+						</ThingDef>
+						<ThingDef ParentName="SeedBase">
+							<defName>Seed_VPE__Bileceps</defName>
+							<label>bileceps seeds</label>
+							<descriptionHyperlinks>
+								<ThingDef>VPE_Plant_Bileceps</ThingDef>
+							</descriptionHyperlinks>
+							<modExtensions>
+								<li Class="SeedsPleaseLite.Seed">
+									<sources>
+										<li>VPE_Plant_Bileceps</li>
+									</sources>
+								</li>
+							</modExtensions>
+						</ThingDef>
+						<ThingDef ParentName="SeedBase">
+							<defName>Seed_VPE__Glowcap</defName>
+							<label>glowcap seeds</label>
+							<descriptionHyperlinks>
+								<ThingDef>VPE_Plant_Glowcap</ThingDef>
+							</descriptionHyperlinks>
+							<modExtensions>
+								<li Class="SeedsPleaseLite.Seed">
+									<sources>
+										<li>VPE_Plant_Glowcap</li>
+									</sources>
+								</li>
+							</modExtensions>
+						</ThingDef>
+						<ThingDef ParentName="SeedBase">
+							<defName>Seed_VPE__MycothreadMushroom</defName>
+							<label>mycothreadmushroom seeds</label>
+							<descriptionHyperlinks>
+								<ThingDef>VPE_Plant_MycothreadMushroom</ThingDef>
+							</descriptionHyperlinks>
+							<modExtensions>
+								<li Class="SeedsPleaseLite.Seed">
+									<sources>
+										<li>VPE_Plant_MycothreadMushroom</li>
+									</sources>
+								</li>
+							</modExtensions>
+						</ThingDef>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>
