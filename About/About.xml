@@ -13,5 +13,6 @@
         <li>Harkon.CEAddOn.CEGunsVanillaExpandedConsistencyPatch</li>
 		<li>VanillaExpanded.VMemesE</li>
 		<li>Harkon.GunNut.UkrainianFirearms</li>
+		<li>VR.MOPatches</li>
     </loadAfter>
 </ModMetaData>

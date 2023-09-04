@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<!--<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Plants Expanded - More Plants</li>
+		</mods>
+		<match Class="PatchOperationFindMod">
+			<mods>
+				<li>Medieval Overhaul Patches</li>
+			</mods>
+			<match Class="PatchOperationSequence">
+				<operations>
+					<li Class="PatchOperationRemove">
+						<xpath>Defs/ThingDef[defName="Seed_VCE_Garlic"]</xpath>
+					</li>
+					<li Class="PatchOperationRemove">
+						<xpath>Defs/ThingDef[defName="Seed_VCE_Carrot"]</xpath>
+					</li>
+				</operations>
+			</match>
+		</match>
+	</Operation>-->
+	<Operation Class="PatchOperationSequence" MayRequire="VanillaExpanded.VPlantsEMore,VR.MOPatches">
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName="Seed_VCE_Garlic"]</xpath>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="DankPyon_Plant_Carrots"]/plant/sowTags</xpath>
+				<value>
+					<sowTags>
+						<li>Ground</li>
+						<li>Hydroponics</li>
+					</sowTags>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="DankPyon_Plant_Carrots"]/plant</xpath>
+				<value>
+					<sowResearchPrerequisites>
+						<li>DankPyon_IntermediateAgriculture</li>
+					</sowResearchPrerequisites>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="DankPyon_Plant_Carrots"]/description</xpath>
+				<value>
+					<description>Bushy, short stalks whos root consists of a brightly-colored orange tuber. They make for healthy, if not tasty snacks on their own, or a good addition to any meal when boiled, stewed or sauteed.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Companion planting: carrots will grow faster if green beans are cultivated in the same map (up to 30% faster if 100 are found).</description>
+				</value>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName="VCE_Carrot"]/plant/sowResearchPrerequisites/li[text()='DankPyon_IntermediateAgriculture']</xpath>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="VCE_Carrot"]/plant/sowTags</xpath>
+				<value>
+					<sowTags/>
+				</value>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName="Seed_VCE_Carrot"]</xpath>
+			</li>
+		</operations>
+	</Operation>
+</Patch>
