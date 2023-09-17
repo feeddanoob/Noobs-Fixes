@@ -11,7 +11,7 @@
 					<value>
 						<ThingDef ParentName="SeedBase">
 							<defName>Seed_VDE_AmbrosiaPalm</defName>
-							<label>vde_ambrosiapalm seeds</label>
+							<label>ambrosiapalm seeds</label>
 							<descriptionHyperlinks>
 								<ThingDef>VDE_AmbrosiaPalm</ThingDef>
 							</descriptionHyperlinks>
