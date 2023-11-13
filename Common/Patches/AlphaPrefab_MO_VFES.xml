@@ -3,8 +3,19 @@
 	<Operation Class="PatchOperationSequence">
 		<operations>
 			<li Class="PatchOperationRemove" MayRequire="DankPyon.Medieval.Overhaul,Sarg.AlphaPrefabs,VanillaExpanded.VFESecurity">
-				<xpath>Defs/AlphaPrefabs.PrefabDef[defName = "AP_Prefab_MedievalDefensiveLine"]/researchPrerequisites/li[text() = 'VFES_SiegeEquipment']</xpath>
+				<xpath>Defs/AlphaPrefabs.PrefabDef[
+				defName = "AP_Prefab_MedievalDefensiveLine" or 
+				defName = "AP_Prefab_BallistaLine" or 
+				defName = "AP_Prefab_CatapultLine"]/researchPrerequisites/li[text() = 'VFES_SiegeEquipment']</xpath>
 			</li>
+			<!--
+			<li Class="PatchOperationRemove" MayRequire="DankPyon.Medieval.Overhaul,Sarg.AlphaPrefabs,VanillaExpanded.VFESecurity">
+				<xpath>Defs/AlphaPrefabs.PrefabDef[defName = "AP_Prefab_BallistaLine"]/researchPrerequisites/li[text() = 'VFES_SiegeEquipment']</xpath>
+			</li>
+			<li Class="PatchOperationRemove" MayRequire="DankPyon.Medieval.Overhaul,Sarg.AlphaPrefabs,VanillaExpanded.VFESecurity">
+				<xpath>Defs/AlphaPrefabs.PrefabDef[defName = "AP_Prefab_CatapultLine"]/researchPrerequisites/li[text() = 'VFES_SiegeEquipment']</xpath>
+			</li>
+			-->
 		</operations>
 	</Operation>
 </Patch>
