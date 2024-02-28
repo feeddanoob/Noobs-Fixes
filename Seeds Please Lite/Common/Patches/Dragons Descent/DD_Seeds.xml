@@ -6,12 +6,13 @@
 		</mods>
 		<match Class="PatchOperationSequence">
 			<operations>
-				<li Class="PatchOperationAdd">
+				<!-- Changed to make this plant seedless -->
+				<!-- <li Class="PatchOperationAdd">
 					<xpath>Defs</xpath>
 					<value>
 						<ThingDef ParentName="SeedBase">
 							<defName>Seed_Jewel_Orchid</defName>
-							<label>jewel_orchid seeds</label>
+							<label>jewel orchid seeds</label>
 							<descriptionHyperlinks>
 								<ThingDef>Jewel_Orchid</ThingDef>
 							</descriptionHyperlinks>
@@ -24,6 +25,12 @@
 								</li>
 							</modExtensions>
 						</ThingDef>
+					</value>
+				</li> -->
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="Jewel_Orchid"]</xpath>
+					<value>
+						<li Class="SeedsPleaseLite.Seedless"/>
 					</value>
 				</li>
 			</operations>
