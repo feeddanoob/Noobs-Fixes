@@ -25,6 +25,17 @@
 		<li IfModActive="jamaicancastle.rf.fertilefields">Fertile Fields\Common</li>
 		<li IfModActive="ogliss.thewhitecrayon.quarry">Quarry\Common</li>
 		<li IfModActive="ogliss.thewhitecrayon.quarry">Quarry\1.4</li>
-		<li IfModActive="sarg.alphaanimals">Alpha Animals\1.4</li>
 	</v1.4>
+	<v1.5>
+		<li>Common</li>
+		<li>1.5</li>
+		<li IfModActive="usagirei.lootgoblin">LootGoblin\Common</li>
+		<li IfModActive="dismarzero.VGP.VGPVegetableGarden">VGP Milk Category\Common</li>
+		<!--<li IfModActive="syrchalis.processor.framework">Processor Framework\Common</li>-->
+		<li IfModActive="syrchalis.traitvalue">SYR Trait\Common</li>
+		<li IfModActive="owlchemist.seedspleaselite">Seeds Please Lite\Common</li>
+		<li IfModActive="freemapa.freewill">Free Will\Common</li>
+		<li IfModActive="jamaicancastle.rf.fertilefields">Fertile Fields\Common</li>
+		<li IfModActive="ogliss.thewhitecrayon.quarry">Quarry\Common</li>
+	</v1.5>
 </loadFolders>
