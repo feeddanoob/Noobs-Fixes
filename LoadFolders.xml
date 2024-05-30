@@ -39,5 +39,6 @@
 		<li IfModActive="jamaicancastle.rf.fertilefields">Fertile Fields\Common</li>
 		<li IfModActive="ogliss.thewhitecrayon.quarry">Quarry\Common</li>
 		<li IfModActive="spdskatr.projectrimfactory.drones">Project RimFactory Drones</li>
+		<li IfModActive="niilo007.niilosqol">Medieval Overhaul Textures</li>
 	</v1.5>
 </loadFolders>
