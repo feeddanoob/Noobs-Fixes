@@ -6,66 +6,172 @@
 		</mods>
 		<match Class="PatchOperationSequence">
 			<operations>
-				<li Class="PatchOperationRemove">
-					<xpath>
-						Defs/ThingDef[
-						defName="VBE_SodaFountain" or
-						defName="VBE_WhiskeyCask"]/thingClass</xpath>
-				</li>
-				<!-- Soda -->
 				<li Class="PatchOperationAdd">
 					<xpath>Defs</xpath>
 					<value>
+						<!-- Soda -->
 						<ProcessorFramework.ProcessDef>
-							<defName>VBE_SyrupToSoda</defName>
+							<defName>PF_VBE_Soda</defName>
 							<thingDef>VBE_Soda</thingDef>
 							<ingredientFilter>
 								<thingDefs>
 									<li>VBE_SodaSyrup</li>
 								</thingDefs>
 							</ingredientFilter>
-							<processDays>2</processDays>
+							<capacityFactor>1</capacityFactor>
+							<usesQuality>false</usesQuality>
+							<efficiency>0.5</efficiency>
 							<usesTemperature>false</usesTemperature>
+							<processDays>1</processDays>
 						</ProcessorFramework.ProcessDef>
-					</value>
-				</li>
-				<li Class="PatchOperationReplace">
-					<xpath>Defs/ThingDef[defName="VBE_SodaFountain"]/comps/li[@Class="ItemProcessor.CompProperties_ItemProcessor"]</xpath>
-					<value>
-						<li Class="ProcessorFramework.CompProperties_Processor">
-							<processes>
-								<li>VBE_SyrupToSoda</li>
-							</processes>
-						</li>
-					</value>
-				</li>
-				<!-- Skipped Ambrandy - Can't do custom hediffs-->
-				
-				<!-- Whiskey -->
-				<li Class="PatchOperationAdd">
-					<xpath>Defs</xpath>
-					<value>
+						<!-- Gin -->
 						<ProcessorFramework.ProcessDef>
-							<defName>VBE_WMashToWhiskey</defName>
+							<defName>PF_VBE_Gin</defName>
+							<thingDef>VBE_Gin</thingDef>
+							<ingredientFilter>
+								<thingDefs>
+									<li>VBE_GinMush</li>
+								</thingDefs>
+							</ingredientFilter>
+							<capacityFactor>1</capacityFactor>
+							<usesQuality>false</usesQuality>
+							<efficiency>0.5</efficiency>
+							<usesTemperature>false</usesTemperature>
+							<processDays>6</processDays>
+						</ProcessorFramework.ProcessDef>
+						<!-- Tequilla -->
+						<ProcessorFramework.ProcessDef>
+							<defName>PF_VBE_Tequila</defName>
+							<thingDef>VBE_Tequila</thingDef>
+							<ingredientFilter>
+								<thingDefs>
+									<li>VBE_TequilaMust</li>
+								</thingDefs>
+							</ingredientFilter>
+							<capacityFactor>1</capacityFactor>
+							<usesQuality>false</usesQuality>
+							<efficiency>0.7</efficiency>
+							<usesTemperature>false</usesTemperature>
+							<processDays>5</processDays>
+						</ProcessorFramework.ProcessDef>
+						<!-- Vodka -->
+						<ProcessorFramework.ProcessDef>
+							<defName>PF_VBE_Vodka</defName>
+							<thingDef>VBE_Vodka</thingDef>
+							<ingredientFilter>
+								<thingDefs>
+									<li>VBE_VodkaMash</li>
+								</thingDefs>
+							</ingredientFilter>
+							<capacityFactor>0.9</capacityFactor>
+							<usesQuality>false</usesQuality>
+							<efficiency>1.0</efficiency>
+							<usesTemperature>false</usesTemperature>
+							<processDays>4</processDays>
+						</ProcessorFramework.ProcessDef>
+						<!-- Whiskey -->
+						<ProcessorFramework.ProcessDef>
+							<defName>PF_VBE_Whiskey</defName>
 							<thingDef>VBE_Whiskey</thingDef>
 							<ingredientFilter>
 								<thingDefs>
 									<li>VBE_WhiskeyMash</li>
 								</thingDefs>
 							</ingredientFilter>
-							<processDays>12</processDays>
-							<usesTemperature>yes</usesTemperature>
-							<temperatureSafe>7.0~25.0</temperatureSafe>
-							<temperatureIdeal>8.0~24.0</temperatureIdeal>
+							<capacityFactor>0.5</capacityFactor>
+							<usesQuality>false</usesQuality>
+							<efficiency>1.0</efficiency>
+							<usesTemperature>false</usesTemperature>
+							<processDays>7</processDays>
+						</ProcessorFramework.ProcessDef>
+						<!-- Double Aged Whiskey -->
+						<ProcessorFramework.ProcessDef>
+							<defName>PF_VBE_DoubleWhiskey</defName>
+							<thingDef>VBE_DoubleWhiskey</thingDef>
+							<ingredientFilter>
+								<thingDefs>
+									<li>VBE_Whiskey</li>
+								</thingDefs>
+							</ingredientFilter>
+							<capacityFactor>1</capacityFactor>
+							<usesQuality>false</usesQuality>
+							<efficiency>1.0</efficiency>
+							<usesTemperature>false</usesTemperature>
+							<processDays>14</processDays>
 						</ProcessorFramework.ProcessDef>
 					</value>
 				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>
+						Defs/ThingDef[
+						defName="VBE_SodaFountain" or
+						defName="VBE_WhiskeyCask" or 
+						defName="VBE_VodkaDrum" or 
+						defName="VBE_GinStill" or 
+						defName="VBE_TequilaBarrel"]/thingClass</xpath>
+				</li>
+				<!-- Vodka -->
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/ThingDef[defName="VBE_WhiskeyCask"]/comps/li[@Class="ItemProcessor.CompProperties_ItemProcessor"]</xpath>
+					<xpath>Defs/ThingDef[defName = "VBE_VodkaDrum"]/comps/li[@Class="ItemProcessor.CompProperties_ItemProcessor"]</xpath>
 					<value>
 						<li Class="ProcessorFramework.CompProperties_Processor">
+							<capacity>50</capacity>
+							<independentProcesses>true</independentProcesses>
 							<processes>
-								<li>VBE_WMashToWhiskey</li>
+								<li>PF_VBE_Vodka</li>
+							</processes>
+						</li>
+					</value>
+				</li>
+				<!-- Gin -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName = "VBE_GinStill"]/comps/li[@Class="ItemProcessor.CompProperties_ItemProcessor"]</xpath>
+					<value>
+						<li Class="ProcessorFramework.CompProperties_Processor">
+							<capacity>25</capacity>
+							<independentProcesses>true</independentProcesses>
+							<processes>
+								<li>PF_VBE_Gin</li>
+							</processes>
+						</li>
+					</value>
+				</li>
+				<!-- Soda -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName = "VBE_SodaFountain"]/comps/li[@Class="ItemProcessor.CompProperties_ItemProcessor"]</xpath>
+					<value>
+						<li Class="ProcessorFramework.CompProperties_Processor">
+							<capacity>25</capacity>
+							<independentProcesses>true</independentProcesses>
+							<processes>
+								<li>PF_VBE_Soda</li>
+							</processes>
+						</li>
+					</value>
+				</li>
+				<!-- Whiskey -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName = "VBE_WhiskeyCask"]/comps/li[@Class="ItemProcessor.CompProperties_ItemProcessor"]</xpath>
+					<value>
+						<li Class="ProcessorFramework.CompProperties_Processor">
+							<capacity>100</capacity>
+							<independentProcesses>true</independentProcesses>
+							<processes>
+								<li>PF_VBE_Whiskey</li>
+								<li>PF_VBE_DoubleWhiskey</li>
+							</processes>
+						</li>
+					</value>
+				</li>
+				<!-- Tequilla -->
+				<li Class="PatchOperationReplace">
+					<xpath>*/ThingDef[defName = "VBE_TequilaBarrel"]/comps/li[@Class="ItemProcessor.CompProperties_ItemProcessor"]</xpath>
+					<value>
+						<li Class="ProcessorFramework.CompProperties_Processor">
+							<capacity>25</capacity>
+							<independentProcesses>true</independentProcesses>
+							<processes>
+								<li>PF_VBE_Tequila</li>
 							</processes>
 						</li>
 					</value>

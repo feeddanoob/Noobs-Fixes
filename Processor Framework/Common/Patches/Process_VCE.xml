@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Cooking Expanded</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+						<!-- Cheese -->
+						<ProcessorFramework.ProcessDef>
+							<defName>VCE_Cheese</defName>
+							<thingDef>VCE_Cheese</thingDef>
+							<ingredientFilter>
+								<thingDefs>
+									<li>Milk</li>
+								</thingDefs>
+							</ingredientFilter>
+							<capacityFactor>2.5</capacityFactor>
+							<usesQuality>true</usesQuality>
+							<qualityDays>(1, 3, 6, 12, 24, 48, 60)</qualityDays>
+						</ProcessorFramework.ProcessDef>
+						<ProcessorFramework.ProcessDef MayRequire="sarg.alphaanimals">
+							<defName>VCE_GowCheese</defName>
+							<thingDef>VCE_GowCheese</thingDef>
+							<ingredientFilter>
+								<thingDefs>
+									<li>AA_GowMilk</li>
+								</thingDefs>
+							</ingredientFilter>
+							<capacityFactor>2.5</capacityFactor>
+							<usesQuality>true</usesQuality>
+							<qualityDays>(1, 3, 6, 12, 24, 48, 60)</qualityDays>
+						</ProcessorFramework.ProcessDef>
+						<ProcessorFramework.ProcessDef MayRequire="sarg.alphaanimals">
+							<defName>VCE_BlueCheese</defName>
+							<thingDef>VCE_BlueCheese</thingDef>
+							<ingredientFilter>
+								<thingDefs>
+									<li>AA_BlueMilk</li>
+								</thingDefs>
+							</ingredientFilter>
+							<capacityFactor>2.5</capacityFactor>
+							<usesQuality>true</usesQuality>
+							<qualityDays>(1, 3, 6, 12, 24, 48, 60)</qualityDays>
+						</ProcessorFramework.ProcessDef>
+						<ProcessorFramework.ProcessDef MayRequire="sarg.alphaanimals">
+							<defName>VCE_NightCheese</defName>
+							<thingDef>VCE_NightCheese</thingDef>
+							<ingredientFilter>
+								<thingDefs>
+									<li>AA_NightMilk</li>
+								</thingDefs>
+							</ingredientFilter>
+							<capacityFactor>2.5</capacityFactor>
+							<usesQuality>true</usesQuality>
+							<qualityDays>(1, 3, 6, 12, 24, 48, 60)</qualityDays>
+						</ProcessorFramework.ProcessDef>
+						<ProcessorFramework.ProcessDef MayRequire="oskarpotocki.vfe.insectoid">
+							<defName>VCE_InsectCheese</defName>
+							<thingDef>VCE_InsectCheese</thingDef>
+							<ingredientFilter>
+								<thingDefs>
+									<li>VFEI_InsectMilk</li>
+								</thingDefs>
+							</ingredientFilter>
+							<capacityFactor>2.5</capacityFactor>
+							<usesQuality>true</usesQuality>
+							<qualityDays>(1, 3, 6, 12, 24, 48, 60)</qualityDays>
+						</ProcessorFramework.ProcessDef>
+						<ProcessorFramework.ProcessDef MayRequire="vanillaexpanded.vgeneticse">
+							<defName>VCE_WeirdCheese</defName>
+							<thingDef>VCE_WeirdCheese</thingDef>
+							<ingredientFilter>
+								<thingDefs>
+									<li>GR_WeirdMilk</li>
+								</thingDefs>
+							</ingredientFilter>
+							<capacityFactor>2.5</capacityFactor>
+							<usesQuality>true</usesQuality>
+							<qualityDays>(1, 3, 6, 12, 24, 48, 60)</qualityDays>
+						</ProcessorFramework.ProcessDef>
+						<ProcessorFramework.ProcessDef MayRequire="vanillaexpanded.vgeneticse">
+							<defName>VCE_MechaCheese</defName>
+							<thingDef>VCE_MechaCheese</thingDef>
+							<ingredientFilter>
+								<thingDefs>
+									<li>GR_MechaMilk</li>
+								</thingDefs>
+							</ingredientFilter>
+							<capacityFactor>2.5</capacityFactor>
+							<usesQuality>true</usesQuality>
+							<qualityDays>(1, 3, 6, 12, 24, 48, 60)</qualityDays>
+						</ProcessorFramework.ProcessDef>
+						<ProcessorFramework.ProcessDef MayRequire="vanillaexpanded.vgeneticse">
+							<defName>VCE_BearffaloCheese</defName>
+							<thingDef>VCE_BearffaloCheese</thingDef>
+							<ingredientFilter>
+								<thingDefs>
+									<li>GR_BearffaloMilk</li>
+								</thingDefs>
+							</ingredientFilter>
+							<capacityFactor>2.5</capacityFactor>
+							<usesQuality>true</usesQuality>
+							<qualityDays>(1, 3, 6, 12, 24, 48, 60)</qualityDays>
+						</ProcessorFramework.ProcessDef>
+						<ProcessorFramework.ProcessDef MayRequire="vanillaexpanded.vgeneticse">
+							<defName>VCE_ThrumffaloGouda</defName>
+							<thingDef>VCE_ThrumffaloGouda</thingDef>
+							<ingredientFilter>
+								<thingDefs>
+									<li>GR_ThrumffaloMilk</li>
+								</thingDefs>
+							</ingredientFilter>
+							<capacityFactor>2.5</capacityFactor>
+							<usesQuality>true</usesQuality>
+							<qualityDays>(1, 3, 6, 12, 24, 48, 60)</qualityDays>
+						</ProcessorFramework.ProcessDef>
+						<ProcessorFramework.ProcessDef MayRequire="vanillaexpanded.vgeneticse">
+							<defName>VCE_LumpyCheese</defName>
+							<thingDef>VCE_LumpyCheese</thingDef>
+							<ingredientFilter>
+								<thingDefs>
+									<li>GR_MuffalochickenMilk</li>
+								</thingDefs>
+							</ingredientFilter>
+							<capacityFactor>2.5</capacityFactor>
+							<usesQuality>true</usesQuality>
+							<qualityDays>(1, 3, 6, 12, 24, 48, 60)</qualityDays>
+						</ProcessorFramework.ProcessDef>
+						<ProcessorFramework.ProcessDef MayRequire="vanillaexpanded.vgeneticse">
+							<defName>VCE_ChickenffaloCheese</defName>
+							<thingDef>VCE_ChickenffaloCheese</thingDef>
+							<ingredientFilter>
+								<thingDefs>
+									<li>GR_ChickenffaloMilk</li>
+								</thingDefs>
+							</ingredientFilter>
+							<capacityFactor>2.5</capacityFactor>
+							<usesQuality>true</usesQuality>
+							<qualityDays>(1, 3, 6, 12, 24, 48, 60)</qualityDays>
+						</ProcessorFramework.ProcessDef>
+						<ProcessorFramework.ProcessDef MayRequire="vanillaexpanded.vgeneticse">
+							<defName>VCE_BrownCheese</defName>
+							<thingDef>VCE_BrownCheese</thingDef>
+							<ingredientFilter>
+								<thingDefs>
+									<li>GR_MuffalobearMilk</li>
+								</thingDefs>
+							</ingredientFilter>
+							<capacityFactor>2.5</capacityFactor>
+							<usesQuality>true</usesQuality>
+							<qualityDays>(1, 3, 6, 12, 24, 48, 60)</qualityDays>
+						</ProcessorFramework.ProcessDef>
+						<ProcessorFramework.ProcessDef MayRequire="vanillaexpanded.vgeneticse">
+							<defName>VCE_HairyCheese</defName>
+							<thingDef>VCE_HairyCheese</thingDef>
+							<ingredientFilter>
+								<thingDefs>
+									<li>GR_WolffaloMilk</li>
+								</thingDefs>
+							</ingredientFilter>
+							<capacityFactor>2.5</capacityFactor>
+							<usesQuality>true</usesQuality>
+							<qualityDays>(1, 3, 6, 12, 24, 48, 60)</qualityDays>
+						</ProcessorFramework.ProcessDef>
+						<ProcessorFramework.ProcessDef MayRequire="vanillaexpanded.vgeneticse">
+							<defName>VCE_RatCheese</defName>
+							<thingDef>VCE_RatCheese</thingDef>
+							<ingredientFilter>
+								<thingDefs>
+									<li>GR_RatMilk</li>
+								</thingDefs>
+							</ingredientFilter>
+							<capacityFactor>2.5</capacityFactor>
+							<usesQuality>true</usesQuality>
+							<qualityDays>(1, 3, 6, 12, 24, 48, 60)</qualityDays>
+						</ProcessorFramework.ProcessDef>
+						<!-- Soup -->
+						<ProcessorFramework.ProcessDef>
+							<defName>VCE_CookedSoupSimple</defName>
+							<thingDef>VCE_CookedSoupSimple</thingDef>
+							<ingredientFilter>
+								<thingDefs>
+									<li>VCE_UncookedSoupSimple</li>
+								</thingDefs>
+							</ingredientFilter>
+							<capacityFactor>1</capacityFactor>
+							<efficiency>10.0</efficiency>
+							<processDays>.5</processDays>
+						</ProcessorFramework.ProcessDef>
+						<ProcessorFramework.ProcessDef>
+							<defName>VCE_CookedSoupFine</defName>
+							<thingDef>VCE_CookedSoupFine</thingDef>
+							<ingredientFilter>
+								<thingDefs>
+									<li>VCE_UncookedSoupFine</li>
+								</thingDefs>
+							</ingredientFilter>
+							<capacityFactor>1</capacityFactor>
+							<efficiency>10.0</efficiency>
+							<processDays>.7</processDays>
+						</ProcessorFramework.ProcessDef>
+						<ProcessorFramework.ProcessDef>
+							<defName>VCE_CookedSoupLavish</defName>
+							<thingDef>VCE_CookedSoupLavish</thingDef>
+							<ingredientFilter>
+								<thingDefs>
+									<li>VCE_UncookedSoupLavish</li>
+								</thingDefs>
+							</ingredientFilter>
+							<capacityFactor>1</capacityFactor>
+							<efficiency>10.0</efficiency>
+							<processDays>1</processDays>
+						</ProcessorFramework.ProcessDef>
+						<ProcessorFramework.ProcessDef>
+							<defName>VCE_CookedSoupGourmet</defName>
+							<thingDef>VCE_CookedSoupGourmet</thingDef>
+							<ingredientFilter>
+								<thingDefs>
+									<li>VCE_UncookedSoupGourmet</li>
+								</thingDefs>
+							</ingredientFilter>
+							<capacityFactor>1</capacityFactor>
+							<efficiency>10.0</efficiency>
+							<processDays>1</processDays>
+						</ProcessorFramework.ProcessDef>
+					</value>
+				</li>
+				<!-- Stew Expansion -->
+				<li Class="PatchOperationAdd" MayRequire="vanillaexpanded.vcookestews">
+					<xpath>Defs</xpath>
+					<value>
+						<ProcessorFramework.ProcessDef>
+							<defName>VCE_CookedStewSimple</defName>
+							<thingDef>VCE_CookedStewSimple</thingDef>
+							<ingredientFilter>
+								<thingDefs>
+									<li>VCE_UncookedStewSimple</li>
+								</thingDefs>
+							</ingredientFilter>
+							<capacityFactor>1</capacityFactor>
+							<efficiency>10.0</efficiency>
+							<processDays>.5</processDays>
+						</ProcessorFramework.ProcessDef>
+						<ProcessorFramework.ProcessDef>
+							<defName>VCE_CookedStewFine</defName>
+							<thingDef>VCE_CookedStewFine</thingDef>
+							<ingredientFilter>
+								<thingDefs>
+									<li>VCE_UncookedStewFine</li>
+								</thingDefs>
+							</ingredientFilter>
+							<capacityFactor>1</capacityFactor>
+							<efficiency>10.0</efficiency>
+							<processDays>.7</processDays>
+						</ProcessorFramework.ProcessDef>
+						<ProcessorFramework.ProcessDef>
+							<defName>VCE_CookedStewLavish</defName>
+							<thingDef>VCE_CookedStewLavish</thingDef>
+							<ingredientFilter>
+								<thingDefs>
+									<li>VCE_UncookedStewLavish</li>
+								</thingDefs>
+							</ingredientFilter>
+							<capacityFactor>1</capacityFactor>
+							<efficiency>10.0</efficiency>
+							<processDays>1</processDays>
+						</ProcessorFramework.ProcessDef>
+					</value>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>
+						Defs/ThingDef[
+						defName="VCE_CheesePress" or
+						defName="VCE_ElectricPot"]/thingClass</xpath>
+				</li>
+				<!-- Cheese -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="VCE_CheesePress"]/comps/li[@Class="ItemProcessor.CompProperties_ItemProcessor"]</xpath>
+					<value>
+						<li Class="ProcessorFramework.CompProperties_Processor">
+							<capacity>5</capacity>
+							<independentProcesses>true</independentProcesses>
+							<processes>
+								<li>VCE_Cheese</li>
+								<li MayRequire="sarg.alphaanimals">VCE_BlueCheese</li>
+								<li MayRequire="sarg.alphaanimals">VCE_GowCheese</li>
+								<li MayRequire="sarg.alphaanimals">VCE_NightCheese</li>
+								<li MayRequire="oskarpotocki.vfe.insectoid">VCE_InsectCheese</li>
+								<li MayRequire="vanillaexpanded.vgeneticse">VCE_WeirdCheese</li>
+								<li MayRequire="vanillaexpanded.vgeneticse">VCE_MechaCheese</li>
+								<li MayRequire="vanillaexpanded.vgeneticse">VCE_BearffaloCheese</li>
+								<li MayRequire="vanillaexpanded.vgeneticse">VCE_ThrumffaloGouda</li>
+								<li MayRequire="vanillaexpanded.vgeneticse">VCE_LumpyCheese</li>
+								<li MayRequire="vanillaexpanded.vgeneticse">VCE_ChickenffaloCheese</li>
+								<li MayRequire="vanillaexpanded.vgeneticse">VCE_BrownCheese</li>
+								<li MayRequire="vanillaexpanded.vgeneticse">VCE_HairyCheese</li>
+								<li MayRequire="vanillaexpanded.vgeneticse">VCE_RatCheese</li>
+							</processes>
+						</li>
+					</value>
+				</li>
+				<!-- Soup -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="VCE_ElectricPot"]/comps/li[@Class="ItemProcessor.CompProperties_ItemProcessor"]</xpath>
+					<value>
+						<li Class="ProcessorFramework.CompProperties_Processor">
+							<capacity>2</capacity>
+							<independentProcesses>true</independentProcesses>
+							<processes>
+								<li>VCE_CookedSoupSimple</li>
+								<li>VCE_CookedSoupFine</li>
+								<li>VCE_CookedSoupLavish</li>
+								<li>VCE_CookedSoupGourmet</li>
+								<li MayRequire="vanillaexpanded.vcookestews">VCE_CookedStewSimple</li>
+								<li MayRequire="vanillaexpanded.vcookestews">VCE_CookedStewFine</li>
+								<li MayRequire="vanillaexpanded.vcookestews">VCE_CookedStewLavish</li>
+								<li MayRequire="zal.braziliancrops">KIT_BeanStewFine</li>
+								<li MayRequire="zal.braziliancrops">KIT_BeanStewLavish</li>
+								<li MayRequire="zal.braziliancrops">KIT_BeanStewGourmet</li>
+							</processes>
+						</li>
+					</value>
+				</li>
+				<!-- Sushi Expansion -->
+				<li Class="PatchOperationRemove" MayRequire="vanillaexpanded.vcookesushi">
+					<xpath>Defs/ThingDef[defName="VCE_SoyFermenter"]/thingClass</xpath>
+				</li>
+				<li Class="PatchOperationAdd" MayRequire="vanillaexpanded.vcookesushi">
+					<xpath>Defs</xpath>
+					<value>
+						<ProcessorFramework.ProcessDef>
+							<defName>PF_VCE_SoySauce</defName>
+							<thingDef>VCE_SoySauce</thingDef>
+							<ingredientFilter>
+								<thingDefs>
+									<li>VCE_RawSoybean</li>
+								</thingDefs>
+							</ingredientFilter>
+							<capacityFactor>2.5</capacityFactor>
+							<usesQuality>true</usesQuality>
+							<qualityDays>(1, 3, 6, 12, 24, 48, 60)</qualityDays>
+						</ProcessorFramework.ProcessDef>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace" MayRequire="vanillaexpanded.vcookesushi">
+					<xpath>Defs/ThingDef[defName="VCE_SoyFermenter"]/comps/li[@Class="ItemProcessor.CompProperties_ItemProcessor"]</xpath>
+					<value>
+						<li Class="ProcessorFramework.CompProperties_Processor">
+							<capacity>10</capacity>
+							<independentProcesses>true</independentProcesses>
+							<processes>
+								<li>PF_VCE_SoySauce</li>
+							</processes>
+						</li>
+					</value>
+				</li>
+				<!-- Stew Expansion -->
+				<li Class="PatchOperationRemove" MayRequire="vanillaexpanded.vcookestews">
+					<xpath>Defs/ThingDef[defName="VCE_StewPot"]/thingClass</xpath>
+				</li>
+				<li Class="PatchOperationReplace" MayRequire="vanillaexpanded.vcookestews">
+					<xpath>Defs/ThingDef[defName="VCE_StewPot"]/comps/li[@Class="ItemProcessor.CompProperties_ItemProcessor"]</xpath>
+					<value>
+						<li Class="ProcessorFramework.CompProperties_Processor">
+							<capacity>10</capacity>
+							<independentProcesses>true</independentProcesses>
+							<processes>
+								<li>VCE_CookedStewSimple</li>
+								<li>VCE_CookedStewFine</li>
+								<li>VCE_CookedStewLavish</li>
+								<li>VCE_CookedSoupSimple</li>
+								<li>VCE_CookedSoupFine</li>
+								<li>VCE_CookedSoupLavish</li>
+								<li>VCE_CookedSoupGourmet</li>
+								<li MayRequire="zal.braziliancrops">KIT_BeanStewFine</li>
+								<li MayRequire="zal.braziliancrops">KIT_BeanStewLavish</li>
+								<li MayRequire="zal.braziliancrops">KIT_BeanStewGourmet</li>
+							</processes>
+						</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>
