@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
+<!--
 	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>Medieval Overhaul</li>
@@ -17,7 +18,6 @@
 			</match>
 		</match>
 	</Operation>
-	<!--
 	<Operation Class="PatchOperationSequence" MayRequire="OskarPotocki.VanillaFactionsExpanded.MedievalModule,VR.MOPatches">
 		<operations>
 			<li Class="PatchOperationRemove">
@@ -25,5 +25,5 @@
 			</li>
 		</operations>
 	</Operation>
-	-->
+-->
 </Patch>

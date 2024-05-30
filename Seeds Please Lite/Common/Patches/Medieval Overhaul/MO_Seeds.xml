@@ -9,6 +9,7 @@
 				<li Class="PatchOperationAdd">
 					<xpath>Defs</xpath>
 					<value>
+						<!--
 						<ThingDef ParentName="SeedBase">
 							<defName>Seed_DankPyon__Flax</defName>
 							<label>flax seeds</label>
@@ -23,6 +24,8 @@
 								</li>
 							</modExtensions>
 						</ThingDef>
+						-->
+						<!--
 						<ThingDef ParentName="SeedBase">
 							<defName>Seed_DankPyon__Mulberry</defName>
 							<label>mulberry seeds</label>
@@ -37,6 +40,8 @@
 								</li>
 							</modExtensions>
 						</ThingDef>
+						-->
+						<!--
 						<ThingDef ParentName="SeedBase">
 							<defName>Seed_DankPyon_Macci</defName>
 							<label>macci seeds</label>
@@ -47,6 +52,63 @@
 								<li Class="SeedsPleaseLite.Seed">
 									<sources>
 										<li>DankPyon_MacciPlant</li>
+									</sources>
+								</li>
+							</modExtensions>
+						</ThingDef>
+						-->
+						<ThingDef ParentName="SeedBase">
+							<defName>Seed_DankPyon_Plant_Mindwort</defName>
+							<label>mindwort seeds</label>
+							<descriptionHyperlinks>
+								<ThingDef>DankPyon_Plant_Mindwort</ThingDef>
+							</descriptionHyperlinks>
+							<modExtensions>
+								<li Class="SeedsPleaseLite.Seed">
+									<sources>
+										<li>DankPyon_Plant_Mindwort</li>
+									</sources>
+								</li>
+							</modExtensions>
+						</ThingDef>
+						<ThingDef ParentName="SeedBase">
+							<defName>Seed_DankPyon_Plant_Poppy</defName>
+							<label>poppy seeds</label>
+							<descriptionHyperlinks>
+								<ThingDef>DankPyon_Plant_Poppy</ThingDef>
+							</descriptionHyperlinks>
+							<modExtensions>
+								<li Class="SeedsPleaseLite.Seed">
+									<sources>
+										<li>DankPyon_Plant_Poppy</li>
+									</sources>
+								</li>
+							</modExtensions>
+						</ThingDef>
+						<ThingDef ParentName="SeedBase">
+							<defName>Seed_DankPyon_Plant_Fleawort</defName>
+							<label>fleawort seeds</label>
+							<descriptionHyperlinks>
+								<ThingDef>DankPyon_Plant_Fleawort</ThingDef>
+							</descriptionHyperlinks>
+							<modExtensions>
+								<li Class="SeedsPleaseLite.Seed">
+									<sources>
+										<li>DankPyon_Plant_Fleawort</li>
+									</sources>
+								</li>
+							</modExtensions>
+						</ThingDef>
+						<ThingDef ParentName="SeedBase">
+							<defName>Seed_DankPyon_Plant_FlyAgaric</defName>
+							<label>fly agaric seeds</label>
+							<descriptionHyperlinks>
+								<ThingDef>DankPyon_Plant_FlyAgaric</ThingDef>
+							</descriptionHyperlinks>
+							<modExtensions>
+								<li Class="SeedsPleaseLite.Seed">
+									<sources>
+										<li>DankPyon_Plant_FlyAgaric</li>
 									</sources>
 								</li>
 							</modExtensions>

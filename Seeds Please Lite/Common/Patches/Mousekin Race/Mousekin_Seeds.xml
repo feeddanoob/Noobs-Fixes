@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Mousekin Race</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+						<ThingDef ParentName="SeedBase">
+							<defName>Seed_Mousekin_Plant_Barley</defName>
+							<label>mouse-ear barley seeds</label>
+							<descriptionHyperlinks>
+								<ThingDef>Mousekin_Plant_Barley</ThingDef>
+							</descriptionHyperlinks>
+							<modExtensions>
+								<li Class="SeedsPleaseLite.Seed">
+									<sources>
+										<li>Mousekin_Plant_Barley</li>
+									</sources>
+								</li>
+							</modExtensions>
+						</ThingDef>
+						<ThingDef ParentName="SeedBase">
+							<defName>Seed_Mousekin_Plant_NutChonko</defName>
+							<label>chonko nut bush seeds</label>
+							<descriptionHyperlinks>
+								<ThingDef>Mousekin_Plant_NutChonko</ThingDef>
+							</descriptionHyperlinks>
+							<modExtensions>
+								<li Class="SeedsPleaseLite.Seed">
+									<sources>
+										<li>Mousekin_Plant_NutChonko</li>
+									</sources>
+								</li>
+							</modExtensions>
+						</ThingDef>
+						<ThingDef ParentName="SeedBase">
+							<defName>Seed_Mousekin_Plant_NutNyam</defName>
+							<label>nyam nut bush seeds</label>
+							<descriptionHyperlinks>
+								<ThingDef>Mousekin_Plant_NutNyam</ThingDef>
+							</descriptionHyperlinks>
+							<modExtensions>
+								<li Class="SeedsPleaseLite.Seed">
+									<sources>
+										<li>Mousekin_Plant_NutNyam</li>
+									</sources>
+								</li>
+							</modExtensions>
+						</ThingDef>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

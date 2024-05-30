@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
+<!--
 	<Operation Class="PatchOperationSequence">
 		<operations>
 			<li Class="PatchOperationRemove" MayRequire="VanillaExpanded.VPlantsEMore,VR.MOPatches">
@@ -42,4 +43,5 @@
 			</li>
 		</operations>
 	</Operation>
+-->
 </Patch>

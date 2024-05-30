@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
+<!--
 	<Operation Class="PatchOperationSequence" MayRequire="VanillaExpanded.VCookE,VR.MOPatches">
 		<operations>
 			<li Class="PatchOperationRemove">
@@ -10,4 +11,5 @@
 			</li>
 		</operations>
 	</Operation>
+-->
 </Patch>
