@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationConditional" MayRequire="garethp.replacestuffcompatibility,kentington.saveourship2">
+		<xpath>Defs/Replace_Stuff_Compatibility.InterchangeableItems[defName="ReplaceStuffModCompat_SaveOurShip2"]/replaceLists/li/items/li[text()='ShipInside_PassiveCoolerAdvanced']</xpath>
+		<match Class="PatchOperationRemove">
+			<xpath>Defs/Replace_Stuff_Compatibility.InterchangeableItems[defName="ReplaceStuffModCompat_SaveOurShip2"]/replaceLists/li/items/li[text()='ShipInside_PassiveCoolerAdvanced']/../..</xpath>
+		</match>
+	</Operation>
+</Patch>
