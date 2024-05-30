@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<!-- Vanilla Factions Expanded Pirates -->
+	<Operation Class="PatchOperationConditional" MayRequire="oskarpotocki.vfe.pirates">
+		<xpath>Defs/ThingDef[defName="VFEP_Mech_Wardrone"]/race[soundMeleeHitBuilding="Pawn_Melee_Punch_HitBuilding"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="VFEP_Mech_Wardrone"]/race/soundMeleeHitBuilding</xpath>
+			<value>
+				<soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding_Metal</soundMeleeHitBuilding>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional" MayRequire="oskarpotocki.vfe.pirates">
+		<xpath>Defs/ThingDef[defName="VFEP_Mech_Spidermine"]/race[soundMeleeHitBuilding="Pawn_Melee_Punch_HitBuilding"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="VFEP_Mech_Spidermine"]/race/soundMeleeHitBuilding</xpath>
+			<value>
+				<soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding_Metal</soundMeleeHitBuilding>
+			</value>
+		</match>
+	</Operation>
+	<!-- Dead Man's Switch -->
+	<Operation Class="PatchOperationConditional" MayRequire="aoba.deadmanswitch.core">
+		<xpath>Defs/ThingDef[@Name="BaseAutomatroidRace"]/race[soundMeleeHitBuilding="Pawn_Melee_Punch_HitBuilding"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[@Name="BaseAutomatroidRace"]/race/soundMeleeHitBuilding</xpath>
+			<value>
+				<soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding_Metal</soundMeleeHitBuilding>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional" MayRequire="aoba.deadmanswitch.core">
+		<xpath>Defs/ThingDef[@Name="BaseDMSMachine"]/race[soundMeleeHitBuilding="Pawn_Melee_Punch_HitBuilding"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[@Name="BaseDMSMachine"]/race/soundMeleeHitBuilding</xpath>
+			<value>
+				<soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding_Metal</soundMeleeHitBuilding>
+			</value>
+		</match>
+	</Operation>
+	<!-- Rimefeller -->
+	<Operation Class="PatchOperationConditional" MayRequire="Dubwise.Rimefeller">
+		<xpath>Defs/ThingDef[@Name="SynthyleneBase"]/stuffProps[soundMeleeHitSharp="MeleeHit_Wood_Sharp"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[@Name="SynthyleneBase"]/stuffProps/soundMeleeHitSharp</xpath>
+			<value>
+				<soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional" MayRequire="Dubwise.Rimefeller">
+		<xpath>Defs/ThingDef[@Name="SynthyleneBase"]/stuffProps[soundMeleeHitBlunt="MeleeHit_Wood_Blunt"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[@Name="SynthyleneBase"]/stuffProps/soundMeleeHitBlunt</xpath>
+			<value>
+				<soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
+			</value>
+		</match>
+	</Operation>
+</Patch>
