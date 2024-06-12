@@ -8,8 +8,7 @@
 		<li>1.4</li>
 		<li>1.5</li>
 	</supportedVersions>
-	<description>My edit's/patches to mods
-    </description>
+	<description>My edit's/patches to mods</description>
 	<loadAfter>
 		<li>Harkon.CEAddOn.CEGunsVanillaExpandedConsistencyPatch</li>
 		<li>VanillaExpanded.VMemesE</li>
@@ -23,5 +22,7 @@
 		<li>[SYR] Processor Framework</li>
 		<li>Project RimFactory - Drones</li>
 		<li>Niilo's QoL</li>
+		<li>Rimefeller</li>
+		<li>Save Our Ship 2</li>
 	</loadAfter>
 </ModMetaData>
