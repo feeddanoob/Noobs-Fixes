@@ -35,7 +35,7 @@
 		<li IfModActive="syrchalis.traitvalue">SYR Trait\Common</li>
 		<li IfModActive="owlchemist.seedspleaselite">Seeds Please Lite\Common</li>
 		<li IfModActive="evyatar108.seedspleaseliteredux">Seeds Please Lite\Common</li>
-		<li IfModActive="freemapa.freewill">Free Will\Common</li>
+		<li IfModActive="jamaicancastle.rf.fertilefields">Mods\Fertile Fields</li>
 		<li IfModActive="jamaicancastle.rf.fertilefields">Fertile Fields\Common</li>
 		<li IfModActive="ogliss.thewhitecrayon.quarry">Quarry\Common</li>
 		<li IfModActive="spdskatr.projectrimfactory.drones">Project RimFactory Drones</li>
