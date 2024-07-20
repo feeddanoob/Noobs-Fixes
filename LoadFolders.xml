@@ -29,7 +29,7 @@
 	<v1.5>
 		<li>Common</li>
 		<li>1.5</li>
-		<li IfModActive="usagirei.lootgoblin">LootGoblin\Common</li>
+		<li IfModActive="usagirei.lootgoblin">Mods\LootGoblin</li>
 		<li IfModActive="dismarzero.VGP.VGPVegetableGarden">Mods\VGP Milk Category</li>
 		<li IfModActive="syrchalis.processor.framework">Processor Framework\Common</li>
 		<li IfModActive="syrchalis.traitvalue">SYR Trait\Common</li>
