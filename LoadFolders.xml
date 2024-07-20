@@ -33,8 +33,8 @@
 		<li IfModActive="dismarzero.VGP.VGPVegetableGarden">Mods\VGP Milk Category</li>
 		<li IfModActive="syrchalis.processor.framework">Mods\Processor Framework</li>
 		<li IfModActive="syrchalis.traitvalue">SYR Trait\Common</li>
-		<li IfModActive="owlchemist.seedspleaselite">Seeds Please Lite\Common</li>
-		<li IfModActive="evyatar108.seedspleaseliteredux">Seeds Please Lite\Common</li>
+		<li IfModActive="owlchemist.seedspleaselite">Mods\Seeds Please Lite</li>
+		<li IfModActive="evyatar108.seedspleaseliteredux">Mods\Seeds Please Lite</li>
 		<li IfModActive="freemapa.freewill">Mods\Free Will</li>
 		<li IfModActive="jamaicancastle.rf.fertilefields">Mods\Fertile Fields</li>
 		<!-- <li IfModActive="ogliss.thewhitecrayon.quarry">Mods\Quarry</li> -->
