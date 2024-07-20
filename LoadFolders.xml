@@ -32,7 +32,7 @@
 		<li IfModActive="usagirei.lootgoblin">Mods\LootGoblin</li>
 		<li IfModActive="dismarzero.VGP.VGPVegetableGarden">Mods\VGP Milk Category</li>
 		<li IfModActive="syrchalis.processor.framework">Mods\Processor Framework</li>
-		<li IfModActive="syrchalis.traitvalue">SYR Trait\Common</li>
+		<li IfModActive="syrchalis.traitvalue">Mods\SYR Trait</li>
 		<li IfModActive="owlchemist.seedspleaselite">Mods\Seeds Please Lite</li>
 		<li IfModActive="evyatar108.seedspleaseliteredux">Mods\Seeds Please Lite</li>
 		<li IfModActive="freemapa.freewill">Mods\Free Will</li>
