@@ -2,7 +2,7 @@
 <Patch>
 	<Operation Class="PatchOperationSequence">
 		<operations>
-			<li Class="PatchOperationRemove" MayRequire="DankPyon.Medieval.Overhaul,Sarg.AlphaPrefabs,VanillaExpanded.VFESecurity">
+			<li Class="PatchOperationRemove" MayRequire="DankPyon.Medieval.Overhaul,VanillaExpanded.VFESecurity">
 				<xpath>Defs/AlphaPrefabs.PrefabDef[
 				defName = "AP_Prefab_MedievalDefensiveLine" or 
 				defName = "AP_Prefab_BallistaLine" or 
