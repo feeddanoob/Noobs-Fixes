@@ -42,5 +42,6 @@
 		</li>
 		<li IfModActive="sarg.alphaprefabs">Mods\Alpha Prefabs</li>
 		<li IfModActive="dankpyon.medieval.overhaul">Mods\Medieval Overhaul</li>
+		<li IfModActive="ferny.progressionstorage">Mods\Progression Storage</li>
 	</v1.5>
 </loadFolders>
