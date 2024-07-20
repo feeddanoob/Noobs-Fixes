@@ -22,7 +22,7 @@
 		<li IfModActive="owlchemist.seedspleaselite">Mods\Seeds Please Lite</li>
 		<li IfModActive="freemapa.freewill">Mods\Free Will</li>
 		<li IfModActive="jamaicancastle.rf.fertilefields">Mods\Fertile Fields</li>
-		<li IfModActive="ogliss.thewhitecrayon.quarry">Mods\Quarry</li>
+		<!-- <li IfModActive="ogliss.thewhitecrayon.quarry">Mods\Quarry</li> -->
 	</v1.4>
 	<v1.5>
 		<li>Common</li>
