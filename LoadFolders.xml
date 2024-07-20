@@ -41,5 +41,6 @@
 			<li IfModActive="dankpyon.medieval.overhaul">Mods\Medieval Overhaul Textures</li>
 		</li>
 		<li IfModActive="sarg.alphaprefabs">Mods\Alpha Prefabs</li>
+		<li IfModActive="dankpyon.medieval.overhaul">Mods\Medieval Overhaul</li>
 	</v1.5>
 </loadFolders>
