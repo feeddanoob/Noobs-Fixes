@@ -39,7 +39,9 @@
 		<li IfModActive="jamaicancastle.rf.fertilefields">Fertile Fields\Common</li>
 		<li IfModActive="ogliss.thewhitecrayon.quarry">Quarry\Common</li>
 		<li IfModActive="spdskatr.projectrimfactory.drones">Project RimFactory Drones</li>
-		<li IfModActive="niilo007.niilosqol">Medieval Overhaul Textures</li>
+		<li IfModActive="niilo007.niilosqol">
+			<li IfModActive="dankpyon.medieval.overhaul">Mods\Medieval Overhaul Textures</li>
+		</li>
 		<li IfModActive="sarg.alphaprefabs">Mods\Alpha Prefabs</li>
 	</v1.5>
 </loadFolders>
