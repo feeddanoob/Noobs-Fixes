@@ -3,45 +3,47 @@
 	<v1.3>
 		<li>Common</li>
 		<li>1.3</li>
-		<li IfModActive="usagirei.lootgoblin">Mods\LootGoblin</li>
-		<li IfModActive="dismarzero.VGP.VGPVegetableGarden">Mods\VGP Milk Category</li>
-		<!--<li IfModActive="syrchalis.processor.framework">Mods\Processor Framework</li>-->
-		<li IfModActive="syrchalis.traitvalue">Mods\SYR Trait</li>
-		<li IfModActive="owlchemist.seedspleaselite">Mods\Seeds Please Lite</li>
-		<li IfModActive="freemapa.freewill">Mods\Free Will</li>
-		<li IfModActive="jamaicancastle.rf.fertilefields">Mods\Fertile Fields</li>
-		<li IfModActive="ogliss.thewhitecrayon.quarry">Mods\Quarry</li>
+		<li IfModActive="usagirei.lootgoblin">Mods\LootGoblin\Common</li>
+		<li IfModActive="dismarzero.VGP.VGPVegetableGarden">Mods\VGP Milk Category\Common</li>
+		<!--<li IfModActive="syrchalis.processor.framework">Mods\Processor Framework\Common</li>-->
+		<li IfModActive="syrchalis.traitvalue">Mods\SYR Trait\Common</li>
+		<li IfModActive="owlchemist.seedspleaselite">Mods\Seeds Please Lite\Common</li>
+		<li IfModActive="freemapa.freewill">Mods\Free Will\Common</li>
+		<li IfModActive="jamaicancastle.rf.fertilefields">Mods\Fertile Fields\Common</li>
+		<li IfModActive="ogliss.thewhitecrayon.quarry">Mods\Quarry\Common</li>
+		<li IfModActive="ogliss.thewhitecrayon.quarry">Mods\Quarry\1.3</li>
 	</v1.3>
 	<v1.4>
 		<li>Common</li>
 		<li>1.4</li>
-		<li IfModActive="usagirei.lootgoblin">Mods\LootGoblin</li>
-		<li IfModActive="dismarzero.VGP.VGPVegetableGarden">Mods\VGP Milk Category</li>
-		<!--<li IfModActive="syrchalis.processor.framework">Mods\Processor Framework</li>-->
-		<li IfModActive="syrchalis.traitvalue">Mods\SYR Trait</li>
-		<li IfModActive="owlchemist.seedspleaselite">Mods\Seeds Please Lite</li>
-		<li IfModActive="freemapa.freewill">Mods\Free Will</li>
-		<li IfModActive="jamaicancastle.rf.fertilefields">Mods\Fertile Fields</li>
-		<!-- <li IfModActive="ogliss.thewhitecrayon.quarry">Mods\Quarry</li> -->
+		<li IfModActive="usagirei.lootgoblin">Mods\LootGoblin\Common</li>
+		<li IfModActive="dismarzero.VGP.VGPVegetableGarden">Mods\VGP Milk Category\Common</li>
+		<!--<li IfModActive="syrchalis.processor.framework">Mods\Processor Framework\Common</li>-->
+		<li IfModActive="syrchalis.traitvalue">Mods\SYR Trait\Common</li>
+		<li IfModActive="owlchemist.seedspleaselite">Mods\Seeds Please Lite\Common</li>
+		<li IfModActive="freemapa.freewill">Mods\Free Will\Common</li>
+		<li IfModActive="jamaicancastle.rf.fertilefields">Mods\Fertile Fields\Common</li>
+		<!-- <li IfModActive="ogliss.thewhitecrayon.quarry">Mods\Quarry\Common</li> -->
 	</v1.4>
 	<v1.5>
 		<li>Common</li>
 		<li>1.5</li>
-		<li IfModActive="usagirei.lootgoblin">Mods\LootGoblin</li>
-		<li IfModActive="dismarzero.VGP.VGPVegetableGarden">Mods\VGP Milk Category</li>
-		<li IfModActive="syrchalis.processor.framework">Mods\Processor Framework</li>
-		<li IfModActive="syrchalis.traitvalue">Mods\SYR Trait</li>
-		<li IfModActive="owlchemist.seedspleaselite">Mods\Seeds Please Lite</li>
-		<li IfModActive="evyatar108.seedspleaseliteredux">Mods\Seeds Please Lite</li>
-		<li IfModActive="freemapa.freewill">Mods\Free Will</li>
-		<li IfModActive="jamaicancastle.rf.fertilefields">Mods\Fertile Fields</li>
-		<!-- <li IfModActive="ogliss.thewhitecrayon.quarry">Mods\Quarry</li> -->
+		<li IfModActive="usagirei.lootgoblin">Mods\LootGoblin\Common</li>
+		<li IfModActive="dismarzero.VGP.VGPVegetableGarden">Mods\VGP Milk Category\Common</li>
+		<li IfModActive="syrchalis.processor.framework">Mods\Processor Framework\Common</li>
+		<li IfModActive="syrchalis.traitvalue">Mods\SYR Trait\Common</li>
+		<li IfModActive="owlchemist.seedspleaselite">Mods\Seeds Please Lite\Common</li>
+		<li IfModActive="evyatar108.seedspleaseliteredux">Mods\Seeds Please Lite\Common</li>
+		<li IfModActive="freemapa.freewill">Mods\Free Will\Common</li>
+		<li IfModActive="jamaicancastle.rf.fertilefields">Mods\Fertile Fields\Common</li>
+		<!-- <li IfModActive="ogliss.thewhitecrayon.quarry">Mods\Quarry\Common</li> -->
 		<!-- <li IfModActive="spdskatr.projectrimfactory.drones">Mods\Project RimFactory Drones</li> -->
 		<li IfModActive="niilo007.niilosqol">
 			<li IfModActive="dankpyon.medieval.overhaul">Mods\Medieval Overhaul Textures</li>
 		</li>
-		<li IfModActive="sarg.alphaprefabs">Mods\Alpha Prefabs</li>
-		<li IfModActive="dankpyon.medieval.overhaul">Mods\Medieval Overhaul</li>
-		<li IfModActive="ferny.progressionstorage">Mods\Progression Storage</li>
+		<li IfModActive="sarg.alphaprefabs">Mods\Alpha Prefabs\Common</li>
+		<li IfModActive="dankpyon.medieval.overhaul">Mods\Medieval Overhaul\Common</li>
+		<li IfModActive="dankpyon.medieval.overhaul">Mods\Medieval Overhaul\1.5</li>
+		<li IfModActive="ferny.progressionstorage">Mods\Progression Storage\Common</li>
 	</v1.5>
 </loadFolders>
