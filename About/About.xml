@@ -14,15 +14,17 @@
 		<li>VanillaExpanded.VMemesE</li>
 		<li>Harkon.GunNut.UkrainianFirearms</li>
 		<li>VR.MOPatches</li>
-		<li>Alpha Animals</li>
-		<li>Vanilla Genetics Expanded</li>
-		<li>Vanilla Factions Expanded - Insectoids</li>
-		<li>Vanilla Brewing Expanded</li>
-		<li>Kit's Brazilian Crops (Continued)</li>
-		<li>[SYR] Processor Framework</li>
-		<li>Project RimFactory - Drones</li>
-		<li>Niilo's QoL</li>
-		<li>Rimefeller</li>
-		<li>Save Our Ship 2</li>
+		<li>sarg.alphaanimals</li>
+		<li>vanillaexpanded.vgeneticse</li>
+		<!-- <li>Vanilla Factions Expanded - Insectoids</li> -->
+		<li>vanillaexpanded.vbrewe</li>
+		<!-- Not using the mod -->
+		<!-- <li>Kit's Brazilian Crops (Continued)</li> -->
+		<li>syrchalis.processor.framework</li>
+		<li>spdskatr.projectrimfactory.drones</li>
+		<li>niilo007.niilosqol</li>
+		<li>dubwise.rimefeller</li>
+		<li>kentington.saveourship2</li>
+		<li>ferny.progressionstorage</li>
 	</loadAfter>
 </ModMetaData>
