@@ -13,7 +13,7 @@
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
-					<xpath>Defs/RecipeDef[defName="Kibble"]/defaultIngredientFilter/disallowedThingDefs</xpath>
+					<xpath>Defs/RecipeDef[defName="Make_Kibble"]/defaultIngredientFilter/disallowedThingDefs</xpath>
 					<value>
 						<li>VFEI_RoyalInsectJelly</li>
 					</value>
@@ -34,7 +34,7 @@
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
-					<xpath>Defs/RecipeDef[defName="Kibble"]/defaultIngredientFilter/disallowedThingDefs</xpath>
+					<xpath>Defs/RecipeDef[defName="Make_Kibble"]/defaultIngredientFilter/disallowedThingDefs</xpath>
 					<value>
 						<li>AA_BlackInsectJelly</li>
 					</value>
@@ -55,7 +55,7 @@
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
-					<xpath>Defs/RecipeDef[defName="Kibble"]/defaultIngredientFilter/disallowedThingDefs</xpath>
+					<xpath>Defs/RecipeDef[defName="Make_Kibble"]/defaultIngredientFilter/disallowedThingDefs</xpath>
 					<value>
 						<li>DankPyon_HornetJelly</li>
 					</value>
