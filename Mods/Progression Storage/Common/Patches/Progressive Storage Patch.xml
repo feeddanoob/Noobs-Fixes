@@ -11,6 +11,15 @@
 					</match>
 				</nomatch>
 			</li>
+			<li Class="PatchOperationConditional" MayRequire="DankPyon.Medieval.Overhaul,reel.expanded.storage">
+				<xpath>Defs/ResearchProjectDef[defName="ReelMedievalStorage"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef/researchPrerequisites[li="ReelMedievalStorage"]</xpath>
+					<match Class="PatchOperationRemove">
+						<xpath>Defs/ThingDef/researchPrerequisites/li[text()="ReelMedievalStorage"]</xpath>
+					</match>
+				</nomatch>
+			</li>
 		</operations>
 	</Operation>
 </Patch>

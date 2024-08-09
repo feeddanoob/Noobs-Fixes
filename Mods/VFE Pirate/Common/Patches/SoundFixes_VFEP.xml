@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<!-- Vanilla Factions Expanded Pirates -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="VFEP_Mech_Wardrone"]/race[soundMeleeHitBuilding="Pawn_Melee_Punch_HitBuilding"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="VFEP_Mech_Wardrone"]/race/soundMeleeHitBuilding</xpath>
+			<value>
+				<soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding_Metal</soundMeleeHitBuilding>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="VFEP_Mech_Spidermine"]/race[soundMeleeHitBuilding="Pawn_Melee_Punch_HitBuilding"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="VFEP_Mech_Spidermine"]/race/soundMeleeHitBuilding</xpath>
+			<value>
+				<soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding_Metal</soundMeleeHitBuilding>
+			</value>
+		</match>
+	</Operation>
+</Patch>

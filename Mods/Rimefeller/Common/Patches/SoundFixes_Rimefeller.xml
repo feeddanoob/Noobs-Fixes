@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<!-- Rimefeller -->
+	<Operation Class="PatchOperationConditional" MayRequire="Dubwise.Rimefeller">
+		<xpath>Defs/ThingDef[@Name="SynthyleneBase"]/stuffProps[soundMeleeHitSharp="MeleeHit_Wood_Sharp"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[@Name="SynthyleneBase"]/stuffProps/soundMeleeHitSharp</xpath>
+			<value>
+				<soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional" MayRequire="Dubwise.Rimefeller">
+		<xpath>Defs/ThingDef[@Name="SynthyleneBase"]/stuffProps[soundMeleeHitBlunt="MeleeHit_Wood_Blunt"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[@Name="SynthyleneBase"]/stuffProps/soundMeleeHitBlunt</xpath>
+			<value>
+				<soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
+			</value>
+		</match>
+	</Operation>
+</Patch>

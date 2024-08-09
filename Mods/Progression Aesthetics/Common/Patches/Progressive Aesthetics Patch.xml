@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationConditional" MayRequire="DankPyon.Medieval.Overhaul,vanillaexpanded.vfecore">
+				<xpath>Defs/DesignationCategoryDef[defName="DankPyon_RusticFurniture"]</xpath>
+				<nomatch Class="PatchOperationConditional" MayRequire="liuyu.adaptive.mo">
+					<xpath>Defs/ThingDef[designationCategory="DankPyon_RusticFurniture"]</xpath>
+					<match Class="PatchOperationRemove">
+						<xpath>Defs/ThingDef/designationCategory[text()="DankPyon_RusticFurniture"]</xpath>
+					</match>
+				</nomatch>
+			</li>
+			<li Class="PatchOperationConditional" MayRequire="DankPyon.Medieval.Overhaul,vanillaexpanded.vfecore">
+				<xpath>Defs/DesignationCategoryDef[defName="DankPyon_RusticDecoration"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[designationCategory="DankPyon_RusticDecoration"]</xpath>
+					<match Class="PatchOperationRemove">
+						<xpath>Defs/ThingDef/designationCategory[text()="DankPyon_RusticDecoration"]</xpath>
+					</match>
+				</nomatch>
+			</li>
+			<li Class="PatchOperationConditional" MayRequire="DankPyon.Medieval.Overhaul,vanillaexpanded.vfecore">
+				<xpath>Defs/ResearchProjectDef[defName="MF_BasicFurniture"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef/researchPrerequisites[li="MF_BasicFurniture"]</xpath>
+					<match Class="PatchOperationRemove">
+						<xpath>Defs/ThingDef/researchPrerequisites/li[text()="MF_BasicFurniture"]</xpath>
+					</match>
+				</nomatch>
+			</li>
+			<li Class="PatchOperationConditional" MayRequire="DankPyon.Medieval.Overhaul,vanillaexpanded.vfecore">
+				<xpath>Defs/ResearchProjectDef[defName="MF_BasicFurniture"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef/prerequisites[li="MF_BasicFurniture"]</xpath>
+					<match Class="PatchOperationRemove">
+						<xpath>Defs/ResearchProjectDef/prerequisites/li[text()="MF_BasicFurniture"]</xpath>
+					</match>
+				</nomatch>
+			</li>
+			<li Class="PatchOperationConditional" MayRequire="DankPyon.Medieval.Overhaul,vanillaexpanded.vfecore">
+				<xpath>Defs/ResearchProjectDef[defName="MF_BasicFurniture"]</xpath>
+				<nomatch Class="PatchOperationConditional" MayRequire="sarg.alphaprefabs">
+					<xpath>Defs/AlphaPrefabs.PrefabDef/researchPrerequisites[li="MF_BasicFurniture"]</xpath>
+					<match Class="PatchOperationRemove">
+						<xpath>Defs/AlphaPrefabs.PrefabDef/researchPrerequisites/li[text()="MF_BasicFurniture"]</xpath>
+					</match>
+				</nomatch>
+			</li>
+			<li Class="PatchOperationConditional" MayRequire="DankPyon.Medieval.Overhaul">
+				<xpath>Defs/ThingStyleDef[defName="FernyRustic_Table1x1c"]/graphicData[graphicClass="Graphic_Single"]</xpath>
+				<match Class="PatchOperationReplace">
+					<xpath>Defs/ThingStyleDef[defName="FernyRustic_Table1x1c"]/graphicData/graphicClass</xpath>
+					<value>
+						<graphicClass>Graphic_Multi</graphicClass>
+					</value>
+				</match>
+			</li>
+			<li Class="PatchOperationConditional" MayRequire="DankPyon.Medieval.Overhaul">
+				<xpath>Defs/ThingStyleDef[defName="FernyRustic_Table1x1c"]/graphicData[drawSize="(1,1)"]</xpath>
+				<match Class="PatchOperationReplace">
+					<xpath>Defs/ThingStyleDef[defName="FernyRustic_Table1x1c"]/graphicData/drawSize</xpath>
+					<value>
+						<drawSize>(3,3)</drawSize>
+					</value>
+				</match>
+			</li>
+			<li Class="PatchOperationConditional" MayRequire="DankPyon.Medieval.Overhaul,vanillaexpanded.vfecore">
+				<xpath>Defs/StyleCategoryDef[defName="Ferny_Rustic"]/thingDefStyles/li[thingDef="Table1x1c"]</xpath>
+				<match Class="PatchOperationReplace">
+					<xpath>Defs/StyleCategoryDef[defName="Ferny_Rustic"]/thingDefStyles/li/thingDef[text()="Table1x1c"]</xpath>
+					<value>
+						<thingDef>Table_1x1c</thingDef>
+					</value>
+				</match>
+			</li>
+		</operations>
+	</Operation>
+</Patch>
