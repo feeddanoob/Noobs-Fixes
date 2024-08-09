@@ -74,6 +74,51 @@
 					</value>
 				</match>
 			</li>
+			<li Class="PatchOperationConditional" MayRequire="DankPyon.Medieval.Overhaul,vanillaexpanded.vfecore">
+				<xpath>Defs/ThingDef[defName="DankPyon_RoyalCloset"]/designationCategory</xpath>
+				<match Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="DankPyon_RoyalCloset"]/designationCategory</xpath>
+					<value>
+						<designationCategory>Furniture</designationCategory>
+					</value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="DankPyon_RoyalCloset"]</xpath>
+					<value>
+						<designationCategory>Furniture</designationCategory>
+					</value>
+				</nomatch>
+			</li>
+			<li Class="PatchOperationConditional" MayRequire="DankPyon.Medieval.Overhaul,vanillaexpanded.vfecore">
+				<xpath>Defs/ThingDef[defName="DankPyon_RusticTallEndTable"]/designationCategory</xpath>
+				<match Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="DankPyon_RusticTallEndTable"]/designationCategory</xpath>
+					<value>
+						<designationCategory>Furniture</designationCategory>
+					</value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="DankPyon_RusticTallEndTable"]</xpath>
+					<value>
+						<designationCategory>Furniture</designationCategory>
+					</value>
+				</nomatch>
+			</li>
+			<li Class="PatchOperationConditional" MayRequire="DankPyon.Medieval.Overhaul,vanillaexpanded.vfecore">
+				<xpath>Defs/ThingDef[defName="DankPyon_RoyalTudorBed"]/designationCategory</xpath>
+				<match Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="DankPyon_RoyalTudorBed"]/designationCategory</xpath>
+					<value>
+						<designationCategory>Furniture</designationCategory>
+					</value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="DankPyon_RoyalTudorBed"]</xpath>
+					<value>
+						<designationCategory>Furniture</designationCategory>
+					</value>
+				</nomatch>
+			</li>
 		</operations>
 	</Operation>
 </Patch>
