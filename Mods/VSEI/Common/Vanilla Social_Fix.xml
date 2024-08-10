@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/InspirationDef[defName="VSIE_Melee_Frenzy"]/requiredAnyNonDisabledWorkType</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/InspirationDef[defName="VSIE_Melee_Frenzy"]</xpath>
+					<value>
+						<requiredAnyNonDisabledWorkType>
+							<li>Hunting</li>
+						</requiredAnyNonDisabledWorkType>
+					</value>
+				</nomatch>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

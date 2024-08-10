@@ -24,6 +24,7 @@
 		<li IfModActive="freemapa.freewill">Mods\Free Will\Common</li>
 		<li IfModActive="jamaicancastle.rf.fertilefields">Mods\Fertile Fields\Common</li>
 		<!-- <li IfModActive="ogliss.thewhitecrayon.quarry">Mods\Quarry\Common</li> -->
+		<li IfModActive="vanillaexpanded.vanillasocialinteractionsexpanded">Mods\VSEI\Common</li>
 	</v1.4>
 	<v1.5>
 		<li>Common</li>
@@ -49,5 +50,7 @@
 		<li IfModActive="oskarpotocki.vfe.pirates">Mods\VFE Pirate\Common</li>
 		<li IfModActive="aoba.deadmanswitch.core">Mods\Dead Mans Switch\Common</li>
 		<li IfModActive="dubwise.rimefeller">Mods\Rimefeller\Common</li>
+		<li IfModActive="liuyu.adaptive.mo">Mods\MO ASF Graphics\Common</li>
+		<li IfModActive="vanillaexpanded.vanillasocialinteractionsexpanded">Mods\VSEI\Common</li>
 	</v1.5>
 </loadFolders>

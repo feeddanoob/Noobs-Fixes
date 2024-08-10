@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="DankPyon_Book_AncientCodex"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>Defs/AdaptiveStorage.GraphicsDef/requiredThingDefs[li="DankPyon_Book_AncientCodex"]</xpath>
+					<match Class="PatchOperationRemove">
+						<xpath>Defs/AdaptiveStorage.GraphicsDef/requiredThingDefs/li[text()="DankPyon_Book_AncientCodex"]</xpath>
+					</match>
+				</nomatch>
+			</li>
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="DankPyon_Book_AncientCodex"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef/building/fixedStorageSettings/filter/thingDefs[li="DankPyon_Book_AncientCodex"]</xpath>
+					<match Class="PatchOperationRemove">
+						<xpath>Defs/ThingDef/building/fixedStorageSettings/filter/thingDefs/li[text()="DankPyon_Book_AncientCodex"]</xpath>
+					</match>
+				</nomatch>
+			</li>
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="DankPyon_Book_IntoTheRuins"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>Defs/AdaptiveStorage.GraphicsDef/requiredThingDefs[li="DankPyon_Book_IntoTheRuins"]</xpath>
+					<match Class="PatchOperationRemove">
+						<xpath>Defs/AdaptiveStorage.GraphicsDef/requiredThingDefs/li[text()="DankPyon_Book_IntoTheRuins"]</xpath>
+					</match>
+				</nomatch>
+			</li>
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="DankPyon_Book_IntoTheRuins"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef/building/fixedStorageSettings/filter/thingDefs[li="DankPyon_Book_IntoTheRuins"]</xpath>
+					<match Class="PatchOperationRemove">
+						<xpath>Defs/ThingDef/building/fixedStorageSettings/filter/thingDefs/li[text()="DankPyon_Book_IntoTheRuins"]</xpath>
+					</match>
+				</nomatch>
+			</li>
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="DankPyon_Book_TheBeginning"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>Defs/AdaptiveStorage.GraphicsDef/requiredThingDefs[li="DankPyon_Book_TheBeginning"]</xpath>
+					<match Class="PatchOperationRemove">
+						<xpath>Defs/AdaptiveStorage.GraphicsDef/requiredThingDefs/li[text()="DankPyon_Book_TheBeginning"]</xpath>
+					</match>
+				</nomatch>
+			</li>
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="DankPyon_Book_TheBeginning"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef/building/fixedStorageSettings/filter/thingDefs[li="DankPyon_Book_TheBeginning"]</xpath>
+					<match Class="PatchOperationRemove">
+						<xpath>Defs/ThingDef/building/fixedStorageSettings/filter/thingDefs/li[text()="DankPyon_Book_TheBeginning"]</xpath>
+					</match>
+				</nomatch>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

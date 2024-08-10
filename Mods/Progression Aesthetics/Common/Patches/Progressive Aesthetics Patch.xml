@@ -119,6 +119,15 @@
 					</value>
 				</nomatch>
 			</li>
+			<li Class="PatchOperationConditional" MayRequire="DankPyon.Medieval.Overhaul,vanillaexpanded.vfecore">
+				<xpath>Defs/ResearchProjectDef[defName="DankPyon_RoyalRusticFurniture"]</xpath>
+				<nomatch Class="PatchOperationConditional" MayRequire="liuyu.adaptive.mo">
+					<xpath>Defs/ThingDef/researchPrerequisites[li="DankPyon_RoyalRusticFurniture"]</xpath>
+					<match Class="PatchOperationRemove">
+						<xpath>Defs/ThingDef/researchPrerequisites/li[text()="DankPyon_RoyalRusticFurniture"]</xpath>
+					</match>
+				</nomatch>
+			</li>
 		</operations>
 	</Operation>
 </Patch>
