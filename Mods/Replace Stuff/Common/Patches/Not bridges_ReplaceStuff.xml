@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationRemove" MayRequire="spdskatr.projectrimfactory">
+				<xpath>
+					Defs/TerrainDef[@Name="PRF_ConcreteFloorBase"]/affordances |
+					Defs/TerrainDef[@Name="PRF_FloorBase"]/affordances
+				</xpath>
+			</li>
+			<li Class="PatchOperationRemove" MayRequire="vanillaexpanded.vfearchitect">
+				<xpath>Defs/TerrainDef[defName="VFEArch_PlayerBrokenAsphalt"]/affordances</xpath>
+			</li>
+			<li Class="PatchOperationRemove" MayRequire="vanillaexpanded.vfearchitect">
+				<xpath>Defs/TerrainDef[defName="VFEArch_PlayerPackedDirt"]/affordances</xpath>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

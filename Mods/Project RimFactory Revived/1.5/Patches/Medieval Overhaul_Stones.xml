@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Medieval Overhaul</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<!-- Remove/Exclude Cupro's Stones from Mark III -->
+				<!--
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="PRF_DeepQuarry_mkIII"]/modExtensions/li[@Class="ProjectRimFactory.Common.ModExtension_Miner"]/excludeOres</xpath>
+					<value>
+						<li>ChunkClaystone</li>
+						<li>ChunkAndesite</li>
+						<li>ChunkSyenite</li>
+						<li>ChunkGneiss</li>
+						<li>ChunkQuartzite</li>
+						<li>ChunkSchist</li>
+						<li>ChunkGabbro</li>
+						<li>ChunkDiorite</li>
+						<li>ChunkDunite</li>
+						<li>ChunkPegmatite</li>
+					</value>
+				</li>
+				-->
+				<!-- Define new recipes for excavating rocks from the mod -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+						<RecipeDef ParentName="PRF_MiningWork">
+							<defName>PRF_Excavate_Clay_Chunk_MO</defName>
+							<label>mine clay chunks</label>
+							<description>Mining clay chunks.</description>
+							<jobString>Mining clay chunks.</jobString>
+							<products>
+								<DankPyon_ChunkClay>1</DankPyon_ChunkClay>
+							</products>
+						</RecipeDef>
+					</value>
+				</li>
+				<!-- Add the new recipes to the Mine Shaft for manual acquisition -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="PRF_MineShaft"]/recipes</xpath>
+					<value>
+						<li>PRF_Excavate_Clay_Chunk_MO</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

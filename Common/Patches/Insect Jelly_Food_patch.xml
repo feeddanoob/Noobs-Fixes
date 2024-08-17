@@ -1,66 +1,23 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-	<Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Vanilla Factions Expanded - Insectoids</li>
-		</mods>
-		<match Class="PatchOperationSequence">
-			<operations>
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/RecipeDef[@Name="CookMealBase"]/defaultIngredientFilter/disallowedThingDefs</xpath>
-					<value>
-						<li>VFEI_RoyalInsectJelly</li>
-					</value>
-				</li>
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/RecipeDef[defName="Make_Kibble"]/defaultIngredientFilter/disallowedThingDefs</xpath>
-					<value>
-						<li>VFEI_RoyalInsectJelly</li>
-					</value>
-				</li>
-			</operations>
-		</match>
-	</Operation>
-	<Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Alpha Animals</li>
-		</mods>
-		<match Class="PatchOperationSequence">
-			<operations>
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/RecipeDef[@Name="CookMealBase"]/defaultIngredientFilter/disallowedThingDefs</xpath>
-					<value>
-						<li>AA_BlackInsectJelly</li>
-					</value>
-				</li>
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/RecipeDef[defName="Make_Kibble"]/defaultIngredientFilter/disallowedThingDefs</xpath>
-					<value>
-						<li>AA_BlackInsectJelly</li>
-					</value>
-				</li>
-			</operations>
-		</match>
-	</Operation>
-	<Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Medieval Overhaul</li>
-		</mods>
-		<match Class="PatchOperationSequence">
-			<operations>
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/RecipeDef[@Name="CookMealBase"]/defaultIngredientFilter/disallowedThingDefs</xpath>
-					<value>
-						<li>DankPyon_HornetJelly</li>
-					</value>
-				</li>
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/RecipeDef[defName="Make_Kibble"]/defaultIngredientFilter/disallowedThingDefs</xpath>
-					<value>
-						<li>DankPyon_HornetJelly</li>
-					</value>
-				</li>
-			</operations>
-		</match>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/RecipeDef[@Name="CookMealBase"]/defaultIngredientFilter/disallowedThingDefs</xpath>
+				<value>
+					<!-- <li MayRequire="oskarpotocki.vfe.insectoid2">VFEI2_RoyalInsectJelly</li> -->
+					<li MayRequire="sarg.alphaanimals">AA_BlackInsectJelly</li>
+					<li MayRequire="dankpyon.medieval.overhaul">DankPyon_HornetJelly</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/RecipeDef[defName="Make_Kibble"]/defaultIngredientFilter/disallowedThingDefs</xpath>
+				<value>
+					<li MayRequire="oskarpotocki.vfe.insectoid2">VFEI2_RoyalInsectJelly</li>
+					<li MayRequire="sarg.alphaanimals">AA_BlackInsectJelly</li>
+					<li MayRequire="dankpyon.medieval.overhaul">DankPyon_HornetJelly</li>
+				</value>
+			</li>
+		</operations>
 	</Operation>
 </Patch>

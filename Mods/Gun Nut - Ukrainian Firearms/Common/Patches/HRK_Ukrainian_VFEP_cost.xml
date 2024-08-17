@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationAdd" MayRequire="OskarPotocki.VFE.Pirates">
+		<xpath>Defs/ThingDef[defName="HRK_UAG40_Warcasket"]</xpath>
+		<value>
+			<costList>
+				<Steel>135</Steel>
+				<Chemfuel>80</Chemfuel>
+				<ComponentIndustrial>4</ComponentIndustrial>
+			</costList>
+		</value>
+	</Operation>
+</Patch>
