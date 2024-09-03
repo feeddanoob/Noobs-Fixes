@@ -57,5 +57,6 @@
 		<li IfModActive="uuugggg.replacestuff">Mods\Replace Stuff\Common</li>
 		<li IfModActive="garethp.replacestuffcompatibility">Mods\Replace Stuff Compatability\Common</li>
 		<li IfModActive="notfood.mendandrecycle,dd.unofficial.notfood.mendandrecycle">Mods\MendRecycle\Common</li>
+		<li IfModActive="rim.job.world">Mods\RJW\Common</li>
 	</v1.5>
 </loadFolders>
