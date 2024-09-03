@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationReplace">			
+	<!-- Replace drawsize for the table -->
+	<xpath>/Defs/ThingDef[defName="TableMending"]/graphicData/drawSize</xpath>
+		<value>
+			<drawSize>(4,2)</drawSize>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">			
+	<!-- Replace drawsize for mending kit from 0.85 -->
+	<xpath>/Defs/ThingDef[defName="MendingKit"]/graphicData/drawSize</xpath>
+		<value>
+			<drawSize>1</drawSize>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">			
+	<!-- Replace value for mending kit since recipe s changed -->
+	<xpath>/Defs/ThingDef[defName="MendingKit"]/statBases/MarketValue</xpath>
+		<value>
+			<MarketValue>50</MarketValue>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">			
+	<!-- Replace mending kit recipe with more expensive one -->
+	<xpath>/Defs/RecipeDef[defName="MakeMendingKit"]/ingredients</xpath>
+		<value>
+			<ingredients>
+			  <li>
+				<filter>
+				  <thingDefs>
+					<li>Steel</li>
+				  </thingDefs>
+				</filter>
+				<count>10</count>
+			  </li>
+			  <li>
+				<filter>
+				  <thingDefs>
+					<li>WoodLog</li>
+				  </thingDefs>
+				</filter>
+				<count>10</count>
+			  </li>
+			  <li>
+				<filter>
+				  <thingDefs>
+					<li>Plasteel</li>
+				  </thingDefs>
+				</filter>
+				<count>10</count>
+			  </li>
+			  <li>
+				<filter>
+				  <thingDefs>
+					<li>ComponentIndustrial</li>
+				  </thingDefs>
+				</filter>
+				<count>1</count>
+			  </li>
+			  <li>
+				<filter>
+				  <categories>
+					<li>Textiles</li>
+				  </categories>
+				</filter>
+				<count>20</count>
+			  </li>
+			</ingredients>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">			
+	<xpath>/Defs/RecipeDef[defName="MakeMendingKit"]/fixedIngredientFilter</xpath>
+		<value>
+			<fixedIngredientFilter>
+			  <thingDefs>
+				<li>Steel</li>
+				<li>WoodLog</li>
+				<li>Plasteel</li>
+				<li>ComponentIndustrial</li>
+			  </thingDefs>
+			  <categories>
+				<li>Textiles</li>
+			  </categories>
+			</fixedIngredientFilter>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+	<!-- Replace work amount to 2500 (1 in game hour), 500 is way too easy -->	
+	<xpath>/Defs/RecipeDef[defName="MakeMendingKit"]/workAmount</xpath>
+		<value>
+			<workAmount>2500</workAmount>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+	<!-- Replace work amount to 2500 (1 in game hour), 500 is way too easy -->	
+	<xpath>/Defs/RecipeDef[defName="MakeMendingKit"]/workAmount</xpath>
+		<value>
+			<workAmount>2500</workAmount>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+	<!-- Replace work amount to 2500 (1 in game hour), 500 is way too easy -->	
+	<xpath>/Defs/RecipeDef[defName="MakeMendingKit"]</xpath>
+		<value>
+			<unfinishedThingDef>MendingKit_unfinished</unfinishedThingDef>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+	<!-- Replace work amount to 2500 (1 in game hour), 500 is way too easy -->	
+	<xpath>/Defs</xpath>
+		<value>
+		  <ThingDef ParentName="UnfinishedBase">
+			<defName>MendingKit_unfinished</defName>
+			<label>unfinished mending kit</label>
+			<description>An unfinished mending kit.</description>
+			<statBases>
+			  <Flammability>0.5</Flammability>
+			</statBases>
+			<graphicData>
+			  <texPath>Things/Item/Unfinished/MendingKit_unfinished</texPath>
+			  <graphicClass>Graphic_Single</graphicClass>
+			</graphicData>
+			<stuffCategories Inherit="false" />
+		  </ThingDef>
+		</value>
+	</Operation>
+
+</Patch>

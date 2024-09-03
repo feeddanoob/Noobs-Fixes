@@ -56,5 +56,6 @@
 		<li IfModActive="harkon.gunnut.ukrainianfirearms">Mods\Gun Nut - Ukrainian Firearms\Common</li>
 		<li IfModActive="uuugggg.replacestuff">Mods\Replace Stuff\Common</li>
 		<li IfModActive="garethp.replacestuffcompatibility">Mods\Replace Stuff Compatability\Common</li>
+		<li IfModActive="notfood.mendandrecycle,dd.unofficial.notfood.mendandrecycle">Mods\MendRecycle\Common</li>
 	</v1.5>
 </loadFolders>
