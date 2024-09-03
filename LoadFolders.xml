@@ -37,7 +37,6 @@
 		<li IfModActive="evyatar108.seedspleaseliteredux">Mods\Seeds Please Lite\Common</li>
 		<li IfModActive="freemapa.freewill">Mods\Free Will\Common</li>
 		<li IfModActive="jamaicancastle.rf.fertilefields">Mods\Fertile Fields\Common</li>
-		<!-- <li IfModActive="ogliss.thewhitecrayon.quarry">Mods\Quarry\Common</li> -->
 		<!-- <li IfModActive="spdskatr.projectrimfactory.drones">Mods\Project RimFactory Drones</li> -->
 		<li IfModActive="niilo007.niilosqol">
 			<li IfModActive="dankpyon.medieval.overhaul">Mods\Medieval Overhaul Textures</li>

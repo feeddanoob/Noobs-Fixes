@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<Patch>
-	<Operation Class="PatchOperationConditional">
-		<xpath>Defs/ThingDef[defName="DankPyon_MiningSpot"]/comps/li[compClass="CompReportWorkSpeed"]</xpath>
-		<match Class="PatchOperationRemove">
-			<xpath>Defs/ThingDef[defName="DankPyon_MiningSpot"]/comps/li[compClass="CompReportWorkSpeed"]</xpath>
-		</match>
-	</Operation>
-</Patch>
