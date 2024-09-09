@@ -42,8 +42,8 @@
 			<li IfModActive="dankpyon.medieval.overhaul">Mods\Medieval Overhaul Textures</li>
 		</li>
 		<li IfModActive="sarg.alphaprefabs">Mods\Alpha Prefabs\Common</li>
-		<li IfModActive="dankpyon.medieval.overhaul">Mods\Medieval Overhaul\Common</li>
-		<li IfModActive="dankpyon.medieval.overhaul">Mods\Medieval Overhaul\1.5</li>
+		<!-- <li IfModActive="dankpyon.medieval.overhaul">Mods\Medieval Overhaul\Common</li> -->
+		<!-- <li IfModActive="dankpyon.medieval.overhaul">Mods\Medieval Overhaul\1.5</li> -->
 		<li IfModActive="ferny.progressionstorage">Mods\Progression Storage\Common</li>
 		<li IfModActive="ferny.progressionaesthetics">Mods\Progression Aesthetics\Common</li>
 		<li IfModActive="oskarpotocki.vfe.pirates">Mods\VFE Pirate\Common</li>
