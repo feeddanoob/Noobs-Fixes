@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<!-- Removes the spot and WorkGiverDef if MO or VCE is enabled -->
+			<li Class="PatchOperationRemove" MayRequire="DankPyon.Medieval.Overhaul,vanillaexpanded.vcooke">
+				<xpath>Defs/ThingDef[defName="MouseKin_FlourGrindingSpot"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove" MayRequire="DankPyon.Medieval.Overhaul,vanillaexpanded.vcooke">
+				<xpath>Defs/WorkGiverDef[defName="DoBillsCook"]/fixedBillGiverDefs/li[text()="MouseKin_FlourGrindingSpot"]</xpath>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

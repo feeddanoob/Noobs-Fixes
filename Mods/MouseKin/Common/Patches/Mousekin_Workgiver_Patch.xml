@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<!-- Removes the CraftingSpot as a Cook bill -->
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/WorkGiverDef[defName="DoBillsCook"]/fixedBillGiverDefs[li="CraftingSpot"]</xpath>
+				<match Class="PatchOperationRemove">
+					<xpath>Defs/WorkGiverDef[defName="DoBillsCook"]/fixedBillGiverDefs/li[text()="CraftingSpot"]</xpath>
+				</match>
+			</li>
+			<!-- Creates the flour spot as the workgiver instead -->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/WorkGiverDef[defName="DoBillsCook"]/fixedBillGiverDefs</xpath>
+				<value>
+					<li>MouseKin_FlourGrindingSpot</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>
