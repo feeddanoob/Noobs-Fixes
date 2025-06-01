@@ -59,5 +59,6 @@
 		<li IfModActive="rim.job.world">Mods\RJW\Common</li>
 		<li IfModActive="sumghai.mousekinrace">Mods\MouseKin\Common</li>
 		<li IfModActive="crows.dragonbond">Mods\DragonBond\Common</li>
+		<li IfModActive="VR.MOPatches">Mods\MO Patches\Common</li>
 	</v1.5>
 </loadFolders>

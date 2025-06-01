@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationConditional" MayRequire="sarg.rimbees">
+				<xpath>Defs/RecipeDef[defName="DankPyon_Extract_Honey" or defName="DankPyon_Extract_HoneyBulk"]</xpath>
+				<nomatch Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef/recipes[li="DankPyon_Extract_Honey" or defName="DankPyon_Extract_HoneyBulk"]</xpath>
+				</nomatch>
+			</li>
+		</operations>
+	</Operation>
+</Patch>
