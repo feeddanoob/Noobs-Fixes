@@ -58,5 +58,6 @@
 		<li IfModActive="notfood.mendandrecycle,dd.unofficial.notfood.mendandrecycle">Mods\MendRecycle\Common</li>
 		<li IfModActive="rim.job.world">Mods\RJW\Common</li>
 		<li IfModActive="sumghai.mousekinrace">Mods\MouseKin\Common</li>
+		<li IfModActive="crows.dragonbond">Mods\DragonBond\Common</li>
 	</v1.5>
 </loadFolders>
