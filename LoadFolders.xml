@@ -44,7 +44,6 @@
 		<li IfModActive="sarg.alphaprefabs">Mods\Alpha Prefabs\Common</li>
 		<!-- <li IfModActive="dankpyon.medieval.overhaul">Mods\Medieval Overhaul\Common</li> -->
 		<!-- <li IfModActive="dankpyon.medieval.overhaul">Mods\Medieval Overhaul\1.5</li> -->
-		<li IfModActive="ferny.progressionstorage">Mods\Progression Storage\Common</li>
 		<li IfModActive="oskarpotocki.vfe.pirates">Mods\VFE Pirate\Common</li>
 		<li IfModActive="aoba.deadmanswitch.core">Mods\Dead Mans Switch\Common</li>
 		<li IfModActive="dubwise.rimefeller">Mods\Rimefeller\Common</li>
