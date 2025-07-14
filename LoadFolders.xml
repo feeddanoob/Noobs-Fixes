@@ -61,7 +61,6 @@
 	</v1.5>
 	<v1.6>
 		<li>Common</li>
-		<li>1.5</li>
 		<li IfModActive="usagirei.lootgoblin">Mods\LootGoblin\Common</li>
 		<li IfModActive="dismarzero.VGP.VGPVegetableGarden">Mods\VGP Milk Category\Common</li>
 		<li IfModActive="syrchalis.processor.framework">Mods\Processor Framework\Common</li>
