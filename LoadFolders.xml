@@ -81,7 +81,7 @@
 		<li IfModActive="dubwise.rimefeller">Mods\Rimefeller\Common</li>
 		<li IfModActive="liuyu.adaptive.mo">Mods\MO ASF Graphics\Common</li>
 		<li IfModActive="vanillaexpanded.vanillasocialinteractionsexpanded">Mods\VSEI\Common</li>
-		<li IfModActive="spdskatr.projectrimfactory">Mods\Project RimFactory Revived\1.5</li>
+		<!-- <li IfModActive="spdskatr.projectrimfactory">Mods\Project RimFactory Revived\1.5</li> -->
 		<li IfModActive="harkon.gunnut.ukrainianfirearms">Mods\Gun Nut - Ukrainian Firearms\Common</li>
 		<li IfModActive="uuugggg.replacestuff">Mods\Replace Stuff\Common</li>
 		<li IfModActive="garethp.replacestuffcompatibility">Mods\Replace Stuff Compatability\Common</li>
