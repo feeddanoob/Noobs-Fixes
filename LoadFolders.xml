@@ -59,4 +59,37 @@
 		<li IfModActive="crows.dragonbond">Mods\DragonBond\Common</li>
 		<li IfModActive="VR.MOPatches">Mods\MO Patches\Common</li>
 	</v1.5>
+	<v1.6>
+		<li>Common</li>
+		<li>1.5</li>
+		<li IfModActive="usagirei.lootgoblin">Mods\LootGoblin\Common</li>
+		<li IfModActive="dismarzero.VGP.VGPVegetableGarden">Mods\VGP Milk Category\Common</li>
+		<li IfModActive="syrchalis.processor.framework">Mods\Processor Framework\Common</li>
+		<li IfModActive="syrchalis.traitvalue">Mods\SYR Trait\Common</li>
+		<li IfModActive="owlchemist.seedspleaselite">Mods\Seeds Please Lite\Common</li>
+		<li IfModActive="evyatar108.seedspleaseliteredux">Mods\Seeds Please Lite\Common</li>
+		<li IfModActive="freemapa.freewill">Mods\Free Will\Common</li>
+		<li IfModActive="jamaicancastle.rf.fertilefields">Mods\Fertile Fields\Common</li>
+		<!-- <li IfModActive="spdskatr.projectrimfactory.drones">Mods\Project RimFactory Drones</li> -->
+		<li IfModActive="niilo007.niilosqol">
+			<li IfModActive="dankpyon.medieval.overhaul">Mods\Medieval Overhaul Textures</li>
+		</li>
+		<li IfModActive="sarg.alphaprefabs">Mods\Alpha Prefabs\Common</li>
+		<!-- <li IfModActive="dankpyon.medieval.overhaul">Mods\Medieval Overhaul\Common</li> -->
+		<!-- <li IfModActive="dankpyon.medieval.overhaul">Mods\Medieval Overhaul\1.5</li> -->
+		<li IfModActive="oskarpotocki.vfe.pirates">Mods\VFE Pirate\Common</li>
+		<li IfModActive="aoba.deadmanswitch.core">Mods\Dead Mans Switch\Common</li>
+		<li IfModActive="dubwise.rimefeller">Mods\Rimefeller\Common</li>
+		<li IfModActive="liuyu.adaptive.mo">Mods\MO ASF Graphics\Common</li>
+		<li IfModActive="vanillaexpanded.vanillasocialinteractionsexpanded">Mods\VSEI\Common</li>
+		<li IfModActive="spdskatr.projectrimfactory">Mods\Project RimFactory Revived\1.5</li>
+		<li IfModActive="harkon.gunnut.ukrainianfirearms">Mods\Gun Nut - Ukrainian Firearms\Common</li>
+		<li IfModActive="uuugggg.replacestuff">Mods\Replace Stuff\Common</li>
+		<li IfModActive="garethp.replacestuffcompatibility">Mods\Replace Stuff Compatability\Common</li>
+		<li IfModActive="notfood.mendandrecycle,dd.unofficial.notfood.mendandrecycle">Mods\MendRecycle\Common</li>
+		<li IfModActive="rim.job.world">Mods\RJW\Common</li>
+		<li IfModActive="sumghai.mousekinrace">Mods\MouseKin\Common</li>
+		<li IfModActive="crows.dragonbond">Mods\DragonBond\Common</li>
+		<li IfModActive="VR.MOPatches">Mods\MO Patches\Common</li>
+	</v1.6>
 </loadFolders>
