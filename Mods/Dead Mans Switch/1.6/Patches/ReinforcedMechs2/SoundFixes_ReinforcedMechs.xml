@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<!-- Dead Man's Switch central command core-->
+	<Operation Class="PatchOperationConditional" MayRequire="mlie.reinforcedmechanoid2">
+		<xpath>Defs/ThingDef[defName="DMS_GestaltEngine"]/building/soundAmbient</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[defName="DMS_GestaltEngine"]/building/soundAmbient</xpath>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="DMS_GestaltEngine"]/comps</xpath>
+					<value>
+						<li Class="CompProperties_AmbientSound">
+							<sound>GeothermalPlant_Ambience</sound>
+						</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>
