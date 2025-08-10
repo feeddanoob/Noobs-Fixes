@@ -2,28 +2,28 @@
 <Patch>
 	<Operation Class="PatchOperationReplace">
 		<!-- Replace drawsize for the table -->
-		<xpath>/Defs/ThingDef[defName="TableMending"]/graphicData/drawSize</xpath>
+		<xpath>Defs/ThingDef[defName="TableMending"]/graphicData/drawSize</xpath>
 		<value>
 			<drawSize>(4,2)</drawSize>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
 		<!-- Replace drawsize for mending kit from 0.85 -->
-		<xpath>/Defs/ThingDef[defName="MendingKit"]/graphicData/drawSize</xpath>
+		<xpath>Defs/ThingDef[defName="MendingKit"]/graphicData/drawSize</xpath>
 		<value>
 			<drawSize>1</drawSize>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
 		<!-- Replace value for mending kit since recipe s changed -->
-		<xpath>/Defs/ThingDef[defName="MendingKit"]/statBases/MarketValue</xpath>
+		<xpath>Defs/ThingDef[defName="MendingKit"]/statBases/MarketValue</xpath>
 		<value>
 			<MarketValue>50</MarketValue>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
 		<!-- Replace mending kit recipe with more expensive one -->
-		<xpath>/Defs/RecipeDef[defName="MakeMendingKit"]/ingredients</xpath>
+		<xpath>Defs/RecipeDef[defName="MakeMendingKit"]/ingredients</xpath>
 		<value>
 			<ingredients>
 				<li>
@@ -70,7 +70,7 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
-		<xpath>/Defs/RecipeDef[defName="MakeMendingKit"]/fixedIngredientFilter</xpath>
+		<xpath>Defs/RecipeDef[defName="MakeMendingKit"]/fixedIngredientFilter</xpath>
 		<value>
 			<fixedIngredientFilter>
 				<thingDefs>
@@ -87,19 +87,11 @@
 	</Operation>
 	<Operation Class="PatchOperationReplace">
 		<!-- Replace work amount to 2500 (1 in game hour), 500 is way too easy -->
-		<xpath>/Defs/RecipeDef[defName="MakeMendingKit"]/workAmount</xpath>
+		<xpath>Defs/RecipeDef[defName="MakeMendingKit"]/workAmount</xpath>
 		<value>
 			<workAmount>2500</workAmount>
 		</value>
 	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<!-- Replace work amount to 2500 (1 in game hour), 500 is way too easy -->
-		<xpath>/Defs/RecipeDef[defName="MakeMendingKit"]/workAmount</xpath>
-		<value>
-			<workAmount>2500</workAmount>
-		</value>
-	</Operation>
-	<!-- Replace work amount to 2500 (1 in game hour), 500 is way too easy -->
 	<!--
 	<Operation Class="PatchOperationAdd">
 	<xpath>/Defs/RecipeDef[defName="MakeMendingKit"]</xpath>
@@ -108,7 +100,6 @@
 		</value>
 	</Operation>
 	-->
-	<!-- Replace work amount to 2500 (1 in game hour), 500 is way too easy -->
 	<!--
 	<Operation Class="PatchOperationAdd">
 		<xpath>/Defs</xpath>
