@@ -87,5 +87,6 @@
 		<li IfModActive="sumghai.mousekinrace">Mods\MouseKin\Common</li>
 		<li IfModActive="crows.dragonbond">Mods\DragonBond\Common</li>
 		<li IfModActive="VR.MOPatches">Mods\MO Patches\Common</li>
+		<li IfModActive="sarg.alphaanimals">Mods\Alpha Animals\Common</li>
 	</v1.6>
 </loadFolders>
