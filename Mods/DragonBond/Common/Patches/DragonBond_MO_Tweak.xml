@@ -1,24 +1,21 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-	<Operation Class="PatchOperationSequence">
-		<operations>
-			<!-- Removes the spot and WorkGiverDef if MO or VCE is enabled -->
-			<li Class="PatchOperationReplace" MayRequire="vr.mopatches">
-				<xpath>Defs/ResearchProjectDef[defName="Crows_BasicIncubation"]/tab</xpath>
-				<value>
-					<tab>
-						<li>DankPyon_MedievalResearchTab</li>
-					</tab>
-				</value>
-			</li>
-			<li Class="PatchOperationReplace" MayRequire="vr.mopatches">
-				<xpath>Defs/ResearchProjectDef[defName="Crows_DraconicAdvancedIncubation"]/tab</xpath>
-				<value>
-					<tab>
-						<li>Main</li>
-					</tab>
-				</value>
-			</li>
-		</operations>
+	<!-- Removes the spot and WorkGiverDef if MO or VCE is enabled -->
+	<!-- Primarily because of the MO Patches making these edits -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ResearchProjectDef[defName="Crows_BasicIncubation"]/tab</xpath>
+		<value>
+			<tab>
+				<li>DankPyon_MedievalResearchTab</li>
+			</tab>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ResearchProjectDef[defName="Crows_DraconicAdvancedIncubation"]/tab</xpath>
+		<value>
+			<tab>
+				<li>Main</li>
+			</tab>
+		</value>
 	</Operation>
 </Patch>

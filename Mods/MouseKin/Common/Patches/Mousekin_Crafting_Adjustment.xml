@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-	<Operation Class="PatchOperationSequence">
-		<operations>
-			<!-- Removes the crafting spot bill recipe -->
-			<li Class="PatchOperationConditional">
-				<xpath>Defs/RecipeDef[defName="Mousekin_Make_FlourFromWheat"]/recipeUsers[li="CraftingSpot"]</xpath>
-				<match Class="PatchOperationRemove">
-					<xpath>Defs/RecipeDef[defName="Mousekin_Make_FlourFromWheat"]/recipeUsers/li[text()="CraftingSpot"]</xpath>
-				</match>
-			</li>
-			<!-- Creates another spot type for flour -->
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/RecipeDef[defName="Mousekin_Make_FlourFromWheat"]/recipeUsers</xpath>
-				<value>
-					<li>MouseKin_FlourGrindingSpot</li>
-				</value>
-			</li>
-		</operations>
+	<!-- Removes the crafting spot bill recipe -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/RecipeDef[defName="Mousekin_Make_FlourFromWheat"]/recipeUsers[li="CraftingSpot"]</xpath>
+		<match Class="PatchOperationRemove">
+			<xpath>Defs/RecipeDef[defName="Mousekin_Make_FlourFromWheat"]/recipeUsers/li[text()="CraftingSpot"]</xpath>
+		</match>
+	</Operation>
+	<!-- Creates another spot type for flour -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/RecipeDef[defName="Mousekin_Make_FlourFromWheat"]/recipeUsers</xpath>
+		<value>
+			<li>MouseKin_FlourGrindingSpot</li>
+		</value>
 	</Operation>
 </Patch>

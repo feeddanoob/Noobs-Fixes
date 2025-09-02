@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationRemove" MayRequire="DankPyon.Medieval.Overhaul,VanillaExpanded.VFESecurity">
+				<xpath>Defs/AlphaPrefabs.PrefabDef[
+				defName = "AP_Prefab_MedievalDefensiveLine" or 
+				defName = "AP_Prefab_BallistaLine" or 
+				defName = "AP_Prefab_CatapultLine"]/researchPrerequisites/li[text() = 'VFES_SiegeEquipment']</xpath>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

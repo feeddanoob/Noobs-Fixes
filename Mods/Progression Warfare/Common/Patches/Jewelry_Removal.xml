@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchProjectDef[defName="DankPyon_Jewelry"]</xpath>
+		<nomatch Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef/recipeMaker/researchPrerequisite[text()='DankPyon_Jewelry']</xpath>
+			<value>
+				<researchPrerequisite>VFEC_Scorpion</researchPrerequisite>
+			</value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchProjectDef[defName="DankPyon_Jewelry"]</xpath>
+		<nomatch Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()='DankPyon_Jewelry']</xpath>
+			<value>
+				<li>VFEC_Scorpion</li>
+			</value>
+		</nomatch>
+	</Operation>
+</Patch>
