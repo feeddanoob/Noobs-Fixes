@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchProjectDef[defName="ReelNeolithicStorage"]</xpath>
+		<nomatch Class="PatchOperationRemove">
+			<xpath>Defs/ThingDef/recipeMaker/researchPrerequisite[text()='ReelNeolithicStorage']</xpath>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchProjectDef[defName="ReelNeolithicStorage"]</xpath>
+		<nomatch Class="PatchOperationRemove">
+			<xpath>Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()='ReelNeolithicStorage']</xpath>
+		</nomatch>
+	</Operation>
+</Patch>

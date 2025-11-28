@@ -84,5 +84,6 @@
 		<li IfModActiveAll="crows.dragonbond,vr.mopatches">Mods\DragonBond\Common</li>
 		<li IfModActive="sarg.alphaanimals">Mods\Alpha Animals\Common</li>
 		<li IfModActive="ferny.progressionwarfare,dankpyon.medieval.overhaul">Mods\Progression Warfare\Common</li>
+		<li IfModActive="dankpyon.medieval.overhaul">Mods\Medieval Overhaul\1.6</li>
 	</v1.6>
 </loadFolders>

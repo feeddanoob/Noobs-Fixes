@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="AA_ShadowCharger"]/race[trainability="Intermediate"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/ThingDef[defName="AA_ShadowCharger"]/race[roamMtbDays="2"]</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="AA_ShadowCharger"]/race/trainability</xpath>
+				<value>
+					<trainability>None</trainability>
+				</value>
+			</match>
+		</match>
+	</Operation>
+</Patch>

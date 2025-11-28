@@ -92,32 +92,4 @@
 			<workAmount>2500</workAmount>
 		</value>
 	</Operation>
-	<!--
-	<Operation Class="PatchOperationAdd">
-	<xpath>/Defs/RecipeDef[defName="MakeMendingKit"]</xpath>
-		<value>
-			<unfinishedThingDef>MendingKit_unfinished</unfinishedThingDef>
-		</value>
-	</Operation>
-	-->
-	<!--
-	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs</xpath>
-		<value>
-		  <ThingDef ParentName="UnfinishedBase">
-			<defName>MendingKit_unfinished</defName>
-			<label>unfinished mending kit</label>
-			<description>An unfinished mending kit.</description>
-			<statBases>
-			  <Flammability>0.5</Flammability>
-			</statBases>
-			<graphicData>
-			  <texPath>Things/Item/Unfinished/MendingKit_unfinished</texPath>
-			  <graphicClass>Graphic_Single</graphicClass>
-			</graphicData>
-			<stuffCategories Inherit="false" />
-		  </ThingDef>
-		</value>
-	</Operation>
-	-->
 </Patch>

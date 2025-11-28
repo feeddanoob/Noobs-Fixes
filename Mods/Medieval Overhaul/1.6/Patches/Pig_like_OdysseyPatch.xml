@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="DankPyon_Hampshire" or defName="DankPyon_Gloucestershire" or defName="DankPyon_NorthernBoar"]/race/specialTrainables</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="DankPyon_Hampshire" or defName="DankPyon_Gloucestershire" or defName="DankPyon_NorthernBoar"]/race</xpath>
+			<value>
+				<specialTrainables>
+					<li MayRequire="Ludeon.RimWorld.Odyssey">Forage</li>
+				</specialTrainables>
+			</value>
+		</nomatch>
+	</Operation>
+</Patch>
