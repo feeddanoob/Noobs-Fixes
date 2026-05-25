@@ -10,7 +10,10 @@
 		<li>1.6</li>
 	</supportedVersions>
 	<description>My edit's/patches to mods</description>
-	<loadAfter>
+	<loadBefore>
+        <li>vr.missilegirl</li>
+    </loadBefore>
+    <loadAfter>
 		<li>Harkon.CEAddOn.CEGunsVanillaExpandedConsistencyPatch</li>
 		<li>VanillaExpanded.VMemesE</li>
 		<li>Harkon.GunNut.UkrainianFirearms</li>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<!-- One with Death -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="OWD_LesserUndead"]/race[soundMeleeHitBuilding="Pawn_Melee_Punch_HitBuilding"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="OWD_LesserUndead"]/race/soundMeleeHitBuilding</xpath>
+			<value>
+				<soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding_Metal</soundMeleeHitBuilding>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="OWD_LesserUndead_Turret"]/race[soundMeleeHitBuilding="Pawn_Melee_Punch_HitBuilding"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="OWD_LesserUndead_Turret"]/race/soundMeleeHitBuilding</xpath>
+			<value>
+				<soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding_Metal</soundMeleeHitBuilding>
+			</value>
+		</match>
+	</Operation>
+    <Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="OWD_Gnawer"]/race[soundMeleeHitBuilding="Pawn_Melee_Punch_HitBuilding"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="OWD_Gnawer"]/race/soundMeleeHitBuilding</xpath>
+			<value>
+				<soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding_Metal</soundMeleeHitBuilding>
+			</value>
+		</match>
+	</Operation>
+    <Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="OWD_LesserUndead_Legion"]/race[soundMeleeHitBuilding="Pawn_Melee_Punch_HitBuilding"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="OWD_LesserUndead_Legion"]/race/soundMeleeHitBuilding</xpath>
+			<value>
+				<soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding_Metal</soundMeleeHitBuilding>
+			</value>
+		</match>
+	</Operation>
+</Patch>
