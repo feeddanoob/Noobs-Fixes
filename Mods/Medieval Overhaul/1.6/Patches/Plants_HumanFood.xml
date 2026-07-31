@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="DankPyon_Plant_Onions" or defName="DankPyon_Plant_Lentils" or defName="DankPyon_Plant_Cabbages" or defName="DankPyon_Plant_Garlic" or defName="DankPyon_Plant_Mushrooms" or defName="DankPyon_Plant_Carrots" or defName="DankPyon_Plant_Tomatoes" or defName="DankPyon_Plant_Grape" or defName="DankPyon_Plant_Pumpkins"]/plant/humanFoodPlant</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="DankPyon_Plant_Onions" or defName="DankPyon_Plant_Lentils" or defName="DankPyon_Plant_Cabbages" or defName="DankPyon_Plant_Garlic" or defName="DankPyon_Plant_Mushrooms" or defName="DankPyon_Plant_Carrots" or defName="DankPyon_Plant_Tomatoes" or defName="DankPyon_Plant_Grape" or defName="DankPyon_Plant_Pumpkins"]/plant</xpath>
+            <value>
+                <humanFoodPlant>true</humanFoodPlant>
+            </value>
+        </nomatch>
+    </Operation>
+</Patch>
