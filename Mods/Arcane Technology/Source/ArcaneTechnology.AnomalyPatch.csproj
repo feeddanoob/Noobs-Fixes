@@ -1,0 +1,50 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!-- RimWorld 1.6 ships on .NET Framework 4.7.2. If this fails to build
+         against your install, try net48. -->
+    <TargetFramework>net48</TargetFramework>
+    <RootNamespace>ArcaneTechnologyAnomalyPatch</RootNamespace>
+    <AssemblyName>ArcaneTechnologyAnomalyPatch</AssemblyName>
+    <LangVersion>latest</LangVersion>
+    <Nullable>disable</Nullable>
+
+    <!-- Compiled DLL lands directly in the mod's 1.6/Assemblies folder -->
+    <OutputPath>..\1.6\Assemblies\</OutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Auto-references Assembly-CSharp.dll / UnityEngine*.dll from your
+         local RimWorld install. If it can't auto-detect, add:
+         <RimWorldInstallDir>C:\...\SteamLibrary\steamapps\common\RimWorld</RimWorldInstallDir>
+         to the PropertyGroup above. -->
+    <PackageReference Include="Krafs.Rimworld.Ref" Version="1.6.*" />
+
+    <PackageReference Include="Lib.Harmony" Version="2.3.*">
+      <IncludeAssets>compile</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Direct reference to Arcane Technology's own compiled assembly, so
+         this compiles against its real public types (Base, GearAssigner)
+         instead of reflection/duck-typing. Private=false so it's NOT copied
+         into this mod's own output - it's expected to already be loaded
+         from Arcane Technology's own mod folder at runtime, and this mod
+         hard-depends on Arcane Technology being present (see About.xml).
+
+         Path below is exactly where it was found on this machine via Steam
+         Workshop. If you resubscribe, move Steam libraries, or this is
+         built on a different machine, update the HintPath to match:
+           <SteamLibrary>\steamapps\workshop\content\294100\2554469600\1.6\Assemblies\Arcane Technology.dll
+    -->
+    <Reference Include="Arcane Technology">
+      <HintPath>C:\Steam\steamapps\workshop\content\294100\2554469600\1.6\Assemblies\Arcane Technology.dll</HintPath>
+      <Private>false</Private>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+  </ItemGroup>
+
+</Project>
