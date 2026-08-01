@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using System.Reflection;
 using DArcaneTechnology;
 using HarmonyLib;
@@ -138,6 +139,23 @@ namespace ArcaneTechnologyAnomalyPatch
     [HarmonyPatch(typeof(Base), nameof(Base.MakeDictionaries))]
     public static class Patch_Base_MakeDictionaries_Postfix
     {
+        // CompProperties_DArcane is internal, so it can't be referenced by
+        // type at compile time - constructed reflectively instead. This is
+        // exactly the comp Arcane Technology attaches itself (in its own
+        // MakeDictionaries loop and in HardAssign/OverrideAssign) so
+        // CompDArcane.CompInspectStringExtra() can show
+        // "Unknown technology (...)" on the item itself. Without it,
+        // IsResearchLocked/Locked - and therefore equip-blocking - work
+        // fine, since that goes through EquipmentUtility.CanEquip directly,
+        // but nothing shows the reason on hover/inspect for these
+        // recipe-less variants, because that string comes from the comp,
+        // not from CanEquip.
+        private static readonly System.Type compPropsType =
+            AccessTools.TypeByName("DArcaneTechnology.CompProperties_DArcane");
+        private static readonly ConstructorInfo compPropsCtor = compPropsType != null
+            ? AccessTools.Constructor(compPropsType, new[] { typeof(ResearchProjectDef) })
+            : null;
+
         public static void Postfix()
         {
             int added = 0;
@@ -159,11 +177,28 @@ namespace ArcaneTechnologyAnomalyPatch
                 {
                     Base.researchDic[rpd] = new List<ThingDef> { thingDef };
                 }
+
+                AttachInspectStringComp(thingDef, rpd);
+
                 added++;
             }
 
             Log.Message($"[ArcaneTechnologyAnomalyPatch] Linked {added} recipe-less weapon/apparel " +
-                        "variant(s) to a research requirement via their descriptionHyperlinks.");
+                        "variant(s) to a research requirement via their descriptionHyperlinks, " +
+                        "including the 'Unknown technology' inspect string comp.");
+        }
+
+        private static void AttachInspectStringComp(ThingDef thingDef, ResearchProjectDef rpd)
+        {
+            if (compPropsCtor == null) return; // Arcane Technology renamed/removed the type - nothing to reflect onto
+
+            if (thingDef.comps == null) thingDef.comps = new List<CompProperties>();
+            if (thingDef.comps.Any(c => c != null && c.GetType() == compPropsType)) return; // already has one somehow
+
+            if (compPropsCtor.Invoke(new object[] { rpd }) is CompProperties props)
+            {
+                thingDef.comps.Add(props);
+            }
         }
 
         // Follows descriptionHyperlinks - with a visited set in case of a
