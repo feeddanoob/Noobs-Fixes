@@ -7,7 +7,7 @@
 		<match Class="PatchOperationConditional">
 			<xpath>Defs/rjw.SexFluidDef[consumable="RB_Honey"]</xpath>
 			<match Class="PatchOperationReplace">
-				<xpath>Defs/rjw.SexFluidDef/consumable</xpath>
+				<xpath>Defs/rjw.SexFluidDef[consumable="RB_Honey"]/consumable</xpath>
 				<value>
 					<consumable>RB_BaseHoney</consumable>
 				</value>

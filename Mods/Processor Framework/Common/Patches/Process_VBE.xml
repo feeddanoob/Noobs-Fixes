@@ -165,7 +165,7 @@
 				</li>
 				<!-- Tequilla -->
 				<li Class="PatchOperationReplace">
-					<xpath>*/ThingDef[defName = "VBE_TequilaBarrel"]/comps/li[@Class="ItemProcessor.CompProperties_ItemProcessor"]</xpath>
+					<xpath>Defs/ThingDef[defName = "VBE_TequilaBarrel"]/comps/li[@Class="ItemProcessor.CompProperties_ItemProcessor"]</xpath>
 					<value>
 						<li Class="ProcessorFramework.CompProperties_Processor">
 							<capacity>25</capacity>

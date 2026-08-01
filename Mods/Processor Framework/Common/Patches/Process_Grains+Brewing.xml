@@ -31,11 +31,11 @@
 				</li>
 
 			  <li Class="PatchOperationRemove">
-				<xpath>*/ThingDef[defName = "GAB_BaijuPot"]/thingClass</xpath>
+				<xpath>Defs/ThingDef[defName = "GAB_BaijuPot"]/thingClass</xpath>
 			  </li>
 
 			  <li Class="PatchOperationReplace">
-				<xpath>*/ThingDef[defName = "GAB_BaijuPot"]/comps/li[@Class="ItemProcessor.CompProperties_ItemProcessor"]</xpath>
+				<xpath>Defs/ThingDef[defName = "GAB_BaijuPot"]/comps/li[@Class="ItemProcessor.CompProperties_ItemProcessor"]</xpath>
 				<value>
 				  <li Class="ProcessorFramework.CompProperties_Processor">
 					<capacity>50</capacity>
@@ -68,11 +68,11 @@
 				</li>
 			  
 			  <li Class="PatchOperationRemove">
-				<xpath>*/ThingDef[defName = "GAB_RaksiStill"]/thingClass</xpath>
+				<xpath>Defs/ThingDef[defName = "GAB_RaksiStill"]/thingClass</xpath>
 			  </li>
 
 			  <li Class="PatchOperationReplace">
-				<xpath>*/ThingDef[defName = "GAB_RaksiStill"]/comps/li[@Class="ItemProcessor.CompProperties_ItemProcessor"]</xpath>
+				<xpath>Defs/ThingDef[defName = "GAB_RaksiStill"]/comps/li[@Class="ItemProcessor.CompProperties_ItemProcessor"]</xpath>
 				<value>
 				  <li Class="ProcessorFramework.CompProperties_Processor">
 					<capacity>25</capacity>
@@ -105,11 +105,11 @@
 				</li>
 
 			  <li Class="PatchOperationRemove">
-				<xpath>*/ThingDef[defName = "GAB_VinegarBarrel"]/thingClass</xpath>
+				<xpath>Defs/ThingDef[defName = "GAB_VinegarBarrel"]/thingClass</xpath>
 			  </li>
 
 			  <li Class="PatchOperationReplace">
-				<xpath>*/ThingDef[defName = "GAB_VinegarBarrel"]/comps/li[@Class="ItemProcessor.CompProperties_ItemProcessor"]</xpath>
+				<xpath>Defs/ThingDef[defName = "GAB_VinegarBarrel"]/comps/li[@Class="ItemProcessor.CompProperties_ItemProcessor"]</xpath>
 				<value>
 				  <li Class="ProcessorFramework.CompProperties_Processor">
 					<capacity>25</capacity>
