@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2E1D2C1A-9F3B-4C7E-9B0A-6C3A9B7E4D21}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ArcaneTechnologyAnomalyPatch</RootNamespace>
+    <AssemblyName>ArcaneTechnologyAnomalyPatch</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <!-- Same "..\..\Assemblies\" pattern as Noob's Fixes.csproj, just two
+         levels up from here (Mods\Arcane Technology\1.6\Source\Arcane
+         Technology Anomaly Patch\) lands in
+         Mods\Arcane Technology\1.6\Assemblies\ - only ever loaded via the
+         IfModActive="dame.arcanetechnology" entry in LoadFolders.xml. -->
+    <OutputPath>..\1.6\Assemblies\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Core" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Net.Http" />
+    <!-- Direct reference to Arcane Technology's own compiled assembly, so
+         this compiles against its real public types (Base, GearAssigner)
+         instead of reflection/duck-typing. Private=False so it isn't copied
+         into this project's own output - it's expected to already be
+         loaded from the real Arcane Technology mod at runtime.
+         Update the HintPath if your Steam library path differs. -->
+    <Reference Include="Arcane Technology">
+      <HintPath>C:\Steam\steamapps\workshop\content\294100\2554469600\1.6\Assemblies\Arcane Technology.dll</HintPath>
+      <Private>False</Private>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="HarmonyPatches.cs" />
+    <Compile Include="Main.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Krafs.Rimworld.Ref">
+      <Version>1.6.*</Version>
+    </PackageReference>
+    <PackageReference Include="Lib.Harmony">
+      <Version>2.4.2</Version>
+    </PackageReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="PostBuildAction" AfterTargets="Build">
+    <!-- Same cleanup as Noob's Fixes.csproj - RimWorld already ships its
+         own 0Harmony.dll, don't let a second copy land in Assemblies. -->
+    <Delete Files="..\1.6\Assemblies\0Harmony.dll" />
+    <Delete Files="..\1.6\Assemblies\0Harmony.pdb" />
+  </Target>
+</Project>
