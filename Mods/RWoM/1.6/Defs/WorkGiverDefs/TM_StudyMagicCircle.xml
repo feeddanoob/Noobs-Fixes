@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Mirrors RWoM's own WorkGivers_Magic.xml pattern (TM_Magic work type,
+	     MagicManipulation capacity) so studying the magic circles is mage work,
+	     not generic Research/DarkStudy work.
+
+	     Must use WorkGiver_DarkStudyInteract, not WorkGiver_StudyInteract: despite the
+	     name, WorkGiver_DarkStudyInteract is vanilla's actual generic handler for any
+	     CompStudiable thing that HAS a KnowledgeCategory set (like our circles) -
+	     WorkGiver_StudyInteract explicitly rejects anything with a KnowledgeCategory
+	     (confirmed by decompiling Assembly-CSharp.dll). The "Dark" in the name is
+	     legacy - it's not restricted to evil/dark study content. -->
+	<WorkGiverDef>
+		<defName>TM_StudyMagicCircle</defName>
+		<label>study at magic circle</label>
+		<giverClass>WorkGiver_DarkStudyInteract</giverClass>
+		<workType>TM_Magic</workType>
+		<priorityInType>105</priorityInType>
+		<verb>study</verb>
+		<gerund>studying</gerund>
+		<requiredCapacities>
+			<li>MagicManipulation</li>
+		</requiredCapacities>
+		<canBeDoneByMechs>false</canBeDoneByMechs>
+	</WorkGiverDef>
+
+</Defs>

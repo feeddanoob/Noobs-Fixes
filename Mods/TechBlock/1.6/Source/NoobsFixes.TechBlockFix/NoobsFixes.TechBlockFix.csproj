@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <LangVersion>9.0</LangVersion>
+    <RootNamespace>NoobsFixes.TechBlockFix</RootNamespace>
+    <AssemblyName>NoobsFixes.TechBlockFix</AssemblyName>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3" PrivateAssets="All" />
+    <PackageReference Include="Krafs.Rimworld.Ref" Version="1.6.*" />
+    <PackageReference Include="Lib.Harmony" Version="2.4.2" ExcludeAssets="runtime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="TechBlock 1.2.1">
+      <HintPath>C:\Steam\steamapps\workshop\content\294100\1970774610\1.6\Assemblies\TechBlock 1.2.1.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Arcane Technology">
+      <HintPath>C:\Steam\steamapps\workshop\content\294100\2554469600\1.6\Assemblies\Arcane Technology.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+  <Target Name="CopyToModAssemblies" AfterTargets="Build">
+    <Copy SourceFiles="$(TargetDir)$(AssemblyName).dll" DestinationFolder="$(MSBuildProjectDirectory)\..\..\Assemblies\" SkipUnchangedFiles="false" />
+  </Target>
+</Project>

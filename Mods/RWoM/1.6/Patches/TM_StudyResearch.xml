@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+	Anomaly-style magic research: the deeper Rimworld of Magic research tree is funded from
+	a TM_ArcaneKnowledge pool (see Defs\KnowledgeCategoryDefs\TM_KnowledgeCategories.xml)
+	instead of a research bench. That pool is filled by studying at the magic circle
+	buildings (Patches\TM_StudyMagicCircles.xml) or by reading grimoires, Tome-style
+	(Patches\TM_GrimoireTomeResearch.xml). Every TM_* project in this tree is now
+	knowledge-only except TM_ArcaneConstruction, which is left on bench baseCost purely for
+	structural reasons (nothing else needs its cost model changed - it's moot either way).
+	TM_ArcaneConstruction and TM_ArcaneFundamentals are force-finished at game start
+	regardless of scenario (Source\NoobsFixes.RWoMFix), so a colony always starts with basic
+	arcane research done and can immediately build the small magic circle to start
+	generating knowledge from nothing, with no grimoire required.
+	knowledgeCost values below are baseCost/100 (min 5), matching vanilla Anomaly's typical
+	knowledgeCost range.
+
+	Every project below also gets a <generalRules> block (subject/subject_story/
+	subject_gerund rulesStrings), because BookOutcomeProperties_GainResearch (the base
+	class vanilla's own Tome doer, and ours, both use - see
+	Patches\TM_GrimoireTomeResearch.xml) hard-requires generalRules != null in its internal
+	IsValid() check (confirmed by decompiling Assembly-CSharp.dll's
+	RimWorld.ReadingOutcomeDoerGainResearch). Without this, EVERY TM_* project fails that
+	check, OnBookGenerated() finds zero valid targets, and reading a grimoire grants no
+	knowledge at all - these rules exist purely to satisfy that requirement, not for UI
+	flavor (though they do also feed the book's generated description text).
+-->
+<Patch>
+
+	<!-- TM_ArcaneFundamentals: baseCost 300 -> knowledgeCost 5
+	     (moot in practice: TM_ArcaneFundamentals is force-finished at game start by the
+	     Harmony patch in Source\NoobsFixes.RWoMFix, same as TM_ArcaneConstruction) -->
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ResearchProjectDef[defName = "TM_ArcaneFundamentals"]/baseCost</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ResearchProjectDef[defName = "TM_ArcaneFundamentals"]</xpath>
+				<value>
+					<knowledgeCost>5</knowledgeCost>
+					<knowledgeCategory>TM_ArcaneKnowledge</knowledgeCategory>
+					<generalRules>
+						<rulesStrings>
+							<li>subject->arcane fundamentals</li>
+							<li>subject_story->puzzled out the mathematics linking arcane power to the physical realm</li>
+							<li>subject_gerund->unraveling arcane fundamentals</li>
+						</rulesStrings>
+					</generalRules>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!-- TM_MagicCircle: baseCost 2000 -> knowledgeCost 20 -->
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ResearchProjectDef[defName = "TM_MagicCircle"]/baseCost</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ResearchProjectDef[defName = "TM_MagicCircle"]</xpath>
+				<value>
+					<knowledgeCost>20</knowledgeCost>
+					<knowledgeCategory>TM_ArcaneKnowledge</knowledgeCategory>
+					<generalRules>
+						<rulesStrings>
+							<li>subject->the magic circle</li>
+							<li>subject_story->traced the sacred geometry of a functioning magic circle</li>
+							<li>subject_gerund->mapping ley line geometry</li>
+						</rulesStrings>
+					</generalRules>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!-- TM_Portals: baseCost 2000 -> knowledgeCost 20 -->
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ResearchProjectDef[defName = "TM_Portals"]/baseCost</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ResearchProjectDef[defName = "TM_Portals"]</xpath>
+				<value>
+					<knowledgeCost>20</knowledgeCost>
+					<knowledgeCategory>TM_ArcaneKnowledge</knowledgeCategory>
+					<generalRules>
+						<rulesStrings>
+							<li>subject->arcane portals</li>
+							<li>subject_story->sketched the diagrams for a working arcane portal</li>
+							<li>subject_gerund->charting portal theory</li>
+						</rulesStrings>
+					</generalRules>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!-- TM_ManaStorage: baseCost 1000 -> knowledgeCost 10 -->
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ResearchProjectDef[defName = "TM_ManaStorage"]/baseCost</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ResearchProjectDef[defName = "TM_ManaStorage"]</xpath>
+				<value>
+					<knowledgeCost>10</knowledgeCost>
+					<knowledgeCategory>TM_ArcaneKnowledge</knowledgeCategory>
+					<generalRules>
+						<rulesStrings>
+							<li>subject->mana storage</li>
+							<li>subject_story->devised a vessel capable of holding raw mana</li>
+							<li>subject_gerund->refining mana storage</li>
+						</rulesStrings>
+					</generalRules>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!-- TM_ArcaneForging: baseCost 1500 -> knowledgeCost 15 -->
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ResearchProjectDef[defName = "TM_ArcaneForging"]/baseCost</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ResearchProjectDef[defName = "TM_ArcaneForging"]</xpath>
+				<value>
+					<knowledgeCost>15</knowledgeCost>
+					<knowledgeCategory>TM_ArcaneKnowledge</knowledgeCategory>
+					<generalRules>
+						<rulesStrings>
+							<li>subject->the arcane forge</li>
+							<li>subject_story->described how to bind arcane power into a working forge</li>
+							<li>subject_gerund->designing the arcane forge</li>
+						</rulesStrings>
+					</generalRules>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!-- TM_ForgeReplication: baseCost 3000 -> knowledgeCost 30 -->
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ResearchProjectDef[defName = "TM_ForgeReplication"]/baseCost</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ResearchProjectDef[defName = "TM_ForgeReplication"]</xpath>
+				<value>
+					<knowledgeCost>30</knowledgeCost>
+					<knowledgeCategory>TM_ArcaneKnowledge</knowledgeCategory>
+					<generalRules>
+						<rulesStrings>
+							<li>subject->forge replication</li>
+							<li>subject_story->explained how the arcane forge might copy an item's design</li>
+							<li>subject_gerund->studying forge replication</li>
+						</rulesStrings>
+					</generalRules>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!-- TM_ArcaneCrafting: baseCost 1000 -> knowledgeCost 10 -->
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ResearchProjectDef[defName = "TM_ArcaneCrafting"]/baseCost</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ResearchProjectDef[defName = "TM_ArcaneCrafting"]</xpath>
+				<value>
+					<knowledgeCost>10</knowledgeCost>
+					<knowledgeCategory>TM_ArcaneKnowledge</knowledgeCategory>
+					<generalRules>
+						<rulesStrings>
+							<li>subject->arcane crafting</li>
+							<li>subject_story->detailed the first techniques for shaping raw arcane power into equipment</li>
+							<li>subject_gerund->practicing arcane crafting</li>
+						</rulesStrings>
+					</generalRules>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!-- TM_ArcaneApparel: baseCost 1500 -> knowledgeCost 15 -->
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ResearchProjectDef[defName = "TM_ArcaneApparel"]/baseCost</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ResearchProjectDef[defName = "TM_ArcaneApparel"]</xpath>
+				<value>
+					<knowledgeCost>15</knowledgeCost>
+					<knowledgeCategory>TM_ArcaneKnowledge</knowledgeCategory>
+					<generalRules>
+						<rulesStrings>
+							<li>subject->magical equipment</li>
+							<li>subject_story->recorded techniques for weaving magic into apparel</li>
+							<li>subject_gerund->enchanting apparel</li>
+						</rulesStrings>
+					</generalRules>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!-- TM_ArcaneArtifacts: baseCost 1000 -> knowledgeCost 10 -->
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ResearchProjectDef[defName = "TM_ArcaneArtifacts"]/baseCost</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ResearchProjectDef[defName = "TM_ArcaneArtifacts"]</xpath>
+				<value>
+					<knowledgeCost>10</knowledgeCost>
+					<knowledgeCategory>TM_ArcaneKnowledge</knowledgeCategory>
+					<generalRules>
+						<rulesStrings>
+							<li>subject->arcane artifacts</li>
+							<li>subject_story->pieced together ancient designs for a lost arcane artifact</li>
+							<li>subject_gerund->reconstructing arcane artifacts</li>
+						</rulesStrings>
+					</generalRules>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!-- TM_MagicScribing: baseCost 1500 -> knowledgeCost 15 -->
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ResearchProjectDef[defName = "TM_MagicScribing"]/baseCost</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ResearchProjectDef[defName = "TM_MagicScribing"]</xpath>
+				<value>
+					<knowledgeCost>15</knowledgeCost>
+					<knowledgeCategory>TM_ArcaneKnowledge</knowledgeCategory>
+					<generalRules>
+						<rulesStrings>
+							<li>subject->scribing</li>
+							<li>subject_story->described a press capable of reproducing pages of arcane knowledge</li>
+							<li>subject_gerund->practicing scribing</li>
+						</rulesStrings>
+					</generalRules>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!-- TM_AdvancedScribing: baseCost 1000 -> knowledgeCost 10 -->
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ResearchProjectDef[defName = "TM_AdvancedScribing"]/baseCost</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ResearchProjectDef[defName = "TM_AdvancedScribing"]</xpath>
+				<value>
+					<knowledgeCost>10</knowledgeCost>
+					<knowledgeCategory>TM_ArcaneKnowledge</knowledgeCategory>
+					<generalRules>
+						<rulesStrings>
+							<li>subject->advanced scribing</li>
+							<li>subject_story->detailed finer materials for more powerful scrolls and books</li>
+							<li>subject_gerund->refining advanced scribing</li>
+						</rulesStrings>
+					</generalRules>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!-- TM_MasterScribing: baseCost 1000 -> knowledgeCost 10 -->
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ResearchProjectDef[defName = "TM_MasterScribing"]/baseCost</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ResearchProjectDef[defName = "TM_MasterScribing"]</xpath>
+				<value>
+					<knowledgeCost>10</knowledgeCost>
+					<knowledgeCategory>TM_ArcaneKnowledge</knowledgeCategory>
+					<generalRules>
+						<rulesStrings>
+							<li>subject->master scribing</li>
+							<li>subject_story->recorded the secrets of scribing a master spell</li>
+							<li>subject_gerund->mastering scribing</li>
+						</rulesStrings>
+					</generalRules>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!-- TM_Enchanting: baseCost 1500 -> knowledgeCost 15 -->
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ResearchProjectDef[defName = "TM_Enchanting"]/baseCost</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ResearchProjectDef[defName = "TM_Enchanting"]</xpath>
+				<value>
+					<knowledgeCost>15</knowledgeCost>
+					<knowledgeCategory>TM_ArcaneKnowledge</knowledgeCategory>
+					<generalRules>
+						<rulesStrings>
+							<li>subject->enchanting</li>
+							<li>subject_story->explained how to cut a gem to hold an enchantment</li>
+							<li>subject_gerund->practicing enchanting</li>
+						</rulesStrings>
+					</generalRules>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!-- TM_AdvancedEnchanting: baseCost 1000 -> knowledgeCost 10 -->
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ResearchProjectDef[defName = "TM_AdvancedEnchanting"]/baseCost</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ResearchProjectDef[defName = "TM_AdvancedEnchanting"]</xpath>
+				<value>
+					<knowledgeCost>10</knowledgeCost>
+					<knowledgeCategory>TM_ArcaneKnowledge</knowledgeCategory>
+					<generalRules>
+						<rulesStrings>
+							<li>subject->advanced enchanting</li>
+							<li>subject_story->described a tier II enchanting gem in exacting detail</li>
+							<li>subject_gerund->refining enchanting technique</li>
+						</rulesStrings>
+					</generalRules>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!-- TM_ExpertEnchanting: baseCost 1000 -> knowledgeCost 10 -->
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ResearchProjectDef[defName = "TM_ExpertEnchanting"]/baseCost</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ResearchProjectDef[defName = "TM_ExpertEnchanting"]</xpath>
+				<value>
+					<knowledgeCost>10</knowledgeCost>
+					<knowledgeCategory>TM_ArcaneKnowledge</knowledgeCategory>
+					<generalRules>
+						<rulesStrings>
+							<li>subject->expert enchanting</li>
+							<li>subject_story->recorded the secrets of a tier III enchanting gem</li>
+							<li>subject_gerund->mastering enchanting</li>
+						</rulesStrings>
+					</generalRules>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!-- TM_GolemCraftRD: baseCost 500 -> knowledgeCost 5 -->
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ResearchProjectDef[defName = "TM_GolemCraftRD"]/baseCost</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ResearchProjectDef[defName = "TM_GolemCraftRD"]</xpath>
+				<value>
+					<knowledgeCost>5</knowledgeCost>
+					<knowledgeCategory>TM_ArcaneKnowledge</knowledgeCategory>
+					<generalRules>
+						<rulesStrings>
+							<li>subject->golem theory</li>
+							<li>subject_story->diagrammed how to animate a golem with enchantments</li>
+							<li>subject_gerund->studying golem theory</li>
+						</rulesStrings>
+					</generalRules>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!-- TM_HollowGolemRD: baseCost 2000 -> knowledgeCost 20 -->
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ResearchProjectDef[defName = "TM_HollowGolemRD"]/baseCost</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ResearchProjectDef[defName = "TM_HollowGolemRD"]</xpath>
+				<value>
+					<knowledgeCost>20</knowledgeCost>
+					<knowledgeCategory>TM_ArcaneKnowledge</knowledgeCategory>
+					<generalRules>
+						<rulesStrings>
+							<li>subject->the hollow golem</li>
+							<li>subject_story->described how to animate raw arcane energy into a hollow golem</li>
+							<li>subject_gerund->researching hollow golems</li>
+						</rulesStrings>
+					</generalRules>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!-- TM_HollowGolemEquipmentRD: baseCost 2000 -> knowledgeCost 20 -->
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ResearchProjectDef[defName = "TM_HollowGolemEquipmentRD"]/baseCost</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ResearchProjectDef[defName = "TM_HollowGolemEquipmentRD"]</xpath>
+				<value>
+					<knowledgeCost>20</knowledgeCost>
+					<knowledgeCategory>TM_ArcaneKnowledge</knowledgeCategory>
+					<generalRules>
+						<rulesStrings>
+							<li>subject->hollow golem equipment</li>
+							<li>subject_story->sketched weapons made to attach to a hollow golem</li>
+							<li>subject_gerund->designing hollow golem equipment</li>
+						</rulesStrings>
+					</generalRules>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!-- TM_HollowGolemArtifactsRD: baseCost 2000 -> knowledgeCost 20 -->
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ResearchProjectDef[defName = "TM_HollowGolemArtifactsRD"]/baseCost</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ResearchProjectDef[defName = "TM_HollowGolemArtifactsRD"]</xpath>
+				<value>
+					<knowledgeCost>20</knowledgeCost>
+					<knowledgeCategory>TM_ArcaneKnowledge</knowledgeCategory>
+					<generalRules>
+						<rulesStrings>
+							<li>subject->hollow golem artifacts</li>
+							<li>subject_story->explained how a hollow golem might fuel an arcane artifact</li>
+							<li>subject_gerund->fusing golems with artifacts</li>
+						</rulesStrings>
+					</generalRules>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!-- TM_MechaGolemRD: baseCost 2000 -> knowledgeCost 20 -->
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ResearchProjectDef[defName = "TM_MechaGolemRD"]/baseCost</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ResearchProjectDef[defName = "TM_MechaGolemRD"]</xpath>
+				<value>
+					<knowledgeCost>20</knowledgeCost>
+					<knowledgeCategory>TM_ArcaneKnowledge</knowledgeCategory>
+					<generalRules>
+						<rulesStrings>
+							<li>subject->the mecha golem</li>
+							<li>subject_story->combined mechanical schematics with golem theory</li>
+							<li>subject_gerund->engineering the mecha golem</li>
+						</rulesStrings>
+					</generalRules>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!-- TM_MechaGolemEquipmentRD: baseCost 1500 -> knowledgeCost 15 -->
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ResearchProjectDef[defName = "TM_MechaGolemEquipmentRD"]/baseCost</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ResearchProjectDef[defName = "TM_MechaGolemEquipmentRD"]</xpath>
+				<value>
+					<knowledgeCost>15</knowledgeCost>
+					<knowledgeCategory>TM_ArcaneKnowledge</knowledgeCategory>
+					<generalRules>
+						<rulesStrings>
+							<li>subject->mecha golem attachments</li>
+							<li>subject_story->detailed armor plating for a mecha golem</li>
+							<li>subject_gerund->designing mecha attachments</li>
+						</rulesStrings>
+					</generalRules>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!-- TM_FleshGolemRD: baseCost 1000 -> knowledgeCost 10 -->
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ResearchProjectDef[defName = "TM_FleshGolemRD"]/baseCost</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ResearchProjectDef[defName = "TM_FleshGolemRD"]</xpath>
+				<value>
+					<knowledgeCost>10</knowledgeCost>
+					<knowledgeCategory>TM_ArcaneKnowledge</knowledgeCategory>
+					<generalRules>
+						<rulesStrings>
+							<li>subject->the flesh golem</li>
+							<li>subject_story->recorded how to mold dead flesh into a bipedal construct</li>
+							<li>subject_gerund->researching flesh golems</li>
+						</rulesStrings>
+					</generalRules>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!-- TM_FleshGolemEquipmentRD: baseCost 1000 -> knowledgeCost 10 -->
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ResearchProjectDef[defName = "TM_FleshGolemEquipmentRD"]/baseCost</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ResearchProjectDef[defName = "TM_FleshGolemEquipmentRD"]</xpath>
+				<value>
+					<knowledgeCost>10</knowledgeCost>
+					<knowledgeCategory>TM_ArcaneKnowledge</knowledgeCategory>
+					<generalRules>
+						<rulesStrings>
+							<li>subject->flesh golem attachments</li>
+							<li>subject_story->sketched weapons fit for a flesh golem's frame</li>
+							<li>subject_gerund->designing flesh attachments</li>
+						</rulesStrings>
+					</generalRules>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!-- TM_PlantCultivation: baseCost 1000 -> knowledgeCost 10 (no children in this tree,
+	     low-impact) -->
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ResearchProjectDef[defName = "TM_PlantCultivation"]/baseCost</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ResearchProjectDef[defName = "TM_PlantCultivation"]</xpath>
+				<value>
+					<knowledgeCost>10</knowledgeCost>
+					<knowledgeCategory>TM_ArcaneKnowledge</knowledgeCategory>
+					<generalRules>
+						<rulesStrings>
+							<li>subject->arcane cultivation</li>
+							<li>subject_story->catalogued plants whose properties are relevant to magic</li>
+							<li>subject_gerund->cultivating arcane plants</li>
+						</rulesStrings>
+					</generalRules>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!-- TM_MagicyteRefining: baseCost 800 -> knowledgeCost 8 (bottleneck prerequisite for
+	     TM_ArcaneCrafting, TM_MagicScribing, and TM_Enchanting, so most of the rest of the
+	     tree now sits behind it too) -->
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ResearchProjectDef[defName = "TM_MagicyteRefining"]/baseCost</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ResearchProjectDef[defName = "TM_MagicyteRefining"]</xpath>
+				<value>
+					<knowledgeCost>8</knowledgeCost>
+					<knowledgeCategory>TM_ArcaneKnowledge</knowledgeCategory>
+					<generalRules>
+						<rulesStrings>
+							<li>subject->magicyte refining</li>
+							<li>subject_story->detailed how to refine magicyte into potent recipes</li>
+							<li>subject_gerund->refining magicyte</li>
+						</rulesStrings>
+					</generalRules>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+</Patch>

@@ -87,5 +87,8 @@
 		<li IfModActive="dankpyon.medieval.overhaul">Mods\Medieval Overhaul\1.6</li>
         <li IfModActive="6224Y.OneWithDeath">Mods\OneWithDeath\Common</li>
         <li IfModActive="dame.arcanetechnology">Mods\Arcane Technology\1.6</li>
+        <li IfModActive="fridgeBaron.TechBlock">Mods\TechBlock\1.6</li>
+        <li IfModActive="Poupun.IsekaiCreaturesAddon">Mods\Isekai Creatures\1.6</li>
+        <li IfModActiveAll="Torann.ARimworldOfMagic,Ludeon.RimWorld.Anomaly">Mods\RWoM\1.6</li>
 	</v1.6>
 </loadFolders>

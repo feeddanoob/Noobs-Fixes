@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+	Makes the magic circle buildings the actual Anomaly-style study objects: a mage
+	(TM_Magic work type, which requires the MagicManipulation capacity like RWoM's other
+	magic work - see WorkGiverDefs\WorkGivers_Magic.xml) can be assigned to study at either
+	circle to fill the TM_ArcaneKnowledge pool that funds the research tree
+	(Patches\TM_StudyResearch.xml). Grimoires are untouched and keep their normal
+	read-for-EXP behavior.
+
+	TableSmallMagicCircle studies at half the rate of TableMagicCircle - a single pool,
+	just a slower trickle from the small/early building vs. the full circle.
+
+	Non-mages assigned to Research work could otherwise also pick up this study job, since
+	vanilla's generic study WorkGiverDef (StudyArchotechStructures) scans for any
+	CompStudiable thing map-wide regardless of building. That's blocked in
+	Source\NoobsFixes.RWoMFix (Harmony prefix on WorkGiver_StudyInteract.HasJobOnThing)
+	so only the new TM_Magic-typed WorkGiverDef (Defs\WorkGiverDefs\TM_StudyMagicCircle.xml)
+	can pick these two buildings up.
+-->
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "TableSmallMagicCircle"]/comps</xpath>
+				<value>
+					<li Class="CompProperties_Studiable">
+						<frequencyTicks>30000</frequencyTicks>
+						<knowledgeCategory>TM_ArcaneKnowledge</knowledgeCategory>
+						<anomalyKnowledge>1</anomalyKnowledge>
+						<showToggleGizmo>true</showToggleGizmo>
+					</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "TableSmallMagicCircle"]/inspectorTabs</xpath>
+				<value>
+					<li>ITab_StudyNotes</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "TableMagicCircle"]/comps</xpath>
+				<value>
+					<li Class="CompProperties_Studiable">
+						<frequencyTicks>30000</frequencyTicks>
+						<knowledgeCategory>TM_ArcaneKnowledge</knowledgeCategory>
+						<anomalyKnowledge>2</anomalyKnowledge>
+						<showToggleGizmo>true</showToggleGizmo>
+					</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "TableMagicCircle"]/inspectorTabs</xpath>
+				<value>
+					<li>ITab_StudyNotes</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+</Patch>

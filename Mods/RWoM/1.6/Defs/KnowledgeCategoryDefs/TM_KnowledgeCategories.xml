@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- New Anomaly-style knowledge pool, filled by studying grimoires, spent on the deeper Rimworld of Magic research tree. -->
+	<KnowledgeCategoryDef>
+		<defName>TM_ArcaneKnowledge</defName>
+		<label>arcane knowledge</label>
+		<color>(0.55, 0.35, 0.85, 1)</color>
+		<texPath>UI/AnomalyResearchCategoryMarkers/AnomalyResearchCategory_Advanced</texPath>
+	</KnowledgeCategoryDef>
+
+</Defs>

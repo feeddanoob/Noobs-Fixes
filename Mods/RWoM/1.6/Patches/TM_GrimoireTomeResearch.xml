@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+	Grimoires act like Anomaly's Tomes: reading one (RWoM's normal book job, still also
+	grants magic EXP via TorannMagic.BookOutcomeProperties_GainMagicExp as before) also
+	feeds the TM_ArcaneKnowledge pool that funds the research tree (TM_StudyResearch.xml),
+	exactly like vanilla's own Tome ThingDef does for the Anomaly tab - see
+	Data\Anomaly\Defs\Books\BookDefs.xml, which uses this same doer:
+
+		<li Class="BookOutcomeProperties_GainAnomalyResearch">
+			<tabs><Anomaly /></tabs>
+			<ignoreZeroBaseCost>false</ignoreZeroBaseCost>
+			<usesHiddenProjects>true</usesHiddenProjects>
+		</li>
+
+	swapped here to RWoM's own "TMagic" ResearchTabDef instead of "Anomaly". Unlike vanilla
+	Tomes, this doesn't add the mental-break/quest-giving flavor doers - just the research
+	contribution.
+-->
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName = "TM_Grimoire"]/comps/li[@Class = "CompProperties_Book"]/doers</xpath>
+		<value>
+			<li Class="BookOutcomeProperties_GainAnomalyResearch">
+				<tabs>
+					<TMagic />
+				</tabs>
+				<ignoreZeroBaseCost>false</ignoreZeroBaseCost>
+				<usesHiddenProjects>true</usesHiddenProjects>
+			</li>
+		</value>
+	</Operation>
+
+</Patch>
