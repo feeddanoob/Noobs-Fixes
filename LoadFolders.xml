@@ -91,6 +91,8 @@
         <li IfModActive="Poupun.IsekaiCreaturesAddon">Mods\Isekai Creatures\1.6</li>
         <li IfModActive="Torann.ARimworldOfMagic">Mods\RWoM\Common</li>
         <li IfModActiveAll="Torann.ARimworldOfMagic,Ludeon.RimWorld.Anomaly">Mods\RWoM\1.6</li>
+        <li IfModActive="OskarPotocki.VanillaFactionsExpanded.Core">Mods\Vanilla Expanded Framework\1.6</li>
+        <li IfModActive="memegoddess.giddyup">Mods\Giddy-Up 2\1.6</li>
     </v1.6>
     <!-- Supposidly 1.7 has no code or structure change from 1.6, making cross save games compatible, future changes will be 1.7 specific -->
     <v1.7>
@@ -125,6 +127,8 @@
         <li IfModActive="Poupun.IsekaiCreaturesAddon">Mods\Isekai Creatures\1.6</li>
         <li IfModActive="Torann.ARimworldOfMagic">Mods\RWoM\Common</li>
         <li IfModActiveAll="Torann.ARimworldOfMagic,Ludeon.RimWorld.Anomaly">Mods\RWoM\1.6</li>
+        <li IfModActive="OskarPotocki.VanillaFactionsExpanded.Core">Mods\Vanilla Expanded Framework\1.6</li>
+        <li IfModActive="memegoddess.giddyup">Mods\Giddy-Up 2\1.6</li>
         <li IfModActive="VanillaExpanded.VNutrientE">Mods\Vanilla Nutrient Paste Expanded\1.7</li>
     </v1.7>
 </loadFolders>

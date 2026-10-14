@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <LangVersion>9.0</LangVersion>
+    <RootNamespace>NoobsFixes.GiddyUpFix</RootNamespace>
+    <AssemblyName>NoobsFixes.GiddyUpFix</AssemblyName>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3" PrivateAssets="All" />
+    <PackageReference Include="Krafs.Rimworld.Ref" Version="1.6.*" />
+    <PackageReference Include="Lib.Harmony" Version="2.4.2" ExcludeAssets="runtime" />
+  </ItemGroup>
+  <!-- No reference to GiddyUpCore.dll on purpose: Giddy-Up is reached through reflection so an update
+       that moves things around only disables the affected patch instead of failing to load. -->
+  <Target Name="CopyToModAssemblies" AfterTargets="Build">
+    <Copy SourceFiles="$(TargetDir)$(AssemblyName).dll" DestinationFolder="$(MSBuildProjectDirectory)\..\..\Assemblies\" SkipUnchangedFiles="false" />
+  </Target>
+</Project>
