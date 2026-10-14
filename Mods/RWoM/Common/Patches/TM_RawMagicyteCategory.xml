@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+	Unrefined magicyte (RawMagicyte) ends up in two thing categories: TM_Magicyte ("refined
+	magicyte") inherited from its abstract parent MagicResourceBase_Magicyte, plus TM_MagicItems
+	from its own def, because list nodes merge with the parent's by default. TM_Magicyte is
+	itself a child of TM_MagicItems, so the item appears twice in the category tree.
+
+	The game's real wealth (WealthWatcher) counts each thing once, so this is harmless there,
+	but anything that walks the category tree lists it twice - notably Visible Wealth, whose
+	item breakdown builds one node per (category, thingDef) and sums them, so the Items and
+	Magic Items totals include all raw magicyte twice. It also files the raw stone under
+	"refined magicyte".
+
+	Fix: keep only TM_MagicItems. A plain PatchOperationRemove can't do it - the inherited
+	TM_Magicyte entry isn't in RawMagicyte's XML when patches run (inheritance resolves
+	afterwards) - so the whole list is replaced with Inherit="False" to stop the merge.
+	No RWoM recipe or filter references the TM_Magicyte category for raw magicyte.
+-->
+<Patch>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName = "RawMagicyte"]/thingCategories</xpath>
+		<value>
+			<thingCategories Inherit="False">
+				<li>TM_MagicItems</li>
+			</thingCategories>
+		</value>
+	</Operation>
+
+</Patch>

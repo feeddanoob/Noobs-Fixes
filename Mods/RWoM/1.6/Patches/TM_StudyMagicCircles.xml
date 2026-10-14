@@ -28,6 +28,11 @@
 						<frequencyTicks>30000</frequencyTicks>
 						<knowledgeCategory>TM_ArcaneKnowledge</knowledgeCategory>
 						<anomalyKnowledge>1</anomalyKnowledge>
+						<!-- Vanilla's ConfigErrors requires this to be non-zero whenever
+						     anomalyKnowledge is set; every runtime use is
+						     "HighestLevelReached < this", so -1 never gates study behind the
+						     Void Monolith the way 1 would. -->
+						<minMonolithLevelForStudy>-1</minMonolithLevelForStudy>
 						<showToggleGizmo>true</showToggleGizmo>
 					</li>
 				</value>
@@ -50,6 +55,7 @@
 						<frequencyTicks>30000</frequencyTicks>
 						<knowledgeCategory>TM_ArcaneKnowledge</knowledgeCategory>
 						<anomalyKnowledge>2</anomalyKnowledge>
+						<minMonolithLevelForStudy>-1</minMonolithLevelForStudy>
 						<showToggleGizmo>true</showToggleGizmo>
 					</li>
 				</value>
