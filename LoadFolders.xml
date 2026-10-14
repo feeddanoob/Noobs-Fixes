@@ -1,96 +1,130 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <loadFolders>
-	<v1.3>
-		<li>Common</li>
-		<li>1.3</li>
-		<li IfModActive="usagirei.lootgoblin">Mods\LootGoblin\Common</li>
-		<li IfModActive="dismarzero.VGP.VGPVegetableGarden">Mods\VGP Milk Category\Common</li>
-		<!--<li IfModActive="syrchalis.processor.framework">Mods\Processor Framework\Common</li>-->
-		<li IfModActive="syrchalis.traitvalue">Mods\SYR Trait\Common</li>
-		<li IfModActive="owlchemist.seedspleaselite">Mods\Seeds Please Lite\Common</li>
-		<li IfModActive="freemapa.freewill">Mods\Free Will\Common</li>
-		<li IfModActive="jamaicancastle.rf.fertilefields">Mods\Fertile Fields\Common</li>
-		<li IfModActive="ogliss.thewhitecrayon.quarry">Mods\Quarry\Common</li>
-		<li IfModActive="ogliss.thewhitecrayon.quarry">Mods\Quarry\1.3</li>
-	</v1.3>
-	<v1.4>
-		<li>Common</li>
-		<li>1.4</li>
-		<li IfModActive="usagirei.lootgoblin">Mods\LootGoblin\Common</li>
-		<li IfModActive="dismarzero.VGP.VGPVegetableGarden">Mods\VGP Milk Category\Common</li>
-		<!--<li IfModActive="syrchalis.processor.framework">Mods\Processor Framework\Common</li>-->
-		<li IfModActive="syrchalis.traitvalue">Mods\SYR Trait\Common</li>
-		<li IfModActive="owlchemist.seedspleaselite">Mods\Seeds Please Lite\Common</li>
-		<li IfModActive="freemapa.freewill">Mods\Free Will\Common</li>
-		<li IfModActive="jamaicancastle.rf.fertilefields">Mods\Fertile Fields\Common</li>
-		<!-- <li IfModActive="ogliss.thewhitecrayon.quarry">Mods\Quarry\Common</li> -->
-		<li IfModActive="vanillaexpanded.vanillasocialinteractionsexpanded">Mods\VSEI\Common</li>
-	</v1.4>
-	<v1.5>
-		<li>Common</li>
-		<li>1.5</li>
-		<li IfModActive="usagirei.lootgoblin">Mods\LootGoblin\Common</li>
-		<li IfModActive="dismarzero.VGP.VGPVegetableGarden">Mods\VGP Milk Category\Common</li>
-		<li IfModActive="syrchalis.processor.framework">Mods\Processor Framework\Common</li>
-		<li IfModActive="syrchalis.traitvalue">Mods\SYR Trait\Common</li>
-		<li IfModActive="owlchemist.seedspleaselite">Mods\Seeds Please Lite\Common</li>
-		<li IfModActive="evyatar108.seedspleaseliteredux">Mods\Seeds Please Lite\Common</li>
-		<li IfModActive="freemapa.freewill">Mods\Free Will\Common</li>
-		<li IfModActive="jamaicancastle.rf.fertilefields">Mods\Fertile Fields\Common</li>
-		<!-- <li IfModActive="spdskatr.projectrimfactory.drones">Mods\Project RimFactory Drones</li> -->
-		<li IfModActive="niilo007.niilosqol">
-			<li IfModActive="dankpyon.medieval.overhaul">Mods\Medieval Overhaul Textures</li>
-		</li>
-		<li IfModActive="sarg.alphaprefabs">Mods\Alpha Prefabs\1.5</li>
-		<li IfModActive="oskarpotocki.vfe.pirates">Mods\VFE Pirate\Common</li>
-		<li IfModActive="aoba.deadmanswitch.core">Mods\Dead Mans Switch\Common</li>
-		<li IfModActive="dubwise.rimefeller">Mods\Rimefeller\Common</li>
-		<li IfModActive="liuyu.adaptive.mo">Mods\MO ASF Graphics\1.5</li>
-		<li IfModActive="vanillaexpanded.vanillasocialinteractionsexpanded">Mods\VSEI\Common</li>
-		<li IfModActive="spdskatr.projectrimfactory">Mods\Project RimFactory Revived\1.5</li>
-		<li IfModActive="harkon.gunnut.ukrainianfirearms">Mods\Gun Nut - Ukrainian Firearms\Common</li>
-		<li IfModActive="uuugggg.replacestuff">Mods\Replace Stuff\Common</li>
-		<li IfModActive="garethp.replacestuffcompatibility">Mods\Replace Stuff Compatability\Common</li>
-		<li IfModActive="notfood.mendandrecycle,dd.unofficial.notfood.mendandrecycle">Mods\MendRecycle\Common</li>
-		<li IfModActive="rim.job.world">Mods\RJW\Common</li>
-		<li IfModActive="sumghai.mousekinrace">Mods\MouseKin\Common</li>
-		<li IfModActive="crows.dragonbond">Mods\DragonBond\Common</li>
-		<li IfModActive="VR.MOPatches">Mods\MO Patches\Common</li>
-	</v1.5>
-	<v1.6>
-		<li>Common</li>
-		<li IfModActive="usagirei.lootgoblin">Mods\LootGoblin\Common</li>
-		<li IfModActive="dismarzero.VGP.VGPVegetableGarden">Mods\VGP Milk Category\Common</li>
-		<li IfModActive="syrchalis.processor.framework">Mods\Processor Framework\Common</li>
-		<li IfModActive="syrchalis.traitvalue">Mods\SYR Trait\Common</li>
-		<li IfModActive="owlchemist.seedspleaselite">Mods\Seeds Please Lite\Common</li>
-		<li IfModActive="evyatar108.seedspleaseliteredux">Mods\Seeds Please Lite\Common</li>
-		<li IfModActive="freemapa.freewill">Mods\Free Will\Common</li>
-		<li IfModActive="jamaicancastle.rf.fertilefields">Mods\Fertile Fields\Common</li>
-		<!-- <li IfModActive="spdskatr.projectrimfactory.drones">Mods\Project RimFactory Drones</li> -->
-		<li IfModActive="niilo007.niilosqol">
-			<li IfModActive="dankpyon.medieval.overhaul">Mods\Medieval Overhaul Textures</li>
-		</li>
-		<li IfModActive="oskarpotocki.vfe.pirates">Mods\VFE Pirate\Common</li>
-		<li IfModActive="dubwise.rimefeller">Mods\Rimefeller\Common</li>
-		<li IfModActive="vanillaexpanded.vanillasocialinteractionsexpanded">Mods\VSEI\Common</li>
-		<!-- <li IfModActive="spdskatr.projectrimfactory">Mods\Project RimFactory Revived\1.5</li> -->
-		<li IfModActive="harkon.gunnut.ukrainianfirearms">Mods\Gun Nut - Ukrainian Firearms\Common</li>
-		<li IfModActive="uuugggg.replacestuff">Mods\Replace Stuff\Common</li>
-		<li IfModActive="garethp.replacestuffcompatibility">Mods\Replace Stuff Compatability\Common</li>
-		<li IfModActive="notfood.mendandrecycle,dd.unofficial.notfood.mendandrecycle">Mods\MendRecycle\Common</li>
-		<li IfModActive="rim.job.world">Mods\RJW\Common</li>
-		<li IfModActive="sumghai.mousekinrace">Mods\MouseKin\Common</li>
-		<li IfModActiveAll="crows.dragonbond,vr.mopatches">Mods\DragonBond\Common</li>
-		<li IfModActive="sarg.alphaanimals">Mods\Alpha Animals\Common</li>
-		<li IfModActive="ferny.progressionwarfare,dankpyon.medieval.overhaul">Mods\Progression Warfare\Common</li>
-		<li IfModActive="dankpyon.medieval.overhaul">Mods\Medieval Overhaul\1.6</li>
+    <v1.3>
+        <li>Common</li>
+        <li>1.3</li>
+        <li IfModActive="usagirei.lootgoblin">Mods\LootGoblin\Common</li>
+        <li IfModActive="dismarzero.VGP.VGPVegetableGarden">Mods\VGP Milk Category\Common</li>
+        <!--<li IfModActive="syrchalis.processor.framework">Mods\Processor Framework\Common</li>-->
+        <li IfModActive="syrchalis.traitvalue">Mods\SYR Trait\Common</li>
+        <li IfModActive="owlchemist.seedspleaselite">Mods\Seeds Please Lite\Common</li>
+        <li IfModActive="freemapa.freewill">Mods\Free Will\Common</li>
+        <li IfModActive="jamaicancastle.rf.fertilefields">Mods\Fertile Fields\Common</li>
+        <li IfModActive="ogliss.thewhitecrayon.quarry">Mods\Quarry\Common</li>
+        <li IfModActive="ogliss.thewhitecrayon.quarry">Mods\Quarry\1.3</li>
+    </v1.3>
+    <v1.4>
+        <li>Common</li>
+        <li>1.4</li>
+        <li IfModActive="usagirei.lootgoblin">Mods\LootGoblin\Common</li>
+        <li IfModActive="dismarzero.VGP.VGPVegetableGarden">Mods\VGP Milk Category\Common</li>
+        <!--<li IfModActive="syrchalis.processor.framework">Mods\Processor Framework\Common</li>-->
+        <li IfModActive="syrchalis.traitvalue">Mods\SYR Trait\Common</li>
+        <li IfModActive="owlchemist.seedspleaselite">Mods\Seeds Please Lite\Common</li>
+        <li IfModActive="freemapa.freewill">Mods\Free Will\Common</li>
+        <li IfModActive="jamaicancastle.rf.fertilefields">Mods\Fertile Fields\Common</li>
+        <!-- <li IfModActive="ogliss.thewhitecrayon.quarry">Mods\Quarry\Common</li> -->
+        <li IfModActive="vanillaexpanded.vanillasocialinteractionsexpanded">Mods\VSEI\Common</li>
+    </v1.4>
+    <v1.5>
+        <li>Common</li>
+        <li>1.5</li>
+        <li IfModActive="usagirei.lootgoblin">Mods\LootGoblin\Common</li>
+        <li IfModActive="dismarzero.VGP.VGPVegetableGarden">Mods\VGP Milk Category\Common</li>
+        <li IfModActive="syrchalis.processor.framework">Mods\Processor Framework\Common</li>
+        <li IfModActive="syrchalis.traitvalue">Mods\SYR Trait\Common</li>
+        <li IfModActive="owlchemist.seedspleaselite">Mods\Seeds Please Lite\Common</li>
+        <li IfModActive="evyatar108.seedspleaseliteredux">Mods\Seeds Please Lite\Common</li>
+        <li IfModActive="freemapa.freewill">Mods\Free Will\Common</li>
+        <li IfModActive="jamaicancastle.rf.fertilefields">Mods\Fertile Fields\Common</li>
+        <!-- <li IfModActive="spdskatr.projectrimfactory.drones">Mods\Project RimFactory Drones</li> -->
+        <li IfModActive="niilo007.niilosqol">
+            <li IfModActive="dankpyon.medieval.overhaul">Mods\Medieval Overhaul Textures</li>
+        </li>
+        <li IfModActive="sarg.alphaprefabs">Mods\Alpha Prefabs\1.5</li>
+        <li IfModActive="oskarpotocki.vfe.pirates">Mods\VFE Pirate\Common</li>
+        <li IfModActive="aoba.deadmanswitch.core">Mods\Dead Mans Switch\Common</li>
+        <li IfModActive="dubwise.rimefeller">Mods\Rimefeller\Common</li>
+        <li IfModActive="liuyu.adaptive.mo">Mods\MO ASF Graphics\1.5</li>
+        <li IfModActive="vanillaexpanded.vanillasocialinteractionsexpanded">Mods\VSEI\Common</li>
+        <li IfModActive="spdskatr.projectrimfactory">Mods\Project RimFactory Revived\1.5</li>
+        <li IfModActive="harkon.gunnut.ukrainianfirearms">Mods\Gun Nut - Ukrainian Firearms\Common</li>
+        <li IfModActive="uuugggg.replacestuff">Mods\Replace Stuff\Common</li>
+        <li IfModActive="garethp.replacestuffcompatibility">Mods\Replace Stuff Compatability\Common</li>
+        <li IfModActive="notfood.mendandrecycle,dd.unofficial.notfood.mendandrecycle">Mods\MendRecycle\Common</li>
+        <li IfModActive="rim.job.world">Mods\RJW\Common</li>
+        <li IfModActive="sumghai.mousekinrace">Mods\MouseKin\Common</li>
+        <li IfModActive="crows.dragonbond">Mods\DragonBond\Common</li>
+        <li IfModActive="VR.MOPatches">Mods\MO Patches\Common</li>
+    </v1.5>
+    <v1.6>
+        <li>Common</li>
+        <li IfModActive="usagirei.lootgoblin">Mods\LootGoblin\Common</li>
+        <li IfModActive="dismarzero.VGP.VGPVegetableGarden">Mods\VGP Milk Category\Common</li>
+        <li IfModActive="syrchalis.processor.framework">Mods\Processor Framework\Common</li>
+        <li IfModActive="syrchalis.traitvalue">Mods\SYR Trait\Common</li>
+        <li IfModActive="owlchemist.seedspleaselite">Mods\Seeds Please Lite\Common</li>
+        <li IfModActive="evyatar108.seedspleaseliteredux">Mods\Seeds Please Lite\Common</li>
+        <li IfModActive="freemapa.freewill">Mods\Free Will\Common</li>
+        <li IfModActive="jamaicancastle.rf.fertilefields">Mods\Fertile Fields\Common</li>
+        <!-- <li IfModActive="spdskatr.projectrimfactory.drones">Mods\Project RimFactory Drones</li> -->
+        <li IfModActive="niilo007.niilosqol">
+            <li IfModActive="dankpyon.medieval.overhaul">Mods\Medieval Overhaul Textures</li>
+        </li>
+        <li IfModActive="oskarpotocki.vfe.pirates">Mods\VFE Pirate\Common</li>
+        <li IfModActive="dubwise.rimefeller">Mods\Rimefeller\Common</li>
+        <li IfModActive="vanillaexpanded.vanillasocialinteractionsexpanded">Mods\VSEI\Common</li>
+        <!-- <li IfModActive="spdskatr.projectrimfactory">Mods\Project RimFactory Revived\1.5</li> -->
+        <li IfModActive="harkon.gunnut.ukrainianfirearms">Mods\Gun Nut - Ukrainian Firearms\Common</li>
+        <li IfModActive="uuugggg.replacestuff">Mods\Replace Stuff\Common</li>
+        <li IfModActive="garethp.replacestuffcompatibility">Mods\Replace Stuff Compatability\Common</li>
+        <li IfModActive="notfood.mendandrecycle,dd.unofficial.notfood.mendandrecycle">Mods\MendRecycle\Common</li>
+        <li IfModActive="rim.job.world">Mods\RJW\Common</li>
+        <li IfModActive="sumghai.mousekinrace">Mods\MouseKin\Common</li>
+        <li IfModActiveAll="crows.dragonbond,vr.mopatches">Mods\DragonBond\Common</li>
+        <li IfModActive="sarg.alphaanimals">Mods\Alpha Animals\Common</li>
+        <li IfModActive="ferny.progressionwarfare,dankpyon.medieval.overhaul">Mods\Progression Warfare\Common</li>
+        <li IfModActive="dankpyon.medieval.overhaul">Mods\Medieval Overhaul\1.6</li>
         <li IfModActive="6224Y.OneWithDeath">Mods\OneWithDeath\Common</li>
         <li IfModActive="dame.arcanetechnology">Mods\Arcane Technology\1.6</li>
         <li IfModActive="fridgeBaron.TechBlock">Mods\TechBlock\1.6</li>
         <li IfModActive="Poupun.IsekaiCreaturesAddon">Mods\Isekai Creatures\1.6</li>
         <li IfModActive="Torann.ARimworldOfMagic">Mods\RWoM\Common</li>
         <li IfModActiveAll="Torann.ARimworldOfMagic,Ludeon.RimWorld.Anomaly">Mods\RWoM\1.6</li>
-        <li IfModActive="VanillaExpanded.VNutrientE">Mods\Vanilla Nutrient Paste Expanded\Common</li>
-	</v1.6>
+    </v1.6>
+    <!-- Supposidly 1.7 has no code or structure change from 1.6, making cross save games compatible, future changes will be 1.7 specific -->
+    <v1.7>
+        <li>Common</li>
+        <li IfModActive="usagirei.lootgoblin">Mods\LootGoblin\Common</li>
+        <li IfModActive="dismarzero.VGP.VGPVegetableGarden">Mods\VGP Milk Category\Common</li>
+        <li IfModActive="syrchalis.processor.framework">Mods\Processor Framework\Common</li>
+        <li IfModActive="syrchalis.traitvalue">Mods\SYR Trait\Common</li>
+        <li IfModActive="owlchemist.seedspleaselite">Mods\Seeds Please Lite\Common</li>
+        <li IfModActive="evyatar108.seedspleaseliteredux">Mods\Seeds Please Lite\Common</li>
+        <li IfModActive="freemapa.freewill">Mods\Free Will\Common</li>
+        <li IfModActive="jamaicancastle.rf.fertilefields">Mods\Fertile Fields\Common</li>
+        <li IfModActive="niilo007.niilosqol">
+            <li IfModActive="dankpyon.medieval.overhaul">Mods\Medieval Overhaul Textures</li>
+        </li>
+        <li IfModActive="oskarpotocki.vfe.pirates">Mods\VFE Pirate\Common</li>
+        <li IfModActive="dubwise.rimefeller">Mods\Rimefeller\Common</li>
+        <li IfModActive="vanillaexpanded.vanillasocialinteractionsexpanded">Mods\VSEI\Common</li>
+        <li IfModActive="harkon.gunnut.ukrainianfirearms">Mods\Gun Nut - Ukrainian Firearms\Common</li>
+        <li IfModActive="uuugggg.replacestuff">Mods\Replace Stuff\Common</li>
+        <li IfModActive="garethp.replacestuffcompatibility">Mods\Replace Stuff Compatability\Common</li>
+        <li IfModActive="notfood.mendandrecycle,dd.unofficial.notfood.mendandrecycle">Mods\MendRecycle\Common</li>
+        <li IfModActive="rim.job.world">Mods\RJW\Common</li>
+        <li IfModActive="sumghai.mousekinrace">Mods\MouseKin\Common</li>
+        <li IfModActiveAll="crows.dragonbond,vr.mopatches">Mods\DragonBond\Common</li>
+        <li IfModActive="sarg.alphaanimals">Mods\Alpha Animals\Common</li>
+        <li IfModActive="ferny.progressionwarfare,dankpyon.medieval.overhaul">Mods\Progression Warfare\Common</li>
+        <li IfModActive="dankpyon.medieval.overhaul">Mods\Medieval Overhaul\1.6</li>
+        <li IfModActive="6224Y.OneWithDeath">Mods\OneWithDeath\Common</li>
+        <li IfModActive="dame.arcanetechnology">Mods\Arcane Technology\1.6</li>
+        <li IfModActive="fridgeBaron.TechBlock">Mods\TechBlock\1.6</li>
+        <li IfModActive="Poupun.IsekaiCreaturesAddon">Mods\Isekai Creatures\1.6</li>
+        <li IfModActive="Torann.ARimworldOfMagic">Mods\RWoM\Common</li>
+        <li IfModActiveAll="Torann.ARimworldOfMagic,Ludeon.RimWorld.Anomaly">Mods\RWoM\1.6</li>
+        <li IfModActive="VanillaExpanded.VNutrientE">Mods\Vanilla Nutrient Paste Expanded\1.7</li>
+    </v1.7>
 </loadFolders>
