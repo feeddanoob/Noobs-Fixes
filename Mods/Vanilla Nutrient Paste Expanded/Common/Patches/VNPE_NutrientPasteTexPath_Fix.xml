@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <!--
+        VNPE points two textures at "Things/Item/Meal/Nutrientpaste/NutrientPaste_a", but the vanilla folder is
+        "NutrientPaste" (capital P). Unity's lookup ignored case; the 1.7 Waylith engine does not, so both load as
+        magenta placeholders. Each fix only applies while the wrong casing is still there.
+    -->
+    <!-- Nutrient paste pipe net "off" overlay -->
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/PipeSystem.PipeNetDef[defName="VNPE_NutrientPasteNet"]/resource/offTexPath[text()="Things/Item/Meal/Nutrientpaste/NutrientPaste_a"]</xpath>
+        <match Class="PatchOperationReplace">
+            <xpath>Defs/PipeSystem.PipeNetDef[defName="VNPE_NutrientPasteNet"]/resource/offTexPath[text()="Things/Item/Meal/Nutrientpaste/NutrientPaste_a"]</xpath>
+            <value>
+                <offTexPath>Things/Item/Meal/NutrientPaste/NutrientPaste_a</offTexPath>
+            </value>
+        </match>
+    </Operation>
+    <!-- Nutrient paste valve on/off gizmo icon -->
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Flickable"]/commandTexture[text()="Things/Item/Meal/Nutrientpaste/NutrientPaste_a"]</xpath>
+        <match Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Flickable"]/commandTexture[text()="Things/Item/Meal/Nutrientpaste/NutrientPaste_a"]</xpath>
+            <value>
+                <commandTexture>Things/Item/Meal/NutrientPaste/NutrientPaste_a</commandTexture>
+            </value>
+        </match>
+    </Operation>
+</Patch>
