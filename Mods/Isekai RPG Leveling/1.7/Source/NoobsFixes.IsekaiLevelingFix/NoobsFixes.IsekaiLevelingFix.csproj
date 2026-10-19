@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <!-- net48 because Isekai RPG Leveling itself is built for .NETFramework 4.8. -->
+    <TargetFramework>net48</TargetFramework>
+    <LangVersion>9.0</LangVersion>
+    <RootNamespace>NoobsFixes.IsekaiLevelingFix</RootNamespace>
+    <AssemblyName>NoobsFixes.IsekaiLevelingFix</AssemblyName>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <!-- Compiled against the Workshop build of Isekai RPG Leveling: that is the build these patches target. -->
+    <IsekaiAssembly>C:\Steam\steamapps\workshop\content\294100\3657580708\Assemblies\IsekaiLeveling.dll</IsekaiAssembly>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3" PrivateAssets="All" />
+    <PackageReference Include="Krafs.Rimworld.Ref" Version="1.6.*" />
+    <PackageReference Include="Lib.Harmony" Version="2.4.2" ExcludeAssets="runtime" />
+    <!-- The 1.7 game ships System.Reflection.Metadata with its runtime; compile against it only, never copy it. -->
+    <PackageReference Include="System.Reflection.Metadata" Version="8.0.0" ExcludeAssets="runtime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="IsekaiLeveling">
+      <HintPath>$(IsekaiAssembly)</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+  <Target Name="CopyToModAssemblies" AfterTargets="Build">
+    <Copy SourceFiles="$(TargetDir)$(AssemblyName).dll" DestinationFolder="$(MSBuildProjectDirectory)\..\..\Assemblies\" SkipUnchangedFiles="false" />
+  </Target>
+</Project>

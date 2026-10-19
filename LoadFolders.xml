@@ -130,6 +130,7 @@
         <li IfModActive="OskarPotocki.VanillaFactionsExpanded.Core">Mods\Vanilla Expanded Framework\1.6</li>
         <li IfModActive="memegoddess.giddyup">Mods\Giddy-Up 2\1.6</li>
         <li IfModActive="VanillaExpanded.VNutrientE">Mods\Vanilla Nutrient Paste Expanded\1.7</li>
+        <li IfModActive="JellyCreative.IsekaiLeveling,JellyCreative.IsekaiLeveling_steam">Mods\Isekai RPG Leveling\1.7</li>
         <li IfModActiveAll="sarg.alphavehiclesneolithic,DankPyon.Medieval.Overhaul">Mods\Alpha Vehicles Neolithic\MO</li>
         <li IfModActiveAll="eeg.moxasf,ferny.betterarchitect,dankpyon.medieval.overhaul">Mods\Medieval Overhaul\MO_ASF\BetterArchitect</li>
     </v1.7>

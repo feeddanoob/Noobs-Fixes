@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Rows added to Isekai's skill tree summary by fix #17 (own key names, so they can't clash with Isekai's). -->
+  <NoobsIsekai_DetailPrimaryStat>Primary Stat</NoobsIsekai_DetailPrimaryStat>
+  <NoobsIsekai_DetailSecondaryStat>Secondary Stat</NoobsIsekai_DetailSecondaryStat>
+</LanguageData>

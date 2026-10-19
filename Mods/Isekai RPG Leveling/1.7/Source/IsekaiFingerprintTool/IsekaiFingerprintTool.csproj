@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!--
+    Offline helper for NoobsFixes.IsekaiLevelingFix (not shipped, not loaded by RimWorld).
+    Reads IsekaiLeveling.dll builds with the same fingerprint code the mod uses in-game and writes
+    ..\NoobsFixes.IsekaiLevelingFix\Core\KnownFingerprints.Generated.cs. See README.md.
+  -->
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <RootNamespace>NoobsFixes.IsekaiLevelingFix</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\NoobsFixes.IsekaiLevelingFix\Shared\*.cs" Link="Shared\%(Filename)%(Extension)" />
+  </ItemGroup>
+</Project>
