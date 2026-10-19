@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<!-- Changes steel costs to iron costs, rest are the same -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleBuildDef[
+        defName = "AV_Balloon_Blueprint" or
+        defName = "AV_Chariot_Blueprint" or
+        defName = "AV_CoveredCarriage_Blueprint" or
+        defName = "AV_Hwacha_Blueprint" or
+        defName = "AV_OxCart_Blueprint" or
+        defName = "AV_Palanquin_Blueprint" or
+        defName = "AV_Rickshaw_Blueprint" or
+        defName = "AV_WarChariot_Blueprint" or
+        defName = "AV_Wheelbarrow_Blueprint"]/costList/Steel</xpath>
+		<value>
+			<DankPyon_IronIngot>10</DankPyon_IronIngot>
+		</value>
+	</Operation>
+</Patch>
